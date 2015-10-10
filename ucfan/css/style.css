@@ -3,7 +3,7 @@ body {
     padding: 0px;
     border: 0px;
     font-family: sans-serif;
-    background-image: url("img/bg.jpg");
+    background-image: url("../img/bg.jpg");
 }
 
 clear {
@@ -12,10 +12,6 @@ clear {
 
 * {
     box-sizing: border-box;
-}
-
-.row {
-
 }
 
 .column {
@@ -32,7 +28,7 @@ clear {
 }
 
 .fixed-width {
-    width: 980px;
+    width: 981px;
     margin: 0 auto;
 }
 
@@ -120,9 +116,48 @@ clear {
     font-size: 38px;
 }
 
-
 .a-2 p {
     margin: 0 auto;
     font-size: 14px;
     line-height: 30px;
+}
+
+.b > div {
+    width: 327px;
+}
+
+.b .line {
+    box-sizing: content-box;
+    width: 100%;
+    height: 5px;
+    border-top: 5px #FFC947 solid;
+    border-bottom: 3px #FFC947 solid;
+    margin: 0;
+    padding: 0;
+}
+
+.b-1 .line, .b-3 .line , .b-1 .text, .b-3 .text {
+    background-color: #4B3A33;
+}
+
+.b-2 .line, .b-2 .text {
+    background-color: #241B18;
+}
+
+.b .text {
+    padding: 13px 20px 5px 20px;
+}
+
+.b h1 {
+    margin: 0px;
+    color: #FFC947;
+    font-size: 14px;
+    font-weight: normal;
+    text-transform: uppercase;
+}
+
+.b p {
+    margin: 0px;
+    color: #fff;
+    font-size: 13px;
 }

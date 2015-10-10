@@ -6,7 +6,7 @@ body {
     background-image: url("../img/bg.jpg");
 }
 
-clear {
+.clear {
     clear: both;
 }
 
@@ -79,7 +79,7 @@ clear {
     color: #fff;
 }
 
-.active {
+.active a {
     color: #FFC947 !important;
 }
 
@@ -122,11 +122,21 @@ clear {
     line-height: 30px;
 }
 
+.b {
+    display: inline-block;
+}
+
 .b > div {
     width: 327px;
+    height: auto;
+}
+
+.b img {
+    float: left;
 }
 
 .b .line {
+    float: left;
     box-sizing: content-box;
     width: 100%;
     height: 5px;
@@ -145,6 +155,7 @@ clear {
 }
 
 .b .text {
+    float: left;
     padding: 13px 20px 5px 20px;
 }
 
@@ -160,4 +171,61 @@ clear {
     margin: 0px;
     color: #fff;
     font-size: 13px;
+}
+
+.c {
+    width: 100%;
+    height: 280px;
+    display: inline-block;
+    background-color: #fff;
+}
+
+.c h6 {
+    margin: 0;
+    color: #7B7B92;
+    font-size: 14px;
+    text-transform: uppercase;
+}
+
+.c-1 span {
+    font-size: 24px;
+    text-transform: uppercase;
+}
+
+.c-1 {
+    width: 33.5%;
+    height: 100%;
+    padding: 30px 20px 30px 20px;
+    border-right: 3px #FFC947 dotted;
+    border-right-width: thick;
+}
+
+.c-2 {
+    width: 66.5%;
+    height: 100%;
+    padding: 30px 0px 30px 20px;
+}
+
+.post {
+    width: 288px;
+    background-color: #DDDAD3;
+    font-size: 13px;
+    margin: 20px 25px 0 0;
+}
+
+.post .text {
+    width: 50%;
+    padding: 13px;
+}
+
+.post .cover {
+    width: 50%;
+}
+
+.post .title {
+    color: #7A5300;
+}
+
+.post .more {
+    text-transform: uppercase;
 }

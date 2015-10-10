@@ -157,6 +157,7 @@ body {
 .b .text {
     float: left;
     padding: 13px 20px 5px 20px;
+    height: 96px;
 }
 
 .b h1 {
@@ -206,26 +207,138 @@ body {
     padding: 30px 0px 30px 20px;
 }
 
-.post {
+.c .post {
     width: 288px;
     background-color: #DDDAD3;
     font-size: 13px;
     margin: 20px 25px 0 0;
 }
 
-.post .text {
+.c .post .text {
     width: 50%;
     padding: 13px;
 }
 
-.post .cover {
+.c .post .cover {
     width: 50%;
 }
 
-.post .title {
+.c .post .title {
     color: #7A5300;
 }
 
-.post .more {
+.c .post .more {
     text-transform: uppercase;
+}
+
+#footer {
+    display: inline-block;
+    background-color: #E2B241;
+    width: 100%;
+}
+
+#footer div.three:nth-child(1), #footer div.three:nth-child(2) {
+    border-right: 5px #B68B35 dotted;
+}
+
+
+#footer h1 {
+    font-size: 14px;
+    text-transform: uppercase;
+    margin: 20px 0;
+}
+
+#footer .column {
+    margin: 20px 0 20px 0;
+    height: 350px;
+    padding: 10px;
+}
+
+#footer p {
+    font-size: 13px;
+}
+
+#footer .post {
+    width: 100%;
+    margin: 20px 0;
+}
+
+#footer .post .date {
+    float: left;
+    color: #fff;
+    margin: 6px 6px 0 0;
+    padding: 5px 3px 3px 3px;
+    height: 45px;
+    width: 45px;
+    text-align: center;
+    font-weight: bold;
+    font-size: 13px;
+    background-color: #4B3A33;
+    border-radius: 3px    ;
+}
+
+#footer .post .summary {
+    float: left;
+    width: 240px;
+    font-size: 13px;
+    padding: 5px;
+}
+
+#footer .post .summary .title {
+    font-weight: bold;
+    font-size: 14px;
+}
+
+#footer .join {
+    border-bottom: 5px #B68B35 dotted;
+}
+
+#footer .join input[type="text"] {
+    width: 100%;
+    font-size: 12px;
+    padding: 5px;
+    border: 3px #4B3A33 solid;
+}
+
+#footer .join input[type="submit"] {
+    background-color: #4B3A33;
+    color: #fff;
+    font-weight: bold;
+    text-align: center;
+    border: 0;
+    padding: 5px 15px 5px 15px;
+    margin: 10px 0;
+}
+
+#footer .social img {
+    margin: 0 20px 0 0;
+    }
+
+
+.claim {
+    border-top: 1px #B68B35 dotted;
+    border-top-width: thick;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: #967228;
+    width: 100%;
+    margin: 0 auto;
+    padding: 10px 5px 20px 5px;
+}
+
+.claim .copyright {
+    float: left;
+}
+
+.claim .menu {
+    float: right;
+}
+
+.claim .menu ul {
+    margin: 0px;
+}
+
+.claim .menu ul li {
+    display: inline-block;
+    margin-left: 10px;
 }

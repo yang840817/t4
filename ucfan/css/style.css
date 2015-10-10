@@ -75,7 +75,7 @@ clear {
 
 .navbar li {
     float: left;
-    margin-left: 34px;
+    margin: 0 18px 0 18px;
 }
 
 .navbar a, .navbar a:visited {
@@ -85,4 +85,44 @@ clear {
 
 .active {
     color: #FFC947 !important;
+}
+
+#content {
+    background-color: #fff;
+}
+
+.a {
+    background-color: #DDDAD3;
+    height: 407px;
+    border-bottom: 1px #fff solid;
+}
+
+.a-1 {
+    background-image: url("../img/a1.jpg");
+    width: 461px;
+    height: 100%;
+    border-right: 1px #fff solid;
+    box-shadow:5px 0px 12px rgba(0, 0, 0, 0.3);
+}
+
+.a-2 {
+    width: 100%;
+    width: 519px;
+    padding: 50px;
+}
+
+.a-2 h1 {
+    text-align: center;
+    text-transform: uppercase;
+    padding-bottom: 40px;
+    margin: 0 auto;
+    max-width: 340px;
+    font-size: 38px;
+}
+
+
+.a-2 p {
+    margin: 0 auto;
+    font-size: 14px;
+    line-height: 30px;
 }

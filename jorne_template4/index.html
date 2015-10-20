@@ -10,14 +10,14 @@
 <meta name="Author" content="Lin I Hsuan" />
 <title>template4</title>
 <link rel="stylesheet" type="text/css" href="css/font-awesome.min.css" />
-<link rel="stylesheet" type="text/css" href="css/page.css" />
+<link rel="stylesheet" type="text/css" href="css/index.css" />
 <!--[if lt IE 9]>
 <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
 <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
 <![endif]-->
 <script type="text/javascript" src="js/jquery-1.11.3.min.js"></script>
 <script type="text/javascript" src="js/bootstrap.min.js"></script>
-<script type="text/javascript" src="js/page.js"></script>
+<script type="text/javascript" src="js/index.js"></script>
 
 <!--effect-->
 <link rel="stylesheet" type="text/css" href="css/owl.carousel.css">
@@ -64,22 +64,6 @@
 			<div class="editor">You can remove any link to our website from this website template, you're free to use this website template without linking back to us. This is just a place holder, so you can see what the site would look like. This is just a place holder.</div>
 		</div>
 	</section>
-	<script>
-	$(document).ready(function(){
-		if($('.banner .imgbg img').css('display')=='none'){
-		   $('.banner .imgbg').css('height',$('.banner .content').outerHeight());
-		}else{
-		   $('.banner .imgbg').css('height','');
-		};
-	});
-	$(window).resize(function(){
-		if($('.banner .imgbg img').css('display')=='none'){
-		   $('.banner .imgbg').css('height',$('.banner .content').outerHeight());
-		}else{
-		   $('.banner .imgbg').css('height','');
-		};
-	});
-	</script>
 
 	<section  class="product">
 		<div id="owl-product" class="owl-carousel owl-theme">
@@ -111,46 +95,15 @@
 				</a>
 			</div>
 		</div>
-		<script>
-		$(document).ready(function() {
-			$("#owl-product").owlCarousel({
-				items : 3,
-				itemsDesktop : [1279,3],
-				itemsDesktopSmall : [1023,2],
-				itemsTablet : [767,1],
-				itemsMobile : [479,1],
-				navigation : false,
-				slideSpeed : 800,
-				paginationSpeed : 800,
-				autoPlay : true,
-				stopOnHover : true
-			});
-		});
-
-		$(window).load(function() {
-			var maxHeight = Math.max.apply(null, $('.product .intro').map(function(){
-			     return $(this).outerHeight();
-			}).get());
-			$('.product .intro').css('height',maxHeight);
-		});
-
-		$(window).resize(function() {
-			$('.product .intro').css('height','');
-			var maxHeight = Math.max.apply(null, $('.product .intro').map(function(){
-			     return $(this).outerHeight();
-			}).get());
-			$('.product .intro').css('height',maxHeight);
-		});
-		</script>
-
 	</section>
+	
 	<section  class="service">
 		<div class="row nomargin">
 			<div class="info col-md-4 col-sm-12 col-xs-12">
 				<div class="row">
 					<div class="col-md-12 col-sm-6 col-xs-12">
 						<h5>FOR ORDER AND INQUIRIES PLEASE CALL:</h5>
-						<h4><a href="tel:">760-962-9541</a></h4>
+						<h4><a href="tel:760 962 9541">760-962-9541</a></h4>
 					</div>
 					<div class="col-md-12 col-sm-6 col-xs-12">
 						<h5>OR YOU CAN VISIT US AT:</h5>
@@ -189,33 +142,6 @@
 			</div>
 		</div>
 	</section>
-	<script>
-	$(document).ready(function(){
-		var number = $('.service .imgbg').length;
-		var imgbg = $('.service .imgbg');
-		var img = $('.service .imgbg img');
-		for(var i=0;i<number;i++){
-				 if($(img).css('display')=='none'){
-							$(imgbg[i]).css('height',$(imgbg[i]).prev().outerHeight()).css('background-image','url('+$(img[i]).attr('src')+')');
-				 }else{
-							$(imgbg).css('height','').css('background-image','');
-				 };
-		}
-	});
-	$(window).resize(function(){
-		var number = $('.service .imgbg').length;
-		var imgbg = $('.service .imgbg');
-		var img = $('.service .imgbg img');
-		for(var i=0;i<number;i++){
-				 if($(img).css('display')=='none'){
-							$(imgbg[i]).css('height',$(imgbg[i]).prev().outerHeight()).css('background-image','url('+$(img[i]).attr('src')+')');
-				 }else{
-							$(imgbg).css('height','').css('background-image','');
-				 };
-		}
-	});
-	</script>
-
 </div>
 
 <footer  id="footer">
@@ -271,27 +197,6 @@
 			<p>&copy;COPYRIGHT 2012 ALL RIGHTS RESERVED.</p>
 	</div>
 </footer>
-<script>
-$(window).load(function(){
-	if(window.innerWidth>1023){
-		var maxHeight = Math.max.apply(null, $('#footer .piece').map(function(){
-		     return $(this).outerHeight(true);
-		}).get());
-		$('#footer .piece').css('height',maxHeight);
-
-	}
-});
-$(window).resize(function(){
-	$('#footer .piece').css('height','');
-	if(window.innerWidth>1023){
-		var maxHeight = Math.max.apply(null, $('#footer .piece').map(function(){
-		     return $(this).outerHeight(true);
-		}).get());
-		$('#footer .piece').css('height',maxHeight);
-
-	}
-});
-</script>
 
 </body>
 </html>

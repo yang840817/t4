@@ -8,12 +8,6 @@ h1, h2 {
 	margin: 0;
 }
 
-.clear {
-	clear: both;
-}
-
-
-
 /********** Header Start **********/
 header {
 	background-color: black;
@@ -45,7 +39,6 @@ nav ul {
 
 }
 nav	li {
-	display: inline-block;
 	color: white;
 	font-size: 15px;
 	padding: 0px 15px;
@@ -276,12 +269,23 @@ footer h4{
 
 .postBox{
 	margin:20px  0px 20px 0px;
-	margin-left: 0px;
 }
+
 .postDate {
 	text-align: center;
 	color: white;
 	background-color: #444444;
+
+	float: left;
+	width: 50px;
+}
+
+.postDate p{
+	padding: 0;
+	margin: 0;	
+}
+.postContent{
+	float: right;
 }
 .postTitle{
 	font-size: 20px;
@@ -320,7 +324,7 @@ footer h4{
 }
 
 #copyright {
-	float: left;
+
 }
 
 #bottomNav{
@@ -328,14 +332,13 @@ footer h4{
 }
 
 #bottomNav ul {
-	float: right;
+
 	list-style-type: none;
 	margin: 0;
 	padding: 0;
 }
 
 #bottomNav li {
-	display: inline-block;
 	padding: 0px 5px 0px 0px;
 }
 

@@ -149,7 +149,7 @@ nav	li {
 }
 
 .botItem {
-	padding: 0px 40px;
+	padding: 0px 30px;
 }
 
 #botItemLeft {
@@ -174,7 +174,7 @@ nav	li {
 
 #blogs h3{
 	color: gray;
-	font-size: 20px;
+	font-size: 15px;
 
 }
 .blogItem {
@@ -182,44 +182,37 @@ nav	li {
 	margin: 0 15px;
 	padding-right: 0; 
 }
-.blog {
-	float: left;
-	display: flex;
-	width: 320px;
-}
-.introBlog {
-	float: left;
-	background-color: #AAAAAA;
-	margin-top: 0px;
-	padding: 10px;
-	flex: 1
-}
 
-.authorPic{
-	float: left;
-	flex: 1
-}
-.authorPic img {
-	height: 100%;
-	width: 100%
-}
-
-
-.blogDate {
-	font-size: 13px;
-}
-.blogTitle {
-	font-size: 20px;
-	margin-bottom: 40px;
-}
-.blogConnect {
-	font-size: 15px;
-	margin-bottom: 20px;
-
-}
 
 #blogLeft {
 	margin-right: 60px;
+}
+
+.blog {
+	display: flex;
+}
+.blogDate {
+	font-size: 12px;
+}
+.blogTitle{
+	font-size: 18px;
+	margin-bottom: 30px;
+}
+.blogConnect {
+	font-size: 18px;
+}
+.blogDes {
+	float: left;
+	background-color: #AAAAAA;
+	width: 50%;
+	padding-top: 20px; 
+	padding-left: 20px; 
+}
+.authorPic {
+	float: left;
+}
+.authorPic img {
+	height: 200px;
 }
 
 /********** ContentBot End **********/

@@ -1,0 +1,55 @@
+.containerBottom{
+  margin: 0 auto;
+  width: 900px;
+}
+.containerBottomp p{
+  color: white;
+}
+.containerBottom>div{
+  width: 900px;
+  margin: 0 auto;
+}
+.bottom-top-side{
+  background-color:#4B3A33;
+  padding: 0;
+}
+.bottom-top-center{
+  background-color: #241B18;
+  padding: 0;
+}
+.bottom-top-img{
+  height:190px;
+  background-position: center;
+  background-size: cover;
+}
+#itemleft{
+  background-image: url("img/display1.png");
+}
+#itemright{
+  background-image: url("img/display3.png");
+}
+#itemcenter{
+  background-image: url("img/display2.png");
+}
+.bottom{
+  background-color: white;
+}
+.bottom>div>div{
+  display: flex;
+}
+.bottom>div>div>div{
+  display: inline-block;
+
+}
+.bottom>div>div>div>div{
+
+  background-color: #EEE;
+}
+.bottom p{
+  color: #7B7B7B;
+  font-family: "Oswald";
+  font-variant: small-caps;
+}
+.resetpadding{
+  padding: 0;
+}

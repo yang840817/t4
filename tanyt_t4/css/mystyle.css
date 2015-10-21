@@ -7,7 +7,9 @@ body {
 h1, h2 {
 	margin: 0;
 }
-
+.clear {
+	clear: both;
+}
 /********** Header Start **********/
 header {
 	background-color: black;
@@ -268,16 +270,18 @@ footer h4{
 }
 
 .postBox{
-	margin:20px  0px 20px 0px;
+	margin:10px  0px 10px 0px;
 }
 
 .postDate {
 	text-align: center;
 	color: white;
 	background-color: #444444;
-
-	float: left;
 	width: 50px;
+	height: 60px;
+	float: left;
+	margin-right: 10px;
+
 }
 
 .postDate p{
@@ -285,7 +289,8 @@ footer h4{
 	margin: 0;	
 }
 .postContent{
-	float: right;
+	width: 290px;
+	float: left;
 }
 .postTitle{
 	font-size: 20px;

@@ -1,0 +1,23 @@
+.header{
+  background-color: rgb(14%,11%,9%);
+  height: 150px
+  margin-left: 0px;
+  /*  bootstrap.min.css 裡面定義 margin-left:15px; 所以要還回原來的位置  */
+}
+.nav1 li{
+  display: inline-block;
+}
+.nav1 {
+  margin-top: 20px;
+}
+.nav a{
+
+}
+div.logo img{
+  width: 429px;
+  height: 80px;
+  margin-left: 30px;
+}
+.clear{
+  clear: both;
+}

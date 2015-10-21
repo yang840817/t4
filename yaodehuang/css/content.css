@@ -40,12 +40,7 @@
   left:324px;
   bottom: 59px;
 }
-.col-md-2{
-  width: 11.667%;
-}
-.col-md-8{
-  width: 75.667%;
-}
+
 button{
   display: inline-block;
 }
@@ -77,4 +72,15 @@ button{
   height: 150px;
   width: 133px;
 }
-.
+.sentence-color{
+  background-color: #dddad3;
+  display: inline-block;
+  width: 109px;
+  height: 137px;
+}
+.sentence-img{
+  display: inline-block;
+}
+.left{
+    border-right: 5px solid green;
+}

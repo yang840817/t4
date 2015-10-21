@@ -3,7 +3,7 @@
   border-bottom: 1px solid white;
 }
 .subheader>div{
-  width:1000px;
+  width:900px;
   margin: 0 auto;
 }
 .subheader>div>img{
@@ -14,6 +14,7 @@
   width: 40%;
   margin: 0 auto;
   display: inline-block;
+  float: right;
 }
 .subheader>div>ul>li{
   padding: 20px 15px;

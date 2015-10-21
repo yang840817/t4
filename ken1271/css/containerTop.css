@@ -21,6 +21,9 @@
   left:70%;
   top:70%;
 }
+#topleft>div>p{
+  color: #241B18;
+}
 #topright{
   background-image: url("img/bg-pattern.jpg");
   background-size: cover;
@@ -34,4 +37,5 @@
 #topright>div>p{
   text-align: justify;
   font-family: "QuattrocentoSans-Regular";
+  color: #241B18;
 }

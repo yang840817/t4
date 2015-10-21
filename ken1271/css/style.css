@@ -15,10 +15,14 @@ h3{
   font-variant: small-caps ;
   text-align: left;
   color: #FFC947;
+  margin: 0;
 }
 h4{
   color: #241B18;
-  font-variant: small-caps;
+}
+h6{
+  color: #4B3A33;
+  margin: 0;
 }
 p{
   color: white;
@@ -26,4 +30,10 @@ p{
 .main{
   background-image: url("img/mainbg.png");
   background-repeat: repeat;
+}
+.rightline{
+  border-right: 8px dotted rgb(227, 199, 9);
+}
+.topline{
+  border-top: 8px dotted rgb(227, 199, 9);
 }

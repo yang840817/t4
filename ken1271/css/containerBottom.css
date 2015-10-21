@@ -4,6 +4,7 @@
 }
 .containerBottomp p{
   color: white;
+  padding:5px 0 15px;
 }
 .containerBottom>div{
   width: 900px;
@@ -33,23 +34,22 @@
 }
 .bottom{
   background-color: white;
-}
-.bottom>div>div{
-  display: flex;
-}
-.bottom>div>div>div{
-  display: inline-block;
-
-}
-.bottom>div>div>div>div{
-
-  background-color: #EEE;
+  padding:20px 0;
 }
 .bottom p{
   color: #7B7B7B;
   font-family: "Oswald";
   font-variant: small-caps;
+  font-size: 16px;
 }
-.resetpadding{
+.grayback{
+  background-color: #EEE;
   padding: 0;
+  width:250px;
+}
+.floatright{
+  float: right;
+}
+.floatleft{
+  float: left;
 }

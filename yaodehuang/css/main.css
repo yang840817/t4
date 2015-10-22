@@ -1,0 +1,6 @@
+.main{
+  background-image: url("../images/mainbg.png");
+}
+.main .content p{
+  margin: 0px;
+}

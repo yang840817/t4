@@ -1,0 +1,41 @@
+.main{
+   background-image: url("../images/mainbg.png");
+  .main-content{
+    width: 980px;
+    margin: 0 auto;
+    .main-content-top-left{
+      position: relative;
+      background-image: url("../images/chair.jpg");
+       background-size: 600px 400px;
+       height: 386px;
+
+      .banner{
+        position: absolute;
+        top: 295px;
+        left: 350px;
+        p{
+          color: #030303;
+        }
+        em{
+          color: #030303;
+        }
+        button{
+          background-color: #ffc947;
+          color: #966a03;
+        }
+      }
+    }
+    .main-content-top-right{
+      background-image: url("../images/bg-pattern.jpg");
+      background-size: 800px 500px;
+      height: 386px;
+      .this{
+        padding-top: 200px;
+      }
+
+    }
+    .main-content-center{
+
+    }
+  }
+}

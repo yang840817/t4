@@ -29,5 +29,15 @@
       padding: 0px; }
       .main .main-content .main-content-center .pic img {
         width: 100%; }
+      .main .main-content .main-content-center .pic .intro {
+        border-top: 6px;
+        background-color: #4b3a33;
+        border-style: dotted  none none;
+        color: #E2B241; }
+        .main .main-content .main-content-center .pic .intro h1 {
+          margin-top: 0px;
+          color: #ffc947; }
+        .main .main-content .main-content-center .pic .intro p {
+          color: #ffffff; }
 
 /*# sourceMappingURL=main.css.map */

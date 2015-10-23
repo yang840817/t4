@@ -51,10 +51,45 @@
             }
             p{
               color: #ffffff;
+              margin-bottom: 0px;
             }
           }
         }
 
+    }
+    .main-content-bottom{
+      background-color: #ffffff;
+      height: 350px;
+      .info{
+        border-right: 9px;
+        border-style: none dotted none none;
+        border-color: #E2B241;
+      }
+      .blog{
+        h1{
+
+        }
+        .blog-second{
+          .line{
+            margin-right: 4px;
+          }
+          .blog-info{
+            background-color: #dddad3;
+            background-size: 190px 178px ;
+            padding-bottom: 45px;
+          }
+          .blog-left-img{
+              height: 178px;
+            background-image: url("../images/thumb1.png");
+            background-size: cover;
+          }
+          .blog-right-img{
+            height: 178px;
+            background-image: url("../images/thumb2.png");
+            background-size: cover;
+          }
+        }
+      }
     }
   }
 }

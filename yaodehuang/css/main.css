@@ -38,6 +38,28 @@
           margin-top: 0px;
           color: #ffc947; }
         .main .main-content .main-content-center .pic .intro p {
-          color: #ffffff; }
+          color: #ffffff;
+          margin-bottom: 0px; }
+    .main .main-content .main-content-bottom {
+      background-color: #ffffff;
+      height: 350px; }
+      .main .main-content .main-content-bottom .info {
+        border-right: 9px;
+        border-style: none dotted none none;
+        border-color: #E2B241; }
+      .main .main-content .main-content-bottom .blog .blog-second .line {
+        margin-right: 4px; }
+      .main .main-content .main-content-bottom .blog .blog-second .blog-info {
+        background-color: #dddad3;
+        background-size: 190px 178px;
+        padding-bottom: 45px; }
+      .main .main-content .main-content-bottom .blog .blog-second .blog-left-img {
+        height: 178px;
+        background-image: url("../images/thumb1.png");
+        background-size: cover; }
+      .main .main-content .main-content-bottom .blog .blog-second .blog-right-img {
+        height: 178px;
+        background-image: url("../images/thumb2.png");
+        background-size: cover; }
 
 /*# sourceMappingURL=main.css.map */

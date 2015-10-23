@@ -25,5 +25,9 @@
       height: 386px; }
       .main .main-content .main-content-top-right .this {
         padding-top: 200px; }
+    .main .main-content .main-content-center .pic {
+      padding: 0px; }
+      .main .main-content .main-content-center .pic img {
+        width: 100%; }
 
 /*# sourceMappingURL=main.css.map */

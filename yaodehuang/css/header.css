@@ -12,6 +12,7 @@ body{
 }
 .header .header-content .logo{
   display: inline-block;
+
 }
 .header .header-content  .logo h1{
   margin: 0px;
@@ -23,8 +24,8 @@ body{
 }
 .header .header-content .nav-bar{
   display: inline-block;
-  padding: 0 0px;
-  margin-left: 390px;
+  padding-left: 310px;
+
 }
 .header .header-content .nav-bar li{
   display: inline-block;
@@ -32,4 +33,5 @@ body{
 }
 .header .header-content .nav-bar a{
   text-decoration: none;
+  color: #ffffff;
 }

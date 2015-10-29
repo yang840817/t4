@@ -33,6 +33,18 @@ header
 {
   float: left;
   padding: 25px;
+  font-weight: bold;
+}
+
+#menu a
+{
+  text-decoration: none;
+  color: white;
+}
+
+#menu a:hover
+{
+  color: #FFDC35;
 }
 
 .clear
@@ -49,24 +61,17 @@ header
 
 #cover_img
 {
-  padding-right: 0px;
-}
-
-#cover_img img
-{
-  width: 100%;
-  height: 100%;
+  background-image: url("img/chair.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 363px
 }
 
 #main_descript
 {
   background-image: url("img/bg-pattern.jpg");
-  width: 485px;
-  height: 421px;
   background-repeat: no-repeat;
   background-size: cover;
-  padding-left: 30px;
-  padding-right: 30px;
 }
 
 #main_descript h1
@@ -89,7 +94,94 @@ header
   width: 100%;
 }
 
-#cover2.col-md-4
+.padding_clear
 {
   padding: 0px;
+}
+
+#cover2 h3
+{
+  color: #FFDC35;
+}
+
+#cover2 .col-md-4
+{
+  background-color: #4b3a33;
+}
+
+#cover2 .col-md-4:hover
+{
+  background-color: black;
+}
+
+#cover2 p
+{
+  color: white;
+}
+
+.three_img
+{
+  padding: 20px;
+  background: url("img/separator-light.png") repeat-x;
+}
+
+#cover3
+{
+  background-color: white;
+}
+
+#visit
+{
+  background: url("img/separator-light-vertical.png") repeat-y right top;
+  padding-bottom: 30px;
+  padding-top: 10px;
+}
+
+.visit_info
+{
+  margin-top: 20px;
+}
+
+.visit_info p
+{
+  margin-top: 25px;
+  color: #7b7b7b;
+  font-weight: bold;
+}
+
+.visit_info h3
+{
+  margin-top: 0px;
+  font-weight: bold;
+}
+
+.blog_from
+{
+  padding-left: 25px;
+  padding-right: 30px;
+}
+
+.blog_from h4
+{
+  margin-top: 35px;
+  color: #7b7b7b;
+  font-weight: bold;
+}
+
+.blog_from_div
+{
+  position: relative;
+}
+
+.blog_from_word
+{
+  background-color: #CECEFF;
+  width:132px;
+  height: 152px;
+  float: left;
+}
+
+.blog_from_pic
+{
+  float: left;
 }

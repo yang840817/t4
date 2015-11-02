@@ -59,7 +59,7 @@ header
 
 #main_bg
 {
-  background-image: url("img/bg-body.png");
+  background-image: url("img/bg.jpg");
   padding: 0 20px;
 }
 
@@ -338,6 +338,7 @@ footer
 #copyright
 {
   padding-top: 10px;
+  padding-bottom: 20px;
   background: url("img/separator-dark.png") repeat-x top left;
   font-weight: bold;
   color: #BB5E00;

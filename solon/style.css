@@ -288,7 +288,7 @@ footer
 #email
 {
   background: url("img/separator-dark.png") repeat-x bottom left;
-  padding-left: 10px;
+
 }
 
 #email_text
@@ -312,17 +312,23 @@ footer
 #social
 {
   margin-top: 20px;
-  padding-left: 10px;
+}
+
+#social ul
+{
+  list-style-type: none;
+  padding-left: 0px;
+}
+
+#social li
+{
+  display: inline-block;
+  margin-right: 50px;
 }
 
 #social h4
 {
   padding-bottom: 10px;
-}
-
-#social img
-{
-  margin-right: 60px;
 }
 
 #bottom_menu

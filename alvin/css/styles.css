@@ -1,0 +1,43 @@
+header {
+  background-color: #241B18;
+}
+
+.narrow {
+  width:80%;
+}
+
+.logo {
+  margin: 3% 0%;
+}
+
+nav {
+  margin-top:5%;
+}
+nav li {
+  margin: 0% 1% ;
+}
+nav a {
+  color: #ffffff;
+  font-size: 1.3em;
+}
+nav a.current, nav a:hover {
+  color: #ffc947 ;
+}
+
+nav a:hover {
+  text-decoration: none;
+}
+/*--------------------------------content---------------------------------*/
+section {
+  background: url("../images/bg.png") repeat;
+  border-top: 1px solid #ffffff;
+}
+.chair {
+  width: 100%;
+  height: auto;
+}
+.banner-right {
+  background: url("../images/banner-bg.jpg");
+  height: auto;
+ /* margin-left:-15px;*/
+}

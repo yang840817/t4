@@ -3,13 +3,16 @@ header {
 }
 
 .narrow {
-  width:80%;
+  width:70%;
 }
 
 .logo {
   margin: 3% 0%;
 }
-
+img {
+  max-width: 100%;
+  height: auto;
+}
 nav {
   margin-top:5%;
 }
@@ -27,17 +30,136 @@ nav a.current, nav a:hover {
 nav a:hover {
   text-decoration: none;
 }
-/*--------------------------------content---------------------------------*/
+/*--------------------------------banner-top---------------------------------*/
 section {
-  background: url("../images/bg.png") repeat;
+  background: url("../images/bg.png") repeat center center;
   border-top: 1px solid #ffffff;
 }
-.chair {
-  width: 100%;
-  height: auto;
+
+#banner {
+  border-color: #ffffff;
+  border-width: 1px;
+  border-style: none solid solid;
 }
-.banner-right {
-  background: url("../images/banner-bg.jpg");
-  height: auto;
- /* margin-left:-15px;*/
+
+#banner-left {
+  background: url("../images/chair.jpg") no-repeat ;  
+  background-size: cover; 
+  height: 400px;
+  /*background-size: 100% auto;*/
+  /*position: relative;  col裏已經有relative*/
+}
+#banner-left-text {
+  height: auto;  
+  position:absolute;
+  right: 3%;
+  bottom:3%; 
+}
+#money {
+  font-size: 150%;
+  font-weight: bold;
+}
+
+#banner-right {
+  background: url("../images/banner-bg.jpg") no-repeat ;
+  background-size: cover; 
+  height: 400px;
+  /*background-size: 100% auto;*/
+}
+#banner-right > h1 {
+  padding: 8% 3% ;
+}
+#banner-right > p{
+  line-height: 1.7em;
+  padding: 0% 5% ;
+}
+
+/*--------------------------------banner-bottom---------------------------------*/
+.banner-btm-img , .banner-btm-tx {
+  margin-right: -15px;
+  margin-left: -15px;
+}
+
+.banner-btm-img > a >img {
+  width: 100%; 
+}
+.banner-btm-tx > p {
+  color:#ffffff;
+}
+.banner-btm-tx > h4 {
+  color: #ffc947 ;
+}
+.banner-btm-tx {
+  padding: 15px 25px;
+  background: #4B3A33 url("../images/separator-light.png") repeat-x top ;
+}
+
+/*--------------------------------infomation---------------------------------*/
+#infomation {
+  background-color: #fff;
+}
+#infomation > div > h4 {
+  font-weight: bold;
+  color:#7b7b7b;
+}
+#contact > p {
+  color: #000;
+  font-size: 170% ;
+  font-weight: bold;
+}
+
+#contact {
+  margin: 1% 0%;
+  padding: 2% 2%;
+  background:  url("../images/separator-light-vertical.png") repeat-y right ;
+}
+#blog-from {
+  margin: 3% 0%;
+}
+.blog {
+  display: flex;
+}
+.blog-tx {
+  background-color: #DDDAD3;  
+  padding: 15px;
+  width: 50%;
+}
+.blog > div > img {
+  width:100% ;
+}
+
+/*--------------------------------footer---------------------------------*/
+footer {
+  background-color: #E2B241;
+}
+footer h4{
+  color:#241b18;
+  font-weight: bold;
+}
+#footer-top {
+  margin-top: 3%;
+}
+#footer-top{
+  padding-bottom: 5%;
+  width: 100%;
+}
+
+.date {
+  background: url("../images/bg-time.png") no-repeat left top ;
+  color: #fff;
+  float: left;
+  height: 42px;
+  width: 32px;
+  padding: 0 5px;
+  text-align: center;
+}
+
+.date-text {
+  padding-left: 
+}
+#posts{
+  background:url("../images/separator-dark-vertical.png") repeat-y left ;
+}
+#newsletter {
+  background:url("../images/separator-dark-vertical.png") repeat-y left ;
 }

@@ -17,21 +17,21 @@
                 <div class="col-sm-6 logo">
                 	<img src="images/logo.png" alt="logo" />
                 </div>       
-                <nav class="col-sm-6">
-                  <ul class="list-inline text-uppercase">
+                <div class=" nav col-sm-6">
+                  <ul class="pull-right list-inline text-uppercase">
              	       <li><a href="#" class="current">home</a></li>
               	       <li><a href="#">about</a></li>
              	       <li><a href="#">gallery</a></li>
              	       <li><a href="#">blog</a></li>
              	       <li><a href="#">contact</a></li>
                   </ul>
-                </nav>
+                </div>
             </div> 
         </div>                    
     </header>
     <section>
     <div class="container-fluid narrow">
-        <!-- star banner-top-->
+        <!-- start banner-top-->
         <div id="banner" class="row"> 
             <div id="banner-left" class="col-xs-12 col-md-6">                    
                 <div id="banner-left-text" class="text-center">
@@ -45,9 +45,9 @@
                 <p class="text-justify">You can remove any link to our website from this website template, you're free to use this website template without linking back to us. This is just a place holder, so you can see what the site would look like. This is just a place holder</p>                
             </div>
         </div> <!-- end banner-top-->
-        <!-- star banner-bottom-->
+        <!-- start banner-bottom-->
         <div class="row">
-            <div class="col-md-4 banner-bottom"> 
+            <div class="col-xs-12 col-md-4 banner-bottom"> 
                 <div class="banner-btm-img">
                     <a href="#"><img src="images/living-room.jpg" alt="living-room" /></a>
                 </div>
@@ -56,7 +56,7 @@
                       <p class="text-justify">This website template has been designed by Free Website Templates for you, for free. You can replace all this text with your own text</p>
                 </div>                                      
             </div>
-            <div class="col-md-4 banner-bottom">
+            <div class="col-xs-12 col-md-4 banner-bottom">
                 <div class="banner-btm-img">
                   <a href="#"><img src="images/bedroom.jpg" alt="bedroom" /></a>
                 </div>
@@ -65,7 +65,7 @@
                     <p class="text-justify">You can remove any link to our website from this website template, you're free to use this website template without linking back to us.</p>
                 </div>                                     
             </div> 
-            <div class="col-md-4 banner-bottom">
+            <div class="col-xs-12 col-md-4 banner-bottom">
                 <div class="banner-btm-img">
                     <a href="#"><img src="images/kitchen.jpg" alt="kitchen" /></a>
                 </div>
@@ -75,7 +75,7 @@
                 </div>                                         
             </div>
         </div> <!-- end banner-bottom-->
-        <!-- star infomation-->
+        <!-- start infomation-->
         <div id="infomation" class="row">
             <div id="contact" class="col-md-4"> 
                 <h4>FOR ORDER AND INQUIRIES PLEASE CALL:</h4> 
@@ -112,66 +112,66 @@
     </div>           
     </section>
     <footer>
+         <!--start footer-top--> 
         <div class="container-fluid narrow">
             <div id="footer-top" class="row">
                 <div class="col-md-4">
                     <h4>VISIT OUR SHOWROOM</h4>
-                    <img src="images/show-room.png" alt="footer-top" id="footer-top" />
+                    <img src="images/show-room.png" alt="show-room" id="show-room" />
                     <p>This is just a place holder, so you can see what the site would look like.</p>
                     <p>760-962-9541</p>
-                    <p>info@carvedcreations.com</p>                 
+                    <p><u><a href="#">info@carvedcreations.com</a></u></p>               
                 </div>
-                <div id="posts" class="col-md-4">
+                <div id="blog-posts" class="col-md-4">
                     <h4>RECENT BLOG POSTS</h4>
-                    <div class="date">
-                       <p>Apr<br/>16</p>
-                    </div>
-                    <div class="date-text">
-                      <h5><a href="#">This is just a place holder.</a></h5>
-                      <p>This is just a place holder, so you can see what the site would look like.</p>
-                    </div> 
-                    <div class="clearfix"></div> 
-
-                    
-                    <div class="date">
-                       <p>Apr <br/>15</p>
-                    </div>   
-                    <h5><a href="#">This is just a place holder.</a></h5>
-                    <p>This is just a place holder, so you can see what the site would look like.</p>
-
-                    
-                    <div class="date">
-                       <p>Apr <br/>14</p>
-                    </div>   
-                    <h5><a href="#">This is just a place holder.</a></h5>
-                    <p>This is just a place holder, so you can see what the site would look like.</p>
+                    <ul class="list-unstyled">
+                        <li class="post">
+                            <span class="date">Apr 16</span>
+                            <p><a href="#">This is just a place holder.</a></p>
+                            <p>This is just a place holder, so you can see what the site would look like.</p>
+                        </li>
+                        <li class="post">
+                            <span class="date">Apr 15</span>
+                            <p><a href="#">This is just a place holder.</a></p>
+                            <p>This is just a place holder, so you can see what the site would look like.</p>
+                        </li>
+                        <li class="post">
+                            <span class="date">Apr 14</span>
+                            <p><a href="#">This is just a place holder.</a></p>
+                            <p>This is just a place holder, so you can see what the site would look like.</p>
+                        </li>                                                                                       
                 </div>
                 <div id="newsletter" class="col-md-4">
-                    <form>
-                        <h4>JOIN OUR NEWSLETTER</h4>
-                        <input type="text" name="Email" id="text" /><br />
-                        <input type="submit" name="submit" value="SIGN UP" id="submit" />
+                    <form role="form">
+                        <div class="form-group">
+                           <label for="InputEmail1"><h4>JOIN OUR NEWSLETTER</h4></label>
+                           <input type="email" class="form-control" id="InputEmail1" placeholder="Enter Email Address Here For Updates">
+                        </div>
+                        <button type="submit" id="email-btn" class="btn btn-default">submit</button>
                     </form>
+                    <div id="social">  </div>              
                     <h4>SOCIAL MEDIA</h4>
                     <a href="#"><img src="images/icon_fb.png" alt="icon_fb" /></a>
                     <a href="#"><img src="images/icon_g.png" alt="icon_g" /></a> 
                     <a href="#"><img src="images/icon_t.png" alt="icon_t" /></a>
+                    
                 </div>
-            </div>
-            <div class="row">
-                <p> &copy; COPYRIGHT 2012. ALL RIGHTS RESERVED.</p>
-                <nav>
-                  <ul>
-                     <li><a href="#">home</a></li>
-                     <li><a href="#">about</a></li>
-                     <li><a href="#">gallery</a></li>
-                     <li><a href="#">blog</a></li>
-                     <li><a href="#">contact</a></li>
-                  </ul>
-                </nav>
-              
-            </div>
+            </div><!--end footer-top--> 
+            <!--start footer-bottom-->        
+            <div class="row copyright">              
+                <p class="pull-left col-xs-12 col-md-6"> &copy; COPYRIGHT 2012. ALL RIGHTS RESERVED.</p>
+                <div class="nav col-xs-12 col-md-6">
+                    <ul class="pull-right list-inline text-uppercase">
+                      <li><a href="#">home</a></li>
+                      <li><a href="#">about</a></li>
+                      <li><a href="#">gallery</a></li>
+                      <li><a href="#">blog</a></li>
+                      <li><a href="#">contact</a></li>
+                    </ul>             
+                </div>            
+            </div><!--end footer-bottom-->   
         </div>               
     </footer>            	                       	          
 </body>
 </html>
+

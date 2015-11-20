@@ -3,7 +3,7 @@ header {
 }
 
 .narrow {
-  width:70%;
+  width:80%;
 }
 
 .logo {
@@ -13,22 +13,27 @@ img {
   max-width: 100%;
   height: auto;
 }
-nav {
+header .nav {
   margin-top:5%;
 }
-nav li {
-  margin: 0% 1% ;
+header .nav li {
+  margin-left: 10px; ;
 }
-nav a {
+header .nav a {
   color: #ffffff;
   font-size: 1.3em;
 }
-nav a.current, nav a:hover {
+header .nav a.current, header .nav a:hover {
   color: #ffc947 ;
 }
 
-nav a:hover {
+header .nav a:hover {
   text-decoration: none;
+}
+@media (max-width: 700px) {
+  .narrow {
+  width:100%;
+  }
 }
 /*--------------------------------banner-top---------------------------------*/
 section {
@@ -93,7 +98,9 @@ section {
   padding: 15px 25px;
   background: #4B3A33 url("../images/separator-light.png") repeat-x top ;
 }
-
+.banner-btm-tx:hover{
+  background-color: #241B18;
+}
 /*--------------------------------infomation---------------------------------*/
 #infomation {
   background-color: #fff;
@@ -124,11 +131,15 @@ section {
   padding: 15px;
   width: 50%;
 }
+.blog-tx a:hover {
+  text-decoration: none;
+  color: #CC9900;
+}
 .blog > div > img {
   width:100% ;
 }
 
-/*--------------------------------footer---------------------------------*/
+/*--------------------------------footer-top--------------------------------*/
 footer {
   background-color: #E2B241;
 }
@@ -139,27 +150,61 @@ footer h4{
 #footer-top {
   margin-top: 3%;
 }
-#footer-top{
+#show-room  {
   padding-bottom: 5%;
   width: 100%;
 }
 
 .date {
   background: url("../images/bg-time.png") no-repeat left top ;
-  color: #fff;
-  float: left;
   height: 42px;
   width: 32px;
-  padding: 0 5px;
+  color: #fff;
+  float: left;  
+  margin: 0 15px 15px 0;
   text-align: center;
 }
 
-.date-text {
-  padding-left: 
-}
-#posts{
+#blog-posts{
   background:url("../images/separator-dark-vertical.png") repeat-y left ;
+}
+.post {
+  padding-bottom: 20px;
+}
+.post a {
+  color: #4b3a33;
+  font-size:130%;
+  font-weight: bold;
+}
+.post a:hover {
+  color: black;
+  text-decoration: none;
 }
 #newsletter {
   background:url("../images/separator-dark-vertical.png") repeat-y left ;
+}
+#email-btn {
+  background-color: #4B3A33;
+  color: #fff;
+  margin-bottom: 30px;
+  border-radius: 10px;
+}
+#newsletter img{
+  margin: 5px 30px 80px 5px;
+}
+#newsletter form {
+  background:url("../images/separator-dark.png") repeat-x bottom ;
+}
+#newsletter h4 {
+  margin-top:30px;
+}
+
+/*--------------------------------footer-bottom--------------------------------*/
+.copyright p , .copyright a {
+  color: #ab7d0f;
+  font-weight: bold;
+}
+.copyright a:hover {
+  color: #000;
+  text-decoration: none;
 }

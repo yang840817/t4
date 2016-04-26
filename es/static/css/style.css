@@ -125,3 +125,15 @@ body {
 #smallbox-pad {
     padding-top: 28px;
 }
+
+/* footer */
+.footer {
+    background-color: #E2B241;
+}
+.bottom-holder {
+    padding-left: 10%;
+    padding-right: 10%;
+}
+.btn-grid3 > img {
+    width: 100%;
+}

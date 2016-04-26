@@ -74,7 +74,7 @@ body {
     align-items: center;
     text-align: center;
 }
-.hiddenimg {
+.hidden {
     display: none;
 }
 /* mid */
@@ -99,4 +99,29 @@ body {
 }
 .grid-3-text > p {
     color: white;
+}
+.mid2 {
+    background-color: inherit;
+}
+.mid2 > h4, p {
+    color: inherit;
+}
+.grid-3-smallbox {
+   display: flex;
+   min-height: 200px;
+}
+.grid-3-smallbox > * {
+    flex-grow: 1;
+}
+.carving-img {
+    background-image: url(../images/carving-small.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    min-width: 50%;
+}
+.smallbox-in-smallbox {
+    background-color: yellow;
+}
+#smallbox-pad {
+    padding-top: 28px;
 }

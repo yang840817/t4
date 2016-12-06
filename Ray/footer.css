@@ -22,7 +22,7 @@
 }
 .footerleft{
   width:33.3%;
-  border-right: 7px black dashed;
+  border-right: 5px black dashed;
 }
 .footerleft img{
   display: block;
@@ -40,27 +40,28 @@
 
 .footermid{
   width:33.3%;
-  border-right: 7px black dashed;
+  border-right: 5px black dashed;
 }
 
 .dateinfo{
-
   width: 100%;
   height: auto;
   display: flex;
-  border: 1px yellow solid;
+  flex-wrap: wrap;
+  border: 1px blue solid;
 }
 .date{
   min-width: 30px;
   min-height: 30px;
-  background-image: url(/home/ray/git/t4/Ray/bg-time.png);
   background-repeat: repeat-x;
-  border-radius: 8px;
   width:auto;
   margin:10px;
-
 }
-.dateh h5{
+.date h5{
+  display: block;
+  border-radius: 5px;
+  background-image: url(/home/ray/git/t4/Ray/bg-time.png);
+  background-position: center;
   min-width: 30px;
   min-height: 30px;
   width: auto;
@@ -69,11 +70,8 @@
   padding:1px;
   font-weight: lighter;
   margin:0 auto;
-  border: 1px black solid;
 }
 .datecontent{
-  border: 1px black solid;
-
   min-width: 30px;
   min-height: 30px;
   width:80%;
@@ -103,7 +101,7 @@
 .footerru{
   padding: 30px;
   height:40%;
-  border-bottom: 7px black dashed;
+  border-bottom: 5px black dashed;
 }
 .email{
    border:grey 3px solid;
@@ -146,7 +144,7 @@
   justify-content: space-between;
   border:1px green solid;
   padding-bottom:50px;
-  border-top: 7px black dashed;
+  border-top: 5px black dashed;
 
 }
 .bottom h2{

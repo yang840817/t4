@@ -148,7 +148,7 @@
 
 }
 .bottom h2{
-
+  display: block;
   color:rgb(153, 121, 27);
   font-size: 15px;
   width:auto;
@@ -157,24 +157,23 @@
 .bottomlist{
   width:55%;
   display: flex;
-  flex-direction: row;;
+  flex-direction: row;
+  flex-wrap: wrap;
   border:1px black solid;
 }
 .bottomlist ul{
-  display: flex;
-  flex-wrap: wrap;
   width:100%;
   height: 100%;
   list-style: none;
+  display:flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
   font-size: 17px;
 }
 .bottomlist li{
   display: flex;
-  flex-wrap: wrap;
-  list-style: none;
   align-items: center;
+  justify-content: center;
   color:rgb(153, 121, 27);
-  font-size: 15px;
-  margin:auto auto;
-
+  margin: auto auto;
 }

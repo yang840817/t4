@@ -1,4 +1,4 @@
-.footer_desktop {
+.footer {
     width: 100%;
     box-shadow: 0 -10px 20px rgba(0, 0, 0, 0.6);
 }
@@ -47,7 +47,7 @@
     margin-bottom: 0;
 }
 
-.footer_desktop dd {
+.footer dd {
     margin-bottom: 1rem;
 }
 
@@ -58,6 +58,7 @@
 .footer_calendar {
    background-color: #423627;
    color: #FFFFFF;
+   width: 50px;
 }
 
 .footer_join_us_form {

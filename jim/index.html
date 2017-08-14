@@ -112,10 +112,12 @@
     background-color: rgb(27, 21, 19);
   }
   .content_downside {
+    z-index: 1;
     background-color: white;
     margin: 0px;
     padding: 10px;
     padding-top: 20px;
+    padding-bottom: 20px;
     text-align: left;
   }
   .content_downside h5 {
@@ -128,6 +130,9 @@
   }
   .content_downside_left {
     background: url("./images/separator-light-vertical.png") repeat-y right ;
+  }
+  .content_downside_center , .content_downside_right {
+    padding-bottom: 15px;
   }
   .content_downside_center *, .content_downside_right *{
     margin: 0px;
@@ -215,6 +220,21 @@
     display: inline;
     font-size: 13px;
   }
+  @media (max-width: 770px) {
+    body {
+      padding-left: 15px;
+      padding-right: 15px;
+    }
+    .content_upside_right img {
+      margin-left: 30px;
+    }
+    .content_downside {
+      margin-left: 20px;
+    }
+    .content_footer_center {
+      padding-top: 35px;
+    }
+  }
   </style>
 </head>
 <body>
@@ -298,7 +318,7 @@
               <p>READ MORE</p>
             </div>
             <div class="col-md-6 col-lg-6 col-xs-6">
-              <img src="images/carving-small.png" alt="">
+              <img src="images/carving-small.png" class="img-fluid" alt="">
             </div>
           </div>
         </div>
@@ -313,18 +333,18 @@
               <p>READ MORE</p>
             </div>
             <div class="col-md-6 col-lg-6 col-xs-6">
-              <img src="images/resort-small.png" alt="">
+              <img src="images/resort-small.png" class="img-fluid" alt="">
             </div>
           </div>
         </div>
       </div>
   </div>
-  <div class="footer">
+  <div class="footer z-depth-5">
     <div class="container col-md-9 footer_content">
       <div class="row">
         <div class="container col-md-4 col-lg-4 col-xs-12 content_footer_left">
           <h6>VISIT OUR SHOWROOM</h6>
-          <img src="images/show-room.png" alt="">
+          <img src="images/show-room.png" class="img-fluid" alt="">
           <p>This is just a place holder, so you can see what the site would look
           like.</p>
           <br>

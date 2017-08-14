@@ -14,7 +14,6 @@
     background-image: url("images/bg-body.png");
   }
   .header {
-    z-index: 1;
     background-color: black;
     text-align: center;
     color: white;
@@ -34,9 +33,11 @@
     line-height: 100px;
     margin-right: 10px;
   }
+  .header .navigation ul li:hover {
+    color: rgb(251, 191, 56);
+  }
   .content {
     text-align: center;
-    z-index: 2;
   }
   .content .content_upside .content_upside_left {
     padding-right: 0px;
@@ -112,13 +113,13 @@
     background-color: rgb(27, 21, 19);
   }
   .content_downside {
-    z-index: 1;
     background-color: white;
     margin: 0px;
     padding: 10px;
     padding-top: 20px;
     padding-bottom: 20px;
     text-align: left;
+    box-shadow:0px -1px 20px 0px black inset;
   }
   .content_downside h5 {
     margin: 0px;
@@ -154,6 +155,7 @@
     padding-top: 30px;
     padding-right: 4px;
     border-top: 1px solid white;
+    box-shadow: 0px -10px 50px black;
   }
   .footer h6 {
     margin-bottom: 20px;

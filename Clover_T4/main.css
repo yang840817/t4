@@ -54,6 +54,12 @@ body {
     /*    padding-bottom: 40%;*/
 }
 
+.row1 {
+    padding-bottom: 6px;
+    background: url(img/separator-light.png) repeat-x bottom;
+}
+
+
 .banner1 {
     background: url(img/chair.jpg) no-repeat;
 }
@@ -94,7 +100,7 @@ body {
 }
 
 .row3 {
-    border-top: 2px dotted darkorange;
+/*    border-top: 2px dotted darkorange;*/
     background: #4b3a34;
 }
 
@@ -119,9 +125,18 @@ body {
 }
 
 .section {
+    display: flex;
     max-width: 90%;
     margin: 20px 10px;
     background: lightgray;
+}
+
+.item {
+    flex-grow: 1;
+}
+
+.item:nth-child(1) {
+    padding: 10px;
 }
 
 .row4 .col:nth-child(3) {
@@ -135,7 +150,7 @@ body {
 }
 
 .row4 .border {
-    border-right: 3px dotted darkorange;
+    background: url(img/separator-light-vertical.png) repeat-y right;
 }
 
 .article {
@@ -144,4 +159,86 @@ body {
 
 .footer {
     background: #e2b241;
+}
+
+/*
+.footer .container .row .col {
+    text-align: center;
+}
+*/
+.fimg {
+    margin-left: 10px;
+}
+
+.ftitle {
+    padding: 20px 0 10px;
+    text-align: left;
+     font-weight: bold;
+}
+
+.ftext {
+    padding: 10px 10px 0;
+    font-size: 0.5em;
+}
+
+.fsection {
+    display: flex;
+}
+
+.date {
+    flex-basis: 42px;
+    flex-shrink: 1;
+    width: 42x;
+    height: 42px;
+    padding: 5px;
+    font-size:10px;
+    text-align: center;
+    background: url(img/bg-time.png) no-repeat left top;
+    color: white;
+}
+
+.fwrap {
+    flex-basis: auto;
+    flex-shrink: 17;
+    padding: 0 10px;
+}
+.fsubtitle {
+    margin: 0 10px;
+    font-weight: bold;
+}
+
+.fbtn {
+    background: #241b17;
+    color: white;
+    padding: .2rem 1rem;
+}
+
+.emailform {
+    margin-bottom: 20px;
+}
+
+.footer .container .frow1 .col:nth-child(1), .footer .container .frow1 .col:nth-child(2) {
+    margin: 10px 0px;
+    background: url(img/separator-dark-vertical.png) repeat-y right;
+}
+
+
+.row2, .social {
+    background: url(img/separator-dark.png) repeat-x top;
+    padding-top: 10px;
+}
+
+.fnav {
+    display: flex;
+    justify-content: space-between;
+}
+
+.f-item {
+    margin: 0 10px;
+    list-style: none;
+}
+
+.f-item a, .copyright {
+        color: #241b17;
+    font-size: 0.5em;
 }

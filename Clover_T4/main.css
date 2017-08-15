@@ -12,6 +12,10 @@ body {
     background: #241b17;
 }
 
+.navbar-brand {
+    max-width: 80%;
+}
+
 .nav {
     background-color: #494949;
 }

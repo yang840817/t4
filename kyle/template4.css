@@ -213,6 +213,10 @@ p#underImg {
 }
 .footerLeft {
 	position: relative;
+	padding-right: 30px!important;
+}
+.footerCenter,.footerRight {
+	padding-left: 40px!important;
 }
 .separator-dark-vertical1,.separator-dark-vertical2 {
 	background-image: url("images/separator-dark-vertical.png");
@@ -412,5 +416,14 @@ p.footerMenu {
     top: 550px;
     height: 10px;
     width: 100%;
+	}
+}
+
+@media (max-width: 1200px) {
+	.footerLeft {
+		padding-right: 0!important;
+	}
+	.footerCenter,.footerRight {
+		padding-left: 0!important;
 	}
 }

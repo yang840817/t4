@@ -372,17 +372,10 @@ body{
 
 }
 
-.btlink button{
-	width:100%;
-	padding:0; 
-	border: 0;
-	height:22px;
-	background: #ffc947;
-	color:#AB7D0F;
-	outline: none;
-}
 
-.btlink button:hover{
-	background-color: #FFC947;
+
+.bt1 a{
 	color:#AB7D0F;
+	cursor: pointer;
+	text-decoration: none;
 }

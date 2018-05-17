@@ -116,17 +116,13 @@ main {
 }
 #living-room-intro, #kitchen-intro {
   background-color: #4f3629;
+  background-image: url("./image/separator-light.png");
+  background-repeat: repeat-x;
 }
 #bedroom-intro {
   background-color: #1a0d00;
-}
-.border-x-light {
   background-image: url("./image/separator-light.png");
   background-repeat: repeat-x;
-  background-size: contain;
-  height: 8px;
-  width: 100%;
-  margin: 0;
 }
 
 /*----------------------------------------------------last*/
@@ -147,25 +143,20 @@ main {
   margin: auto 0; /*to let block vertically centered 
 }
 */
-/*.border-y-light*/
+/*.border*/
 @media only screen and (max-width: 992px) {
-  .border-y-light {
+  #contact {
     background-image: url("./image/separator-light.png");
-    height: 8px;
-    width: 100%;
+    background-repeat: repeat-x;
+    background-position: bottom;
   }
 }
 @media only screen and (min-width: 992px) {
-  .border-y-light {
+  #contact {
     background-image: url("./image/separator-light-vertical.png");
-    height: 280px;
-    width: 8px;
+    background-repeat: repeat-y;
+    background-position: right;
   }
-}
-.border-y-light {
-  background-repeat: repeat;
-  background-size: contain;
-  margin: 0;
 }
 /*---------------------------------------contact*/
 #contact h6, #blog h6 {
@@ -187,12 +178,6 @@ main {
 #address div {
   word-spacing: 6px;
   letter-spacing: 0px;
-}
-
-@media only screen and (min-width:992px) {
-  #contact.col-lg-4 {
-    flex: 0 0 32%;
-  }
 }
 /*---------------------------------------blog*/
 .blog-block {
@@ -260,37 +245,20 @@ main {
   /*control the margin-bottom of titles*/
   margin-bottom: 20px;
 }
-
-/*border*/
-.border-y-dark {
-  background-repeat: repeat;
-  background-size: contain;
-  margin: 0;
-}
 /*RWD of border-y-dark*/
 @media only screen and (max-width: 992px) {
   /*when width smaller than 992px, change into horizontal direction*/
-  .border-y-dark {
+  #join-us, #recent-post {
     background-image: url("./image/separator-dark.png");
-    height: 8px;
-    width: 100%;
+    background-repeat: repeat-x;
+    background-position: top;
   }
 }
 @media only screen and (min-width: 992px) {
-  /*adjust the flex width percentage to have space for border-y-dark*/
-  #showroom.col-lg-4, #recent-post.col-lg-4 {
-    flex: 0 0 33%;
-  } 
-  #join-us.col-lg-4 {
-    flex: 0 0 31.4%;
-  }
-  .border-y-dark {
+  #join-us, #recent-post {
     background-image: url("./image/separator-dark-vertical.png");
-    /*height same as the other blocks*/
-    height: auto;
-    width: 8px;
-    /*let the padding-y of the border the same as blocks beside*/
-    margin: 1.5rem 0;
+    background-repeat: repeat-y;
+    background-position: left;
   }
 }
 
@@ -368,13 +336,10 @@ input[type="text"] {
   left: 50%;
   transform: translate(-50%, -50%);
 }
-/*--------------------------------border-x-dark*/
-.border-x-dark {
+#join-our-news-letter {
   background-image: url("./image/separator-dark.png");
   background-repeat: repeat-x;
-  background-size: contain;
-  height: 8px;
-  width: auto;
+  background-position: bottom;
 }
 /*--------------------------------social-media*/
 #social-media i {
@@ -387,7 +352,10 @@ footer {
   color: #c1923a;
 }
 #copyright-navigation {
-  margin-top: 5px;
+  padding-top: 11px;
+  background-image: url("./image/separator-dark.png");
+  background-repeat: repeat-x;
+  background-position: top;
 }
 #navbar-bottom {
   display: flex;

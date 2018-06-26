@@ -214,3 +214,17 @@
 .footer_content_content {
   width: 33.33333333333%
 }
+
+.footer_info_date {
+  background-image: url(../image/calender.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  overflow: hidden;
+  color: #fff;
+  text-align: center;
+  padding: 5px;
+  display: inline-block;
+  line-height: 1;
+  font-family: sans-serif;
+  float: left;
+}

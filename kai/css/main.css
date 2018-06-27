@@ -213,6 +213,8 @@
 }
 
 .footer_content_content {
+  padding: 0 20px;
+  margin: 20px 0;
   overflow: hidden;
   font-family: sans-serif;
   width: 33.33333333333%
@@ -229,6 +231,10 @@
 .footer_content_left_underline p {
   line-height: 1;
   margin: 15px 0;
+}
+
+.footer_content_left_underline img {
+  width: 100%;
 }
 
 .footer_info_date {

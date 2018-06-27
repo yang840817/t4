@@ -307,6 +307,10 @@
   width: 100%;
 }
 
+.footer_content_link {
+  margin-top: 10px;
+}
+
 .footer_content_link_border {
   background: url(../image/separator-dark.png) repeat-x right 1px;
 }

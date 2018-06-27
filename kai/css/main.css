@@ -199,7 +199,7 @@
 
 .footer {
   border-top: 2px solid #fff;
-  background-color: #deb63d;
+  background-color: #e2b140;
   width: 100%;
 }
 
@@ -231,4 +231,40 @@
 
 .footer_middle_info_content p {
   margin: 0;
+}
+
+.footer_content_content:not(:nth-last-child(2)) {
+  background: url(../image/separator-dark-vertical.png) repeat-y right 1px;
+}
+
+.footer_content_link_border {
+  background: url(../image/separator-dark.png) repeat-x right 1px;
+}
+
+.footer_content_content img {
+  display: block;
+}
+
+.footer_content_title {
+  margin: 10px 0px;
+  font-family: sans-serif;
+  font-weight: bold;
+}
+
+.footer_content_link img:nth-child(1) {
+  display: flex;
+  position: absolute;
+  clip: rect(110px 100px 150px 40px);
+}
+
+.footer_content_link img:nth-child(2) {
+  display: flex;
+  position: absolute;
+  clip: rect(150px 100px 190px 40px);
+}
+
+.footer_content_link img:last-child {
+  display: flex;
+  position: absolute;
+  clip: rect(190px 100px 230px 40px);
 }

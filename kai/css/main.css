@@ -14,7 +14,7 @@
 }
 
 .logo img {
-  height: 100%
+  width: 100%;
 }
 
 .nav_float {
@@ -225,11 +225,18 @@
 }
 
 .footer_content_content {
-  padding: 0 20px;
   margin: 20px 0;
   overflow: hidden;
   font-family: sans-serif;
   width: 33.33333333333%
+}
+
+.footer_content_content:not(:first-child) {
+  padding-left: 20px;
+}
+
+.footer_content_content:not(:nth-child(3)) {
+  padding-right: 20px;
 }
 
 .footer_content_title {
@@ -291,6 +298,7 @@
 }
 
 .footer_content_content img {
+  margin: 10px 0;
   display: block;
 }
 
@@ -302,24 +310,8 @@
   background: url(../image/separator-dark.png) repeat-x right 1px;
 }
 
-.footer_content_link img:nth-child(1) {
-  margin-top: -120px;
-  margin-left: -40px;
-  position: absolute;
-  clip: rect(110px 100px 150px 40px);
-}
-
-.footer_content_link img:nth-child(2) {
-  margin-top: -160px;
-  position: absolute;
-  clip: rect(150px 100px 190px 40px);
-}
-
-.footer_content_link img:last-child {
-  margin-top: -200px;
-  margin-left: 40px;
-  position: absolute;
-  clip: rect(190px 100px 230px 40px);
+.footer_content_link_img {
+  font-size: 36px;
 }
 
 .footer_bottom {

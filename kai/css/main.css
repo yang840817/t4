@@ -13,6 +13,10 @@
   display: inline-block;
 }
 
+.logo img {
+  height: 100%
+}
+
 .nav_float {
   float: right;
 }
@@ -252,19 +256,37 @@
 }
 
 .footer_content_link img:nth-child(1) {
-  display: flex;
+  margin-top: -120px;
+  margin-left: -40px;
   position: absolute;
   clip: rect(110px 100px 150px 40px);
 }
 
 .footer_content_link img:nth-child(2) {
-  display: flex;
+  margin-top: -160px;
   position: absolute;
   clip: rect(150px 100px 190px 40px);
 }
 
 .footer_content_link img:last-child {
-  display: flex;
+  margin-top: -200px;
+  margin-left: 40px;
   position: absolute;
   clip: rect(190px 100px 230px 40px);
+}
+
+.footer_bottom {
+  width: 100%;
+  position: relative;
+  background: url(../image/separator-dark.png) repeat-x right 1px;
+}
+
+.footer_bottom_left {
+  display: inline;
+}
+
+.footer_content_right {
+  position: absolute;
+  display: inline;
+  right: 0;
 }

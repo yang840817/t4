@@ -217,6 +217,7 @@
   border-top: 2px solid #fff;
   background-color: #e2b140;
   width: 100%;
+  box-shadow: 0 -3px 3px -3px #000;
 }
 
 .footer_content {

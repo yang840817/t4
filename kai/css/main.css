@@ -422,6 +422,9 @@
   .nav img {
     display: block;
   }
+  .content_style {
+    width: 100%;
+  }
   .content_top_left {
     width: 25%;
   }

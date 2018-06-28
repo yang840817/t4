@@ -18,6 +18,14 @@
   width: 100%;
 }
 
+#toggle_menu {
+  display: none;
+}
+
+#toggle_menu:checked~ul {
+  display: block;
+}
+
 .nav ul {
   display: flex;
   padding: 0;
@@ -25,7 +33,6 @@
 }
 
 .nav li {
-  height: 100%;
   vertical-align: middle;
   margin-left: 20px;
 }
@@ -395,8 +402,22 @@
     width: 100%;
     padding: 0;
   }
+  .menu_in_rwd {
+    width: 100%;
+  }
+  .menu_in_rwd img {
+    margin: 0 auto;
+  }
+  .nav ul {
+    text-align: center;
+    display: block;
+    width: 100%;
+  }
   .nav ul {
     display: none;
+  }
+  .nav ul li {
+    margin: 0;
   }
   .nav img {
     display: block;

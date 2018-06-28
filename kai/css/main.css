@@ -43,6 +43,10 @@
   height: 100%;
 }
 
+.nav img {
+  display: none;
+}
+
 .content_background_img {
   background-image: url(../image/bg.jpg);
 }
@@ -386,6 +390,35 @@
 }
 
 @media screen and (max-width:575px) {
+  .background_style {
+    display: block;
+    width: 100%;
+    padding: 0;
+  }
+  .nav ul {
+    display: none;
+  }
+  .nav img {
+    display: block;
+  }
+  .content_top_left {
+    width: 25%;
+  }
+  .content_top_left p {
+    font-size: 20px;
+  }
+  .content_top_left p:first-child {
+    font-size: 12px
+  }
+  .content_top_title {
+    font-size: 24px;
+  }
+  .content_top_right p {
+    font-size: 18px;
+  }
+  .content_top_right_img {
+    padding: 20px;
+  }
   .content_middle {
     width: 100%;
   }

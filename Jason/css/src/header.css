@@ -39,22 +39,31 @@
     .nav-bar {
         display: flex;
         flex-flow: row nowrap;
-        justify-content: space-between;
-        align-items: center;
+        /* justify-content: space-between; */
+        /* align-items: center; */
         padding-bottom: 0;
     }
 }
 .nav-bar li{
     text-align: center;
+    padding-bottom: 10px;
 }
+.nav-bar li:last-child {
+    padding-bottom: 0;
+}
+
 @media (min-width: 992px) {
     .nav-bar li{
-        padding: 0 10px;
+        padding-left: 20px;
+    }
+    .nav-bar li:first-child {
+        padding-left: 0;
     }
 }
 .nav-bar a {
     color: #ffffff;
     text-transform: uppercase;
+    display: inline-block;
 }
 .nav-bar a:hover {
     color: rgb(246, 202, 96);

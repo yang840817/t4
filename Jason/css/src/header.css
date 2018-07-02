@@ -1,5 +1,6 @@
 .main-header {
     background: rgb(35, 27, 24);
+    border-bottom: 1px solid white;
     /* width: 100vw; */
 }
 .main-header-container {

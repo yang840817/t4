@@ -1,12 +1,20 @@
+body {
+    background: transparent url(../../image/bg-body.png);
+}
+
 /* header */
 
 header {
     background-color: rgb(35, 27, 24);
 }
+.header-container {
+    width: 100%;
+}
 
 @media (min-width: 992px) {
     .header-container {
         width: 75%;
+        margin: 0 auto;
     }
 }
 

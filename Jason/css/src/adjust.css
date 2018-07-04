@@ -2,6 +2,10 @@ body {
     background: transparent url(../../image/bg-body.png);
 }
 
+p {
+    margin: 0;
+}
+
 /* header */
 
 header {
@@ -18,3 +22,39 @@ header {
     }
 }
 
+/* banner */
+
+.banner-container {
+    width: 100%;
+}
+
+@media (min-width: 992px) {
+    .banner-container {
+        width: 75%;
+        margin: 0 auto;
+    }
+}
+.chair {
+    background: transparent url(../../image/chair.jpg) center center/100% no-repeat;
+    position: relative;
+    height: 436px;
+}
+.chair-info {
+    right: 30px;
+    bottom: 30px;
+}
+.chair-cost {
+    font-size: 26px;
+}
+
+.chair-info button {
+    background: transparent url(../../image/buttons.png) -114px 0 no-repeat;
+    width: 111px;
+    height: 36px
+}
+
+.chair-info button:hover {
+    background: transparent url(../../image/buttons.png) 0 0 no-repeat;
+    width: 111px;
+    height: 36px
+}

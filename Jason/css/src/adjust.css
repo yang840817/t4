@@ -27,26 +27,35 @@ header {
 .banner-container {
     width: 100%;
 }
-
+/* 容器在手機上，不留邊 */
 @media (min-width: 992px) {
     .banner-container {
         width: 75%;
         margin: 0 auto;
     }
 }
+
+
 .chair {
     background-color: transparent;
     background-image: url(../../image/chair.jpg);
     background-size: cover; 
     background-repeat:no-repeat;
     position: relative;
-    min-height: 436px;
+    height: 300px;
 }
+@media (min-width: 576px) {
+    .chair {
+        height: 436px;
+    }
+}
+
+/* 控制chair detail按鈕位置 */
 .chair-info {
     right: 5%;
     bottom: 5%;
 }
-.chair-cost {
+.chair-price {
     font-size: 26px;
 }
 
@@ -61,4 +70,15 @@ header {
     width: 111px;
     height: 36px;
     cursor: pointer;
+}
+
+
+.place-holder {
+    background: transparent url(../../image/bg-grey.jpg) 0 0/ cover no-repeat;
+    padding: 80px 40px;
+}
+
+.place-holder h2 {
+    text-align: center;
+    text-shadow: 2px 1px white; 
 }

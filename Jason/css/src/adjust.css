@@ -35,13 +35,16 @@ header {
     }
 }
 .chair {
-    background: transparent url(../../image/chair.jpg) center center/100% no-repeat;
+    background-color: transparent;
+    background-image: url(../../image/chair.jpg);
+    background-size: cover; 
+    background-repeat:no-repeat;
     position: relative;
-    height: 436px;
+    min-height: 436px;
 }
 .chair-info {
-    right: 30px;
-    bottom: 30px;
+    right: 5%;
+    bottom: 5%;
 }
 .chair-cost {
     font-size: 26px;
@@ -50,11 +53,12 @@ header {
 .chair-info button {
     background: transparent url(../../image/buttons.png) -114px 0 no-repeat;
     width: 111px;
-    height: 36px
+    height: 36px;
 }
 
 .chair-info button:hover {
     background: transparent url(../../image/buttons.png) 0 0 no-repeat;
     width: 111px;
-    height: 36px
+    height: 36px;
+    cursor: pointer;
 }

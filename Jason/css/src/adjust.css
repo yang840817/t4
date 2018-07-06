@@ -11,25 +11,30 @@ p {
 header {
     background-color: rgb(35, 27, 24);
 }
-.header-container {
+#main-header-container {
     width: 100%;
 }
 
 @media (min-width: 992px) {
-    .header-container {
+    #main-header-container {
         width: 75%;
         margin: 0 auto;
     }
 }
 
+#main-header-container a:hover {
+    color: rgb(244, 201, 95);
+}
+
+
 /* banner */
 
-.banner-container {
+#banner {
     width: 100%;
 }
 /* 容器在手機上，不留邊 */
 @media (min-width: 992px) {
-    .banner-container {
+    #banner {
         width: 75%;
         margin: 0 auto;
     }
@@ -63,6 +68,11 @@ header {
     background: transparent url(../../image/buttons.png) -114px 0 no-repeat;
     width: 111px;
     height: 36px;
+    font-size: 14px;
+    color:rgba(147, 112, 37, 1);
+    border-style: none;
+    /* color: rgba(147, 112, 37, .5); */
+    /* transition: color .5s ease-in-out; */
 }
 
 .chair-info button:hover {
@@ -70,15 +80,55 @@ header {
     width: 111px;
     height: 36px;
     cursor: pointer;
+    /* color:rgba(147, 112, 37, 1); */
+    /* transition: color .5s ease-in-out; */
 }
 
 
 .place-holder {
-    background: transparent url(../../image/bg-grey.jpg) 0 0/ cover no-repeat;
-    padding: 80px 40px;
+    background: transparent url(../../image/bg-grey.jpg) 0 0/ cover repeat;
+    height: 100%;
+    padding: 100px 50px 0;
 }
 
 .place-holder h2 {
-    text-align: center;
     text-shadow: 2px 1px white; 
 }
+
+/* rooms */
+
+#rooms {
+    width: 100%;
+}
+
+/* 容器在手機上，不留邊 */
+
+@media (min-width: 992px) {
+    #rooms {
+        width: 75%;
+        margin: 0 auto;
+    }
+}
+#rooms .card {
+    border-style: none;
+}
+#rooms .card-body {
+    background: transparent url(../../image/separator-light.png) repeat-x;
+}
+
+.living-room, .kitchen {
+    background-color: rgb(72, 59, 52);
+    height: 100%;
+}
+
+.bedroom {
+    background-color: rgb(35, 27, 24);
+    height: 100%;
+}
+
+.living-room h5,
+.bedroom h5,
+.kitchen h5 {
+    color: rgb(244, 201, 95);
+}
+

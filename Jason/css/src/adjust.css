@@ -1,5 +1,5 @@
 body {
-    background: transparent url(../../image/bg-body.png);
+    background: url(../../image/bg-body.png);
 }
 
 p {
@@ -42,7 +42,6 @@ header {
 /* banner */
 
 .chair {
-    background-color: transparent;
     background-image: url(../../image/chair.jpg);
     background-size: cover; 
     background-repeat:no-repeat;
@@ -65,7 +64,7 @@ header {
 }
 
 .chair-info button {
-    background: transparent url(../../image/buttons.png) -114px 0 no-repeat;
+    background: url(../../image/buttons.png) -114px 0 no-repeat;
     width: 111px;
     height: 36px;
     font-size: 14px;
@@ -74,7 +73,7 @@ header {
 }
 
 .chair-info button:hover {
-    background: transparent url(../../image/buttons.png) 0 0 no-repeat;
+    background: url(../../image/buttons.png) 0 0 no-repeat;
     width: 111px;
     height: 36px;
     cursor: pointer;
@@ -82,7 +81,7 @@ header {
 
 
 .place-holder {
-    background: transparent url(../../image/bg-grey.jpg) 0 0/ cover repeat;
+    background: url(../../image/bg-grey.jpg) 0 0/ cover repeat;
     height: 100%;
     padding: 100px 50px 0;
 }
@@ -98,7 +97,7 @@ header {
     border-style: none;
 }
 #rooms .card-body {
-    background: transparent url(../../image/separator-light.png) repeat-x;
+    background: url(../../image/separator-light.png) repeat-x;
 }
 
 .living-room, .kitchen {
@@ -118,8 +117,16 @@ header {
     text-transform: uppercase;
 }
 
+/* more-info */
 .contact {
     padding: 20px 30px;
+    height: 100%;
+}
+
+@media (min-width: 992px) {
+    .contact {
+        background: url(../../image/separator-light-vertical.png) right repeat-y;
+    }
 }
 .address {
     margin-top: 20px;
@@ -135,4 +142,22 @@ header {
 .address div {
     font-size: 20px;
     font-weight: 700;
+}
+
+.blog {
+    padding: 20px 30px;
+    height: 100%;
+}
+.content {
+    background-color: grey;
+    overflow: auto;
+    max-width: 50%;
+    height: 152px;
+}
+
+.blog-pic {
+    max-width: 50%;
+}
+.blog-pic img {
+    width: 100%;
 }

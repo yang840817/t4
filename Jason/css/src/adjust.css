@@ -162,7 +162,7 @@ header {
     background-color: rgb(220, 218, 212);
     overflow: auto;
     padding: 12px;
-    
+    width: 100%;
 }
 .blog-content p {
     color: rgb(65, 48, 41);
@@ -177,16 +177,20 @@ header {
     color: rgb(172, 140, 59);
     text-decoration: none;
 }
-#oldman,
-#beach {
-    flex-basis: 0;
-    flex-grow: 1;
+@media (min-width: 1200px) {
+    #oldman,
+    #beach {
+        flex-basis: 0;
+        flex-grow: 1;
+    }
+
+    .blog-content,
+    .blog-pic {
+        flex-basis: 0;
+        flex-grow: 1;
+    }
 }
-.blog-content,
-.blog-pic {
-    flex-basis: 0;
-    flex-grow: 1;
-}
+
 .blog-content {
     max-height: 152px;
 }
@@ -246,8 +250,13 @@ footer {
     background-image: url(../../image/bg-brown.png);
     background-repeat: no-repeat;
     background-size: 100%;
-    background-position: center top;
+    background-position: left top;
     text-align: center;
     color: white;
-    width: 110px;
+    width: 48px;
+    float: left;
+}
+
+.recent-post-context {
+    margin-left: 56px;
 }

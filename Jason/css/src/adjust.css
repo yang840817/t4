@@ -148,16 +148,40 @@ header {
     padding: 20px 30px;
     height: 100%;
 }
-.content {
-    background-color: grey;
-    overflow: auto;
-    max-width: 50%;
-    height: 152px;
+.blog h5 {
+    font-size: 14px;
+    color: rgb(126, 126, 126);
 }
 
-.blog-pic {
-    max-width: 50%;
+.blog-content {
+    background-color: rgb(220, 218, 212);
+    overflow: auto;
+    padding: 12px;
+    
 }
-.blog-pic img {
-    width: 100%;
+.blog-content p {
+    color: rgb(65, 48, 41);
+    font-weight: 700;
+    margin: 10px 0 10px;
+}
+.blog-content a {
+    color: rgb(65, 48, 41);
+    font-weight: 500;
+}
+.blog-content a:hover {
+    color: rgb(172, 140, 59);
+    text-decoration: none;
+}
+#oldman,
+#beach {
+    flex-basis: 0;
+    flex-grow: 1;
+}
+.blog-content,
+.blog-pic {
+    flex-basis: 0;
+    flex-grow: 1;
+}
+.blog-content {
+    max-height: 152px;
 }

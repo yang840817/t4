@@ -70,6 +70,7 @@ header {
     font-size: 14px;
     color:rgba(147, 112, 37, 1);
     border-style: none;
+    padding: 0;
 }
 
 .chair-info button:hover {
@@ -83,7 +84,7 @@ header {
 .place-holder {
     background: url(../../image/bg-grey.jpg) 0 0/ cover repeat;
     height: 100%;
-    padding: 100px 50px 0;
+    padding: 100px 50px;
 }
 
 .place-holder h2 {
@@ -119,7 +120,7 @@ header {
 
 /* more-info */
 #more-info {
-    padding: 10px 0;
+    padding: 20px 0;
     background-color: #ffffff;
 }
 
@@ -203,36 +204,70 @@ footer {
 #main-footer-container {
     width: 100%;
     color: rgb(35, 27,24);
+    margin: 0;
 }
 
 @media (min-width: 992px) {
     #main-footer-container {
         width: 75%;
-        margin: 0 auto;
+        margin: 30px auto 0;
+        background: url(../../image/separator-dark.png) repeat-x left bottom;
     }
 }
 
 #showroom,
 #recent-post,
-.e-mail,
-.social-media {
+#join-us {
     padding: 0 20px;
-    margin: 30px 0;
-    text-transform: uppercase;
 }
 @media (min-width: 992px) {
-    #showroom,
-    #recent-post {
+    #main-footer-container .col-lg-4 {
         background-image: url(../../image/separator-dark-vertical.png);
         background-repeat: repeat-y;
         background-position-x: right;
+        padding-top: 20px;
+        margin-bottom: 20px;
+    }
+    #main-footer-container .col-lg-4:last-child {
+        background: none;
     }
 }
+
+
+ /* footer內992px以下，各區域的垂直間隔 */
 #main-footer-container h5 {
     font-size: 20px;
     font-weight: 600;
-    margin-bottom: 20px
+    margin-bottom: 20px;
+    text-transform: uppercase;
+
 }
+#showroom h5 {
+    padding-top: 20px;
+}
+@media (min-width: 992px) {
+    #showroom h5{
+        padding-top: 0;
+    }
+}
+/* footer 各title的間隔 */
+
+#recent-post h5,
+#join-email,
+#social-media {
+    padding-top: 20px;
+    background: url(../../image/separator-dark.png) left top repeat-x;
+    margin-top: 20px;
+}
+@media (min-width: 992px) {
+    #recent-post h5,
+    #join-email {
+        margin-top: 0;
+        padding-top: 0;
+        background: none;
+    }
+}
+
 
 /*  showroom */
 #showroom img {
@@ -258,5 +293,40 @@ footer {
 }
 
 .recent-post-context {
-    margin-left: 56px;
+    margin-left: 56px;  /* 為了文繞圖 */
+}
+
+#join-us input{
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+@media (min-width: 768px) and (max-width: 991.9px) {
+    #join-us input {
+        width: 50%;
+    }
+}
+
+#join-us button{
+    background: url(../../image/buttons.png) -127px -38px no-repeat;
+    width: 84px;
+    height: 28px;
+    font-size: 14px;
+    color: white;
+    border-style: none;
+}
+
+#join-us button:hover {
+    background: url(../../image/buttons.png) -13px -38px no-repeat;
+    width: 84px;
+    height: 28px;
+    cursor: pointer;
+}
+
+/* 大於992px，join-us之間的間隔 */
+@media (min-width: 9912px){
+    #social-media {
+        background: url(../../image/separator-dark.png) left top repeat-x;
+        padding-top: 20px;
+    }
 }

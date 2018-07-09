@@ -330,3 +330,37 @@ footer {
         padding-top: 20px;
     }
 }
+.facebook-link {
+    background: url(../../image/icons.png) 0px -112px no-repeat;
+    width: 33px;
+    height: 33px;
+}
+.facebook-link:hover {
+    background: url(../../image/icons.png) -46px -112px no-repeat;
+    width: 33px;
+    height: 33px;
+}
+
+.google-link {
+    background: url(../../image/icons.png) 0px -153px no-repeat;
+    width: 33px;
+    height: 33px;
+}
+
+.google-link:hover {
+    background: url(../../image/icons.png) -46px -153px no-repeat;
+    width: 33px;
+    height: 33px;
+}
+
+.twitter-link {
+    background: url(../../image/icons.png) 0px -163px /219% no-repeat;
+    width: 33px;
+    height: 33px;
+}
+
+.twitter-link:hover {
+    background: url(../../image/icons.png) -39px -163px /219% no-repeat;
+    width: 33px;
+    height: 33px;
+}

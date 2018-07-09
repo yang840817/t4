@@ -348,6 +348,7 @@ footer {
     background: url(../../image/icons.png) -46px -112px no-repeat;
     width: 33px;
     height: 33px;
+    cursor: pointer;
 }
 
 .google-link {
@@ -360,6 +361,7 @@ footer {
     background: url(../../image/icons.png) -46px -153px no-repeat;
     width: 33px;
     height: 33px;
+    cursor: pointer;
 }
 
 .twitter-link {
@@ -372,6 +374,7 @@ footer {
     background: url(../../image/icons.png) -39px -163px /219% no-repeat;
     width: 33px;
     height: 33px;
+    cursor: pointer;
 }
 
 .main-footer-nav {

@@ -214,18 +214,26 @@ footer {
     }
 }
 
-#showroom,
-#recent-post,
-#join-us {
+#showroom {
+    padding-right: 20px;
+}
+
+#recent-post {
     padding: 0 20px;
+}
+
+#join-us {
+    padding-left: 20px;
 }
 @media (min-width: 992px) {
     #main-footer-container .col-lg-4 {
+        padding-top: 20px;
+        margin-bottom: 20px;
+    }
+    .vertical-dividing-line {
         background-image: url(../../image/separator-dark-vertical.png);
         background-repeat: repeat-y;
         background-position-x: right;
-        padding-top: 20px;
-        margin-bottom: 20px;
     }
 }
 
@@ -378,6 +386,7 @@ footer {
         background: url(../../image/separator-dark.png) repeat-x left top;
     }
 }
+
 
 .main-footer-nav a {
     color: rgb(165, 127, 45);

@@ -21,7 +21,12 @@
       <a class="navbar-brand" href="#">
         <img src="img/logo.png" class="d-inline-block align-top" alt="logo">
       </a>
-      <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbars" aria-controls="navbars"
+        aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      
+      <div class="collapse navbar-collapse" id="navbars">
         <ul class="navbar-nav ml-auto mt-2 mt-lg-0">
           <li class="nav-item active">
             <a class="nav-link text-uppercase" href="#">home</a>
@@ -45,7 +50,7 @@
 
   <section id="intro">
     <div class="card-group">
-      <div class="card position-relative border-right-0">
+      <div class="card position-relative border-right-0 rounded-0">
         <img class="card-img-top" src="img/chair.jpg" alt="Card image cap">
         <div class="card-body position-absolute fixed-bottom w-50 pr-0 ml-auto text-center">
           <h6 class="card-title text-capitalize my-0">whicker chair</h6>
@@ -53,7 +58,7 @@
           <button class="text-uppercase">view details</button>
         </div>
       </div>
-      <div class="card position-relative border-left-0">
+      <div class="card position-relative border-left-0 rounded-0">
         <img class="card-img-top" src="img/bg-pattern.jpg" alt="Card image cap">
         <div class="card-body position-absolute text-center p-5">
           <h2 class="card-title text-uppercase">This is just a place holder.</h2>
@@ -66,7 +71,7 @@
   
   <section id="space">
     <div class="card-group">
-      <div class="card border-0">
+      <div class="card border-0 rounded-0">
         <img class="card-img-top" src="img/living-room.jpg" alt="Card image cap">
         <div class="card-body">
           <h5 class="card-title text-uppercase">living room</h5>
@@ -82,7 +87,7 @@
           back to us.</p>
         </div>
       </div>
-      <div class="card border-0">
+      <div class="card border-0 rounded-0">
         <img class="card-img-top" src="img/kitchen.jpg" alt="Card image cap">
         <div class="card-body">
           <h5 class="card-title text-uppercase">kitchen</h5>
@@ -165,18 +170,18 @@
       <div class="col-md-4 pr-0">
         <h5 class="text-uppercase">join our newsletter</h5>
         <input type="text" class="text w-100" placeholder="Enter Email Address Here For Updates">
-        <button class="text-uppercase my-3">sign up</button>
+        <button class="text-uppercase my-3 sign-btn">sign up</button>
         <h5 class="text-uppercase top pt-3">social media</h5>
-        <button></button>
-        <button></button>
-        <button></button>
+        <button class="fb-btn"></button>
+        <button class="google-btn"></button>
+        <button class="twitter-btn"></button>
       </div>
     </div>
       
-    <div class="navbar navbar-expand-lg px-0 py-3">
-      <p class="h6 text-uppercase navbar-text">&copy; copyright 2012. all rights reserved</p>
+    <div class="navbar navbar-expand px-0 py-3">
+      <p class="h6 text-uppercase navbar-text mb-0">&copy; copyright 2012. all rights reserved</p>
       <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
-        <ul class="navbar-nav ml-auto mt-2 mt-lg-0">
+        <ul class="navbar-nav ml-auto">
           <li class="nav-item active">
             <a class="nav-link text-uppercase" href="#">home</a>
           </li>

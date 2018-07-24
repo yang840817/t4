@@ -6,6 +6,14 @@ nav, #intro, #space, #contact, footer .row, footer .navbar {
   margin: 0 auto;
 }
 
+nav .navbar-toggler-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255,201,71, 0.5)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+}
+
+nav .navbar-toggler {
+  border:2px solid rgba(255,201,71,.5);
+}
+
 nav a {
   color: #fff;
 }
@@ -17,6 +25,18 @@ nav a:hover, #space h5 {
 #intro h2{
   text-shadow: 1px 1px #fff;
 }
+
+#intro button {
+  background: url(../img/buttons.png) no-repeat top left;
+  border: none;
+  height: 35px;
+  width: 110px;
+  font-size: 14px;
+ }
+
+#intro button:hover {
+  background: url(../img/buttons.png) no-repeat top right;
+ }
 
 #space .card-body {
   background: url(../img/separator-light.png) repeat-x top, #513b2c;
@@ -97,3 +117,49 @@ footer a:hover {
   color: black;
 }
 
+footer .sign-btn {
+  background: url(../img/buttons.png) no-repeat bottom left;
+  border: none;
+  height: 28px;
+  width: 110px;
+  font-size: 14px;
+  color: white;
+}
+
+footer .sign-btn:hover {
+  background: url(../img/buttons.png) no-repeat bottom right;
+}
+
+footer .fb-btn {
+  background: url(../img/icons.png) no-repeat -43px -105px;
+  height: 40px;
+  width: 40px;
+  border: none;
+}
+
+footer .fb-btn:hover {
+  background: url(../img/icons.png) no-repeat 3px -105px;
+}
+
+footer .google-btn {
+  background: url(../img/icons.png) no-repeat -43px -145px;
+  height: 40px;
+  width: 40px;
+  border: none;
+}
+
+footer .google-btn:hover {
+  background: url(../img/icons.png) no-repeat 3px -145px;
+}
+
+
+footer .twitter-btn {
+  background: url(../img/icons.png) no-repeat bottom right;
+  width: 40px;
+  height: 40px;
+  border: none;
+}
+
+footer .twitter-btn:hover {
+  background: url(../img/icons.png) no-repeat bottom left;
+}

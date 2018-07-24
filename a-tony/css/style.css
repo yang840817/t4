@@ -52,7 +52,7 @@ nav a:hover, #space h5 {
 }
 
 #contact .left{
-  background: url(../img/separator-light-vertical.png) repeat-y right;
+  background: url(../img/separator-light.png) repeat-x bottom;
 }
 
 #contact h6{
@@ -77,8 +77,16 @@ footer {
   background-color: #e2b241;
 }
 
+footer .showroom {
+  padding-left: 15px;
+}
+
+footer .newsletter {
+  padding-right: 15px;
+}
+
 footer .grid {
-  background: url(../img/separator-dark-vertical.png) repeat-y right;
+  background: url(../img/separator-dark.png) repeat-x bottom;
 }
 
 footer .top{
@@ -87,6 +95,8 @@ footer .top{
 
 footer .text-center {
   background: url(../img/bg-time.png) no-repeat center;
+  width: 45px;
+  height: 45px;
 }
 
 footer .navbar {
@@ -162,4 +172,22 @@ footer .twitter-btn {
 
 footer .twitter-btn:hover {
   background: url(../img/icons.png) no-repeat bottom left;
+}
+
+@media (min-width: 768px) {
+  #contact .left{
+    background: url(../img/separator-light-vertical.png) repeat-y right;
+  }
+
+  footer .grid {
+    background: url(../img/separator-dark-vertical.png) repeat-y right;
+  }
+
+  footer .showroom, footer .navbar {
+    padding-left: 0;
+  }
+
+  footer .newsletter, footer .navbar {
+    padding-right: 0;
+  }
 }

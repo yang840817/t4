@@ -1,10 +1,12 @@
 header {
   background-color: #241b18;
 }
-nav, #intro, #space, #contact, footer .row, footer .navbar {
-  max-width: 900px;
+nav, #intro, #space, #contact, footer .row, footer .navbar, #intro1 .row{
+  max-width: 960px;
   margin: 0 auto;
 }
+
+
 
 nav .navbar-toggler-icon {
   background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255,201,71, 0.5)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
@@ -22,7 +24,67 @@ nav a:hover, #space h5 {
   color: #ffc947;
 }
 
-#intro h2{
+#intro1 .row {
+  border: 1px solid #fff;
+}
+
+#intro1 .chair {
+  position: relative;
+  background: url(../img/chair.jpg) no-repeat center;
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+  min-height: 300px;
+  /* outline: 1px solid red; */
+}
+
+#intro1 .chair-cost {
+  position: absolute;
+  text-align: center;
+  bottom: 20px;
+  right: 20px;
+}
+
+.chair-cost .title {
+  text-transform: capitalize;
+  margin-bottom: 0;
+}
+
+.chair-cost .cost {
+  font-weight: bold;
+  font-size: 24px;
+  margin-bottom: 0;
+}
+
+.chair-cost button {
+  background: url(../img/buttons.png) top left;
+  border: none;
+  height: 35px;
+  width: 110px;
+  font-size: 14px;
+  text-transform: uppercase;
+}
+
+#intro1 .chair-text {
+  background: url(../img/bg-pattern.jpg) no-repeat center;
+  background-size: 100% 100%;
+  padding: 60px 45px;
+  width: 100%;
+  /* outline: 1px solid blue; */
+}
+
+.chair-text .title {
+  text-align: center;
+  text-transform: uppercase;
+  text-shadow: 1px 1px #fff;
+}
+
+.chair-text .body {
+  text-align: justify;
+}
+
+
+/* #intro h2{
   text-shadow: 1px 1px #fff;
 }
 
@@ -36,7 +98,7 @@ nav a:hover, #space h5 {
 
 #intro button:hover {
   background: url(../img/buttons.png) no-repeat top right;
- }
+ } */
 
 #space .card-body {
   background: url(../img/separator-light.png) repeat-x top, #513b2c;
@@ -77,11 +139,8 @@ footer {
   background-color: #e2b241;
 }
 
-footer .showroom {
+footer .showroom, footer .newsletter {
   padding-left: 15px;
-}
-
-footer .newsletter {
   padding-right: 15px;
 }
 

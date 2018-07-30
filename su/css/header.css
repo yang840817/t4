@@ -1,0 +1,30 @@
+.header_container{
+  width: 100%;
+  background: #1a0d00;
+}
+.flex_container_center{
+  max-width: 980px;
+  margin: 0 auto;
+  display:flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: 2em 0;
+}
+header>a>img{
+  max-width: 380px;
+  width: 100%;
+  display: block;
+}
+.navigation>li{
+  display: inline-block;
+  padding-right: 2em;
+}
+.navigation>li>a{
+  color: white;
+}
+.navigation>li>a:link{
+  text-decoration: none;
+}
+.navigation>li>a:hover{
+  color: yellow;
+}

@@ -1,24 +1,25 @@
-body{
+body,ul,h1,h4,p{
   margin: 0;
   padding: 0;
+}
+body{
   font-family: arial,sans-serif;
 }
-*, ::before, ::after{
+*,::before,::after{
   box-sizing: border-box;
 }
 ul{
   list-style-type: none;
-  margin: 0;
-  padding: 0;
 }
 a:link{
   /* a連結底線消失 */
   text-decoration: none;
 }
-h4{
-  font-weight: 400;
+img{
+  display: block;
 }
-li{
-  display: inline-block;
-  padding-left: 1rem;
+button{
+  border: none;
+  /* cursor: pointer;把滑鼠游標變成手指形狀 */
+  cursor: pointer;
 }

@@ -1,5 +1,3 @@
-
-
 /* header */
 header {
   background: #241b18;
@@ -16,7 +14,8 @@ header {
   text-decoration: none;
 }
 
-.headerMenu a:hover, .headerMenu .now {
+.headerMenu a:hover,
+.headerMenu .now {
   color: #ffc935;
 }
 
@@ -24,5 +23,95 @@ header {
   header {
     text-align: left;
   }
+}
 
+/* content */
+
+.content {
+  background: url('/images/bg-body.png') repeat left top;
+}
+
+.contentBox {
+  box-shadow: 0px 2px 20px #666;
+  border: 1px solid #fff;
+  border-top: 0;
+}
+
+.contentProduct {
+  position: relative;
+
+}
+
+.product {
+  padding-top: 90%;
+  text-align: center;
+}
+
+.product>div {
+  position: absolute;
+}
+
+.productChair {
+  background: url('/images/chair.jpg') no-repeat right bottom;
+  background-size: cover;
+}
+
+.productBrief {
+  right: 15px;
+  bottom: 15px;
+  line-height: 1.2rem;
+}
+
+.productBrief .productName {
+  font-size: .8rem;
+}
+
+.productBrief .productPrice {
+  font-size: 1.3rem;
+  
+}
+
+.productBrief .productViewButton {
+  background: url(/images/buttons.png) no-repeat left 0px top 4px;
+  padding: 11px;
+  color: #9b6e00;
+}
+
+.productWordBox {
+  background: url('/images/bg-pattern.jpg') no-repeat left top;
+  background-size: cover;
+  font-weight: 600;
+}
+
+.productWordBox>div {
+  top: 0;
+  left: 0;
+}
+
+.productDescription{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100%;
+}
+
+.productDescription h2 {
+  text-transform: uppercase;
+  text-shadow: 1px 1px 0px #fff;
+  margin-bottom: 1rem;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+.productDescription p {
+  text-align: justify;
+    font-size: .9rem;
+    font-weight: 500;
+    line-height: 1.5rem;
+    margin: 0;
+}
+
+@media (min-width: 768px) {
+  .product {
+    padding-top: 45%;
+  }
 }

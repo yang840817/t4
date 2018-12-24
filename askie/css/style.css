@@ -6,22 +6,28 @@ header {
   text-align: center;
 }
 
-.headerMenu a {
+header a {
   text-transform: uppercase;
   color: #fff;
-  font-weight: 700;
   font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
   text-decoration: none;
+  font-size: 1rem;
 }
 
-.headerMenu a:hover,
-.headerMenu .now {
+header a:hover,
+header .now {
   color: #ffc935;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 991px) {
   header {
     text-align: left;
+  }
+}
+
+@media (min-width: 576px) {
+  header a {
+    font-size: 1.15rem;
   }
 }
 
@@ -32,14 +38,14 @@ header {
 }
 
 .contentBox {
-  box-shadow: 0px 2px 20px #666;
-  border: 1px solid #fff;
-  border-top: 0;
+  padding: 0 40px;
 }
 
 .contentProduct {
   position: relative;
-
+  box-shadow: 0px 2px 20px #666;
+  border: 1px solid #fff;
+  border-top: 0;
 }
 
 .product {
@@ -64,17 +70,24 @@ header {
 
 .productBrief .productName {
   font-size: .8rem;
+  font-weight: 600;
 }
 
 .productBrief .productPrice {
   font-size: 1.3rem;
+  font-weight: 600;
   
 }
 
 .productBrief .productViewButton {
   background: url(/images/buttons.png) no-repeat left 0px top 4px;
-  padding: 11px;
+  padding: 10px 0;
   color: #9b6e00;
+  text-transform: uppercase;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  background-size: 260px 65px;
+  font-size: 1.15rem;
+  width: 130px;
 }
 
 .productWordBox {
@@ -93,6 +106,7 @@ header {
   flex-direction: column;
   justify-content: center;
   height: 100%;
+  padding: 0 40px;
 }
 
 .productDescription h2 {
@@ -110,8 +124,60 @@ header {
     margin: 0;
 }
 
+@media (min-width: 991px) {
+  .productDescription {
+    padding: 0 15%;
+  }
+
+  .productDescription h2 {
+    font-size: 3rem;
+    margin-bottom: 2rem;
+  }
+
+  .productDescription p {
+    font-size: 1rem;
+    word-spacing: .1rem;
+    line-height: 1.8rem;
+  }
+
+  .productBrief {
+    right: 30px;
+    bottom: 30px;
+    line-height: 1.8rem;
+  }
+
+  .productBrief .productViewButton {
+    background-size: 260px 75px;
+  }
+
+
+  .productBrief .productPrice {
+    font-size: 1.8rem;
+  }
+
+  .productBrief .productName {
+    font-size: .9rem;
+  }
+
+}
 @media (min-width: 768px) {
   .product {
     padding-top: 45%;
   }
+
+  .productDescription {
+    padding: 0 10%;
+  }
+
+  .productDescription h2 {
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .productDescription p {
+    font-size: .9rem;
+    word-spacing: .1rem;
+    line-height: 1.5rem;
+  }
+
 }

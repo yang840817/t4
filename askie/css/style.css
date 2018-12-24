@@ -45,10 +45,10 @@ header .now {
 }
 
 .contentBox {
-  padding: 0 30px;
+  padding: 0 25px;
 }
 
-.contentProduct {
+.product {
   position: relative;
   text-align: center;
   box-shadow: 0px 2px 20px #666;
@@ -111,7 +111,7 @@ header .now {
   justify-content: center;
   height: 100%;
   position: relative;
-  padding: 45px 15px;
+  padding: 45px 0;
 }
 
 .productDescription h2 {
@@ -128,6 +128,7 @@ header .now {
   font-weight: 500;
   line-height: 1.5rem;
   margin: 0;
+  padding: 0 15px;
 }
 
 @media (min-width: 576px) { 
@@ -150,9 +151,6 @@ header .now {
 }
 
 @media (min-width: 768px) {
-  .product {
-    padding-top: 45%;
-  }
 
   .productDescription {
     padding: 0 10%;
@@ -212,4 +210,56 @@ header .now {
     line-height: 1.8rem;
   }
 
+}
+
+
+/* roomType */
+
+.roomType, .roomType img {
+  border-radius: 0;
+  border: 0;
+}
+
+/* .room > div::before {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 14px;
+  left: 0;
+  top: 65.5%;
+  background: url(../images/separator-light.png) repeat-x, left top 50%;
+  background-size: 5px;
+} */
+
+.roomType1 {
+  background-color: #4b3a33;
+}
+
+.roomType2 {
+  background-color: #251b18;
+}
+
+.roomType3 {
+  background-color: #4b3a33;
+}
+
+.roomType__img {
+  padding-top: 62%;
+}
+
+.roomType__description {
+  padding-top: 15px;
+  background: url(../images/separator-light.png) repeat-x, left top 50%;
+  background-size: 5px;
+}
+
+.roomType__description h2 {
+  font-family: 'Roboto Condensed', sans-serif;
+  color: #ffc935;
+  font-size: 1.5rem;
+  padding-top: 15px;
+  text-transform: uppercase;
+}
+.roomType__description p {
+  color: #fff;
 }

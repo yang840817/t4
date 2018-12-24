@@ -1,3 +1,9 @@
+@import url('https://fonts.googleapis.com/css?family=Nunito|Roboto+Condensed');
+
+body {
+  font-family: 'Nunito', sans-serif;
+}
+
 /* header */
 header {
   background: #241b18;
@@ -9,7 +15,7 @@ header {
 header a {
   text-transform: uppercase;
   color: #fff;
-  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  font-family: 'Roboto Condensed', sans-serif;
   text-decoration: none;
   font-size: 1rem;
 }
@@ -19,17 +25,18 @@ header .now {
   color: #ffc935;
 }
 
+@media (min-width: 576px) {
+  header a {
+    font-size: 1.15rem;
+  }
+}
+
 @media (min-width: 991px) {
   header {
     text-align: left;
   }
 }
 
-@media (min-width: 576px) {
-  header a {
-    font-size: 1.15rem;
-  }
-}
 
 /* content */
 
@@ -38,33 +45,28 @@ header .now {
 }
 
 .contentBox {
-  padding: 0 40px;
+  padding: 0 30px;
 }
 
 .contentProduct {
   position: relative;
+  text-align: center;
   box-shadow: 0px 2px 20px #666;
   border: 1px solid #fff;
   border-top: 0;
 }
 
-.product {
-  padding-top: 90%;
-  text-align: center;
-}
-
-.product>div {
-  position: absolute;
-}
 
 .productChair {
   background: url('/images/chair.jpg') no-repeat right bottom;
   background-size: cover;
+  padding-top: 90%;
 }
 
 .productBrief {
-  right: 15px;
-  bottom: 15px;
+  position: absolute;
+  right: 10px;
+  bottom: 10px;
   line-height: 1.2rem;
 }
 
@@ -80,14 +82,16 @@ header .now {
 }
 
 .productBrief .productViewButton {
+  display: block;
   background: url(/images/buttons.png) no-repeat left 0px top 4px;
-  padding: 10px 0;
+  padding: 12px 0;
   color: #9b6e00;
   text-transform: uppercase;
-  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-  background-size: 260px 65px;
-  font-size: 1.15rem;
-  width: 130px;
+  font-family: 'Roboto Condensed', sans-serif;
+  background-size: 215px 65px;
+  font-size: .9rem;
+  font-weight: 700;
+  width: 105px;
 }
 
 .productWordBox {
@@ -101,27 +105,63 @@ header .now {
   left: 0;
 }
 
-.productDescription{
+.productDescription {
   display: flex;
   flex-direction: column;
   justify-content: center;
   height: 100%;
-  padding: 0 40px;
+  position: relative;
+  padding: 45px 15px;
 }
 
 .productDescription h2 {
+  font-size: 1.5rem;
   text-transform: uppercase;
   text-shadow: 1px 1px 0px #fff;
   margin-bottom: 1rem;
-  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  font-family: 'Roboto Condensed', sans-serif;
 }
 
 .productDescription p {
   text-align: justify;
-    font-size: .9rem;
-    font-weight: 500;
-    line-height: 1.5rem;
-    margin: 0;
+  font-size: 1rem;
+  font-weight: 500;
+  line-height: 1.5rem;
+  margin: 0;
+}
+
+@media (min-width: 576px) { 
+  .productBrief {
+    right: 30px;
+    bottom: 30px;
+  }
+
+  .productDescription {
+    position: absolute;
+  }
+
+  .productDescription h2 {
+    font-size: 1.8rem;
+  }
+
+  .productWordBox {
+    padding-top: 90%;
+  }
+}
+
+@media (min-width: 768px) {
+  .product {
+    padding-top: 45%;
+  }
+
+  .productDescription {
+    padding: 0 10%;
+  }
+
+  .productChair, .productWordBox {
+    padding-top: 50%;
+  }
+
 }
 
 @media (min-width: 991px) {
@@ -147,7 +187,9 @@ header .now {
   }
 
   .productBrief .productViewButton {
-    background-size: 260px 75px;
+    background-size: 260px 80px;
+    width: 130px;
+    font-size: 1.15rem;
   }
 
 
@@ -159,25 +201,15 @@ header .now {
     font-size: .9rem;
   }
 
-}
-@media (min-width: 768px) {
-  .product {
-    padding-top: 45%;
-  }
-
-  .productDescription {
-    padding: 0 10%;
-  }
-
   .productDescription h2 {
-    font-size: 2rem;
-    margin-bottom: 1.5rem;
+    font-size: 2.6rem;
+    font-weight: 700;
   }
 
   .productDescription p {
-    font-size: .9rem;
+    font-size: 1.15rem;
     word-spacing: .1rem;
-    line-height: 1.5rem;
+    line-height: 1.8rem;
   }
 
 }

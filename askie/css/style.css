@@ -262,6 +262,7 @@ header .now {
 
 .contact {
   background: #fff;
+  font-weight: 700;
 }
 
 .contact h2 {
@@ -269,6 +270,7 @@ header .now {
   font-size: .9rem;
   text-transform: uppercase;
   padding: 1.5rem 1.25rem 0;
+  margin-bottom: 0;
   font-family: 'Roboto Condensed', sans-serif;
   font-weight: 700;
 }
@@ -284,28 +286,53 @@ header .now {
   font-family: 'Roboto Condensed', sans-serif;
   font-weight: 700;
   text-transform: uppercase;
-  margin-bottom: 1rem;
   padding: 0 1.25rem;
+  display: block;
+}
+
+.contactMainArticle {
+  margin: 0;
+}
+
+.contactMainArticle h2 {
+  margin-bottom: 1rem;
+}
+
+.contactBlog {
+  flex-wrap: wrap;
 }
 
 .contactBlog, .contactBlog a {
   color: #4b3a33;
 }
 
-.contactBlog img {
-  max-width: 100%;
+.contactBlog .contactBlog__mainPhoto {
+  padding-top: 100%;
+}
+
+.contactBlog .contactBlog__mainPhoto {
+  background: url(../images/carving-small.png) no-repeat top center #dddad3;
+  background-size: cover;
+}
+
+.contactBlog:last-child .contactBlog__mainPhoto {
+  background: url(../images/resort-small.png) no-repeat top center #dddad3;
+  background-size: cover;
 }
 
 .contactBlog__article {
-  margin: 0 1.25rem;
-    padding: 1rem 40% 1rem .5rem;
-    background: url(../images/carving-small.png) no-repeat right center #dddad3;
-    background-size: contain;
-    margin-bottom: 1rem;
-    border: 1px ridge #eee;
+  margin-bottom: 1rem;
+  padding: 1rem 1.25rem;
+  border: 1px ridge #eee;
+  background: #dddad3;
 }
 
-.contactBlog__article:last-child {
+.contactBlog__article:first-child .contactBlog__mainPhoto {
+  background: url(../images/carving-small.png) no-repeat right center #dddad3;
+  background-size: contain;
+}
+
+.contactBlog__article:last-child .contactBlog__mainPhoto {
   background: url(../images/resort-small.png) no-repeat right center #dddad3;
   background-size: contain;
 }
@@ -325,6 +352,43 @@ header .now {
   text-transform: uppercase;
 }
 
+@media (min-width: 576px) {
+
+  .contactBlog {
+    flex-direction: row-reverse;
+    margin-bottom: 1rem;
+  }
+
+  .contactBlog__article {
+    margin-bottom: 0;
+    position: relative;
+  }
+
+  .contactBlog .contactBlog__mainPhoto {
+    padding-top: 60%;
+  }
+
+  .contactBlog__article__button {
+    position: absolute;
+    bottom: 1rem;
+  }
+}
+
+
+@media (min-width: 768px) { 
+  .contactMainInfo {
+    background: url(../images/separator-light-vertical.png) repeat-y right top;
+    background-size: 8px;
+  }
+
+  .contact h2 {
+    font-size: 1.15rem;
+  }
+
+  .contactMainInfo__bold {
+    font-size: 1.8rem;
+  }
+}
 
 @media (min-width: 991px) { 
   
@@ -337,15 +401,3 @@ header .now {
   }
 }
 
-@media (min-width: 768px) { 
-  .contactMainInfo {
-    background: url(../images/separator-light-vertical.png) repeat-y right top;
-    background-size: 8px;
-  }
-
-  .contactBlog__article {
-    margin: 0;
-    background-size: 45%;
-    padding: 1rem 25% 1rem 1rem;
-  }
-}

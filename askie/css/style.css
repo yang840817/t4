@@ -408,7 +408,7 @@ header .now {
 
 /* footer */
 footer {
-  background: #ffc935;
+  background: #e3b333;
 }
 
 .footerContact h2 {
@@ -458,7 +458,6 @@ footer, footer a, input::placeholder {
   font-size: 1.15rem;
   line-height: 1.5rem;
   text-transform: uppercase;
-  margin: auto;
 }
 
 .recentPost + .recentPost {
@@ -503,21 +502,26 @@ footer, footer a, input::placeholder {
 
 .socialMedia a {
   width: 50px;
-  height: 50px;
+  height: 40px;
   display: inline-block;
   background-size: 100px;
+  
+}
+
+.socialMedia a + a {
+  margin-left: .75rem;
 }
 
 .socialMedia__facebook {
-  background: url(../images/icons.png) no-repeat right -2px bottom -90px;
+  background: url(../images/icons.png) no-repeat right 3px bottom -95px;
 }
 
 .socialMedia__googlePlus {
-  background: url(../images/icons.png) no-repeat right -2px bottom -42px;
+  background: url(../images/icons.png) no-repeat right 0px bottom -47px;
 }
 
 .socialMedia__twitter {
-  background: url(../images/icons.png) no-repeat right 2px bottom 6px;
+  background: url(../images/icons.png) no-repeat right bottom;
 }
 
 .footerLastPart, .footerLastPart a {

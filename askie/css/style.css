@@ -14,7 +14,7 @@ header {
 }
 
 header .container {
-  padding: 1rem 1.5rem;
+  padding: 2.5rem 1.5rem;
 }
 
 header a {
@@ -46,7 +46,8 @@ header .now {
 /* content */
 
 .content {
-  background: url('/images/bg-body.png') repeat left top;
+  background: url('/images/bg-body.png') repeat center center;
+  background-size: 115%;
 }
 
 .contentBox {
@@ -263,10 +264,11 @@ header .now {
 .contact {
   background: #fff;
   font-weight: 700;
+  padding: .5rem 0;
 }
 
 .contact h2 {
-  color: #666;
+  color: #7c7c7c;
   font-size: .9rem;
   text-transform: uppercase;
   padding: 1.5rem 1.25rem 0;
@@ -288,6 +290,11 @@ header .now {
   text-transform: uppercase;
   padding: 0 1.25rem;
   display: block;
+}
+
+.contactMainInfo a:hover {
+  color: #ffc935;
+  text-decoration: none;
 }
 
 .contactMainArticle {
@@ -356,7 +363,7 @@ header .now {
 
   .contactBlog {
     flex-direction: row-reverse;
-    margin-bottom: 1rem;
+    margin-bottom: 2rem;
   }
 
   .contactBlog__article {
@@ -386,7 +393,7 @@ header .now {
   }
 
   .contactMainInfo__bold {
-    font-size: 1.8rem;
+    font-size: 2rem;
   }
 }
 
@@ -396,8 +403,168 @@ header .now {
     display: flex;
     padding: 1.25rem;
   }
-  .contactBlog__article {
-
-  }
 }
 
+
+/* footer */
+footer {
+  background: #ffc935;
+}
+
+.footerContact h2 {
+  font-family: 'Roboto Condensed', sans-serif;
+  font-size: 1.15rem;
+  text-transform: uppercase;
+  margin-bottom: 15px;
+  font-weight: 700;
+}
+
+footer, footer a, input::placeholder {
+  color: #4b3a33;
+}
+
+.showroom, .recentPosts, .news {
+  background: url(../images/separator-dark.png) repeat-x left bottom;
+  background-size: 4px;
+  padding: 30px 0;
+}
+
+.showroom__photo {
+  margin-bottom: 15px;
+}
+
+.showroom__phone {
+  margin-bottom: 15px;
+  display: block;
+}
+
+.showroom__mail {
+  text-decoration: underline;
+}
+
+.recentPost::after {
+  content: '';
+  display: block;
+  clear: both;
+}
+.recentPost__date {
+  background: url(../images/bg-time.png) no-repeat center center;
+  background-size: cover;
+  width: 55px;
+  height: 55px;
+  text-align: center;
+  color: #fff;
+  font-family: 'Roboto Condensed', sans-serif;
+  font-size: 1.15rem;
+  line-height: 1.5rem;
+  text-transform: uppercase;
+  margin: auto;
+}
+
+.recentPost + .recentPost {
+  margin-top: 15px;
+}
+
+.recentPost h3 {
+  font-family: 'Roboto Condensed', sans-serif;
+  font-size: 1.15rem;
+}
+
+.recentPost p {
+  font-size: .9rem;
+}
+
+.newsLetter__emailInput {
+  border: 5px solid #b08200;
+  width: 100%;
+  padding: .25rem;
+}
+
+.newsLetter__emailInput::placeholder {
+  font-size: .9rem;
+}
+
+.newsLetter__signUpButton {
+  font-family: 'Roboto Condensed', sans-serif;
+  background: url(../images/buttons.png) no-repeat left -15px top -42px;
+  padding: 5px 21px;
+  background-size: 255px;
+  border: 0;
+  margin: 10px 0 30px;
+  color: #fff;
+  text-transform: uppercase;
+}
+
+.socialMedia {
+  background: url(../images/separator-dark.png) repeat-x left top;
+  background-size: 5px;
+  padding: 30px 0 0;
+}
+
+.socialMedia a {
+  width: 50px;
+  height: 50px;
+  display: inline-block;
+  background-size: 100px;
+}
+
+.socialMedia__facebook {
+  background: url(../images/icons.png) no-repeat right -2px bottom -90px;
+}
+
+.socialMedia__googlePlus {
+  background: url(../images/icons.png) no-repeat right -2px bottom -42px;
+}
+
+.socialMedia__twitter {
+  background: url(../images/icons.png) no-repeat right 2px bottom 6px;
+}
+
+.footerLastPart, .footerLastPart a {
+  font-family: 'Roboto Condensed', sans-serif;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: #b08200;
+}
+
+.footerLastPart__copyright {
+  text-align: center;
+  padding: 15px 0 30px;
+}
+
+
+@media (min-width: 991px) {
+  .footerContact > .showroom {
+    padding-right: 1.25rem;
+  }
+
+  .footerContact > .recentPosts {
+    padding: 30px 1.25rem;
+  }
+
+  .footerContact > .news {
+    padding-left: 1.25rem;
+    background: none;
+  }
+
+  .showroom, .recentPosts {
+    background: url(../images/separator-dark-vertical.png) repeat-y right bottom;
+    background-size: 8px;
+    padding: 30px 0;
+  }
+
+  .footerContact {
+    background: url(../images/separator-dark.png) repeat-x left bottom;
+    background-size: 4px;
+    padding: 30px 0;
+  }
+
+  .footerLastPart__copyright {
+    padding: .5rem 0 1rem;
+    text-align: left;
+  }
+  
+  /* .footerContact > * {
+    padding: 0 1.25rem;
+  } */
+}

@@ -9,25 +9,24 @@ body {
 header {
   background: #241b18;
   border-bottom: 1px solid #fff;
-  box-shadow: 0px 2px 20px #666;
   text-align: center;
 }
 
 header .container {
-  padding: 45px 15px;
+  padding: 30px 15px;
 }
 
 header a {
   text-transform: uppercase;
   color: #fff;
   font-family: 'Roboto Condensed', sans-serif;
-  text-decoration: none;
   font-size: .8rem;
 }
 
 header a:hover,
 header .now {
   color: #ffc935;
+  text-decoration: none;
 }
 
 @media (min-width: 576px) {
@@ -45,6 +44,10 @@ header .now {
 
 /* content */
 
+.content, .product, .room {
+  box-shadow: 0px 2px 20px #000;
+}
+
 .content {
   background: url(../images/bg-body.png) repeat center center;
   background-size: 115%;
@@ -53,7 +56,6 @@ header .now {
 .product {
   position: relative;
   text-align: center;
-  box-shadow: 0px 2px 20px #666;
   border: 1px solid #fff;
   border-top: 0;
 }
@@ -94,6 +96,11 @@ header .now {
   font-size: .9rem;
   font-weight: 700;
   width: 105px;
+}
+
+.productBrief .productViewButton:hover {
+  background-position: left -133px top 4px;
+  text-decoration: none;
 }
 
 .productWordBox {
@@ -230,7 +237,7 @@ header .now {
 }
 
 .roomType__description {
-  background: url(../images/separator-light.png) repeat-x, left top 50%;
+  background: url(../images/separator-light.png) repeat-x left top;
   background-size: 5px;
 }
 
@@ -348,7 +355,6 @@ header .now {
 @media (min-width: 576px) {
 
   .contactBlog {
-    flex-direction: row-reverse;
     margin-bottom: 2rem;
   }
 
@@ -395,6 +401,8 @@ header .now {
 /* footer */
 footer {
   background: #e3b333;
+  border-top: 1px solid #fff;
+  box-shadow: 0px -5px 5px rgba(0,0,0, .2);
 }
 
 .footerContact h2 {
@@ -405,7 +413,7 @@ footer {
   font-weight: 700;
 }
 
-footer, footer a, input::placeholder {
+footer, footer a, footer a:hover, input::placeholder {
   color: #4b3a33;
 }
 
@@ -491,6 +499,11 @@ footer, footer a, input::placeholder {
   margin: 10px 0 30px;
   color: #fff;
   text-transform: uppercase;
+  cursor: pointer;
+}
+
+.newsLetter__signUpButton:hover {
+  background-position: left -145px top -42px;
 }
 
 .socialMedia {
@@ -515,12 +528,24 @@ footer, footer a, input::placeholder {
   background: url(../images/icons.png) no-repeat right 3px bottom -95px;
 }
 
+.socialMedia__facebook:hover {
+  background-position: right -50px bottom -95px;
+}
+
 .socialMedia__googlePlus {
   background: url(../images/icons.png) no-repeat right 0px bottom -47px;
 }
 
+.socialMedia__googlePlus:hover {
+  background-position: right -54px bottom -47px;
+}
+
 .socialMedia__twitter {
   background: url(../images/icons.png) no-repeat right bottom;
+}
+
+.socialMedia__twitter:hover {
+  background-position: right -54px bottom;
 }
 
 .footerLastPart, .footerLastPart a {

@@ -14,7 +14,7 @@ header {
 }
 
 header .container {
-  padding: 2.5rem 1.5rem;
+  padding: 45px 15px;
 }
 
 header a {
@@ -46,12 +46,8 @@ header .now {
 /* content */
 
 .content {
-  background: url('/images/bg-body.png') repeat center center;
+  background: url(../images/bg-body.png) repeat center center;
   background-size: 115%;
-}
-
-.contentBox {
-  padding: 0 25px;
 }
 
 .product {
@@ -64,7 +60,7 @@ header .now {
 
 
 .productChair {
-  background: url('/images/chair.jpg') no-repeat right bottom;
+  background: url(../images/chair.jpg) no-repeat right bottom;
   background-size: cover;
   padding-top: 90%;
 }
@@ -89,7 +85,7 @@ header .now {
 
 .productBrief .productViewButton {
   display: block;
-  background: url(/images/buttons.png) no-repeat left 0px top 4px;
+  background: url(../images/buttons.png) no-repeat left 0px top 4px;
   padding: 12px 0;
   color: #9b6e00;
   text-transform: uppercase;
@@ -101,7 +97,7 @@ header .now {
 }
 
 .productWordBox {
-  background: url('/images/bg-pattern.jpg') no-repeat left top;
+  background: url(../images/bg-pattern.jpg) no-repeat left top;
   background-size: cover;
   font-weight: 600;
 }
@@ -118,6 +114,7 @@ header .now {
   height: 100%;
   position: relative;
   padding: 45px 0;
+  color: #251b18;
 }
 
 .productDescription h2 {
@@ -174,14 +171,16 @@ header .now {
   }
 
   .productDescription h2 {
-    font-size: 3rem;
+    font-size: 2.6rem;
+    font-weight: 700;
     margin-bottom: 2rem;
   }
 
   .productDescription p {
-    font-size: 1rem;
+    font-size: 1.1rem;
     word-spacing: .1rem;
     line-height: 1.8rem;
+    margin: 0 -15px;
   }
 
   .productBrief {
@@ -204,18 +203,6 @@ header .now {
   .productBrief .productName {
     font-size: .9rem;
   }
-
-  .productDescription h2 {
-    font-size: 2.6rem;
-    font-weight: 700;
-  }
-
-  .productDescription p {
-    font-size: 1.15rem;
-    word-spacing: .1rem;
-    line-height: 1.8rem;
-  }
-
 }
 
 
@@ -243,7 +230,6 @@ header .now {
 }
 
 .roomType__description {
-  padding-top: 15px;
   background: url(../images/separator-light.png) repeat-x, left top 50%;
   background-size: 5px;
 }
@@ -252,7 +238,6 @@ header .now {
   font-family: 'Roboto Condensed', sans-serif;
   color: #ffc935;
   font-size: 1.15rem;
-  padding-top: 15px;
   text-transform: uppercase;
 }
 .roomType__description p {
@@ -290,6 +275,7 @@ header .now {
   text-transform: uppercase;
   padding: 0 1.25rem;
   display: block;
+  word-spacing: .1rem;
 }
 
 .contactMainInfo a:hover {
@@ -389,7 +375,7 @@ header .now {
   }
 
   .contact h2 {
-    font-size: 1.15rem;
+    font-size: 1.05rem;
   }
 
   .contactMainInfo__bold {
@@ -415,7 +401,7 @@ footer {
   font-family: 'Roboto Condensed', sans-serif;
   font-size: 1.15rem;
   text-transform: uppercase;
-  margin-bottom: 15px;
+  margin-bottom: 1rem;
   font-weight: 700;
 }
 
@@ -430,11 +416,11 @@ footer, footer a, input::placeholder {
 }
 
 .showroom__photo {
-  margin-bottom: 15px;
+  margin-bottom: 1rem;
 }
 
 .showroom__phone {
-  margin-bottom: 15px;
+  margin-bottom: 1rem;
   display: block;
 }
 
@@ -442,21 +428,31 @@ footer, footer a, input::placeholder {
   text-decoration: underline;
 }
 
+.recentPost {
+  margin-bottom: 30px;
+}
+
 .recentPost::after {
   content: '';
   display: block;
   clear: both;
 }
+
+.recentPost__dateContainer {
+  float: left;
+  margin-right: 15px;
+}
+
 .recentPost__date {
   background: url(../images/bg-time.png) no-repeat center center;
   background-size: cover;
-  width: 55px;
-  height: 55px;
+  width: 50px;
+  height: 50px;
   text-align: center;
   color: #fff;
   font-family: 'Roboto Condensed', sans-serif;
-  font-size: 1.15rem;
-  line-height: 1.5rem;
+  font-size: 1rem;
+  line-height: 1.25rem;
   text-transform: uppercase;
 }
 
@@ -466,11 +462,13 @@ footer, footer a, input::placeholder {
 
 .recentPost h3 {
   font-family: 'Roboto Condensed', sans-serif;
-  font-size: 1.15rem;
+  font-size: .9rem;
+  font-weight: 700;
 }
 
+
 .recentPost p {
-  font-size: .9rem;
+  font-size: .8rem;
 }
 
 .newsLetter__emailInput {
@@ -481,6 +479,7 @@ footer, footer a, input::placeholder {
 
 .newsLetter__emailInput::placeholder {
   font-size: .9rem;
+  font-weight: 700;
 }
 
 .newsLetter__signUpButton {
@@ -567,8 +566,4 @@ footer, footer a, input::placeholder {
     padding: .5rem 0 1rem;
     text-align: left;
   }
-  
-  /* .footerContact > * {
-    padding: 0 1.25rem;
-  } */
 }

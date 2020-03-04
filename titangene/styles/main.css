@@ -53,6 +53,7 @@ body {
 /* ================= header ================= */
 header {
   background-color: #241b18;
+  border-bottom: 1px solid #fff;
 }
 
 

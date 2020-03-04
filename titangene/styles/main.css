@@ -25,3 +25,89 @@ body::before {
   /* opacity: 0; */
   z-index: -1;
 }
+
+
+
+
+/* ================= reset ================= */
+body {
+  font-family: 'Oswald', sans-serif;
+}
+
+
+
+
+/* ================= header ================= */
+header {
+  background-color: #241b18;
+}
+
+
+/* -------- navbar -------- */
+.custom_navbar {
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 1rem;
+}
+@media (min-width: 768px) {
+  .custom_navbar {
+    align-items: flex-end;
+    padding: 2rem 0 1rem;
+  }
+}
+@media (min-width: 992px) {
+  .custom_navbar {
+    padding: 36px 0;
+  }
+}
+
+.custom_navbar .navbar-brand {
+  margin: 0;
+  padding: 0;
+}
+
+.custom_navbar h1 {
+  font-size: 0;
+}
+
+.custom_navbar img {
+  max-width: 380px;
+  width: 100%;
+}
+@media (min-width: 768px) {
+  .custom_navbar img {
+    max-width: 460px;
+    width: 460px;
+  }
+}
+
+.custom_navbar .navbar-toggler {
+  width: 100%;
+  margin-top: 1rem;
+  border-color: rgba(255, 255, 255, .2);
+}
+
+@media (min-width: 768px) {
+  .custom_navbar .navbar-collapse {
+    justify-content: center;
+    margin-top: 1rem;
+  }
+}
+@media (min-width: 992px) {
+  .custom_navbar .navbar-collapse {
+    justify-content: flex-end;
+  }
+}
+
+.custom_navbar .navbar-nav .nav-item {
+  font-size: 18px;
+  font-weight: bold;
+  text-transform: uppercase;
+  padding: 10px 20px;
+  text-align: center;
+  color: #fff;
+}
+
+.custom_navbar .navbar-nav .nav-link.active {
+  color: #fec946;
+}

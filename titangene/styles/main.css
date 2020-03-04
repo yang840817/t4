@@ -1,0 +1,27 @@
+/* ============= debug ============= */
+* {
+  outline: 1px solid red;
+  /* background-color: transparent !important; */
+  /* background-image: none !important; */
+}
+
+img {
+  /* opacity: .2; */
+}
+
+/* screen width: 1540px */
+body::before {
+  content: "";
+  background: url(../template_4.png) no-repeat;
+  background-size: 100% auto;
+  width: 100%;
+  height: 3000px;
+  position: absolute;
+  left: -9px;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  opacity: .6;
+  /* opacity: 0; */
+  z-index: -1;
+}

@@ -356,6 +356,7 @@ header {
 
 .contact h3 {
   font-size: 18px;
+  text-transform: uppercase;
   color: #7b7b7b;
 }
 .contact h3:last-of-type {
@@ -380,6 +381,7 @@ header {
   font-size: 32px;
   line-height: 1.1;
   text-align: justify;
+  text-transform: uppercase;
 }
 
 
@@ -396,6 +398,7 @@ header {
 .blog h2 {
   margin-bottom: 1.25rem;
   font-size: 18px;
+  text-transform: uppercase;
   color: #7b7b7b;
 }
 @media (min-width: 992px) {

@@ -324,7 +324,7 @@ header {
 }
 @media (min-width: 768px) {
   .info {
-    padding: 6px 0;
+    padding: 6px 0 12px;
   }
 }
 

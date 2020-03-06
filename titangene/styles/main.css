@@ -253,14 +253,28 @@ header {
 
 
 /* -------- room-list -------- */
+.room-list {
+  display: flex;
+  flex-direction: column;
+}
+@media (min-width: 768px) {
+  .room-list {
+    flex-direction: row;
+  }
+}
 
 
 /* -------- room-item -------- */
-.room-list > .row .room-item {
+.room-item {
   background-color: #4b3a33;
 }
-.room-list > .row > :nth-child(2) .room-item {
+.room-item:nth-child(2) {
   background-color: #241a17;
+}
+@media (min-width: 768px) {
+  .room-item {
+    flex: 1 0 0;
+  }
 }
 
 .room-item img {
@@ -273,21 +287,6 @@ header {
   position: relative;
   padding: 1.5rem;
   background: url(../images/ds_border_bg_a.png) repeat-x top/5px;
-}
-@media (min-width: 768px) {
-  .room-body {
-    height: 220px;
-  }
-}
-@media (min-width: 992px) {
-  .room-body {
-    height: 174px;
-  }
-}
-@media (min-width: 1200px) {
-  .room-body {
-    height: auto;
-  }
 }
 
 .room-body h2 {

@@ -375,3 +375,91 @@ header {
   line-height: 1.1;
   text-align: justify;
 }
+
+
+/* -------- blog-list -------- */
+.blog-list {
+  padding: 2.5rem 1.5rem;
+}
+@media (min-width: 768px) {
+  .blog-list {
+    padding: 1.5rem 1.75rem 3.25rem;
+  }
+}
+
+.blog-list h2 {
+  margin-bottom: 1.25rem;
+  font-size: 20px;
+  color: #7b7b7b;
+}
+
+
+/* -------- blog-row -------- */
+.blog-gutters {
+  margin: 0;
+}
+.blog-gutters > .col,
+.blog-gutters > [class*="col-"] {
+  padding: 0;
+}
+@media (min-width: 992px) {
+  .blog-gutters {
+    margin: 0 -2rem;
+  }
+  .blog-gutters > .col,
+  .blog-gutters > [class*="col-"] {
+    padding: 0 2rem;
+  }
+}
+
+
+/* -------- blog-item -------- */
+.blog-item {
+  display: flex;
+  background-color: #dedad3;
+}
+.blog-gutters > .col + .col,
+.blog-gutters > [class*="col-"] + [class*="col-"] {
+  margin-top: 1.5rem;
+}
+@media (min-width: 992px) {
+  .blog-gutters > .col + .col,
+  .blog-gutters > [class*="col-"] + [class*="col-"] {
+    margin-top: 0;
+  }
+}
+
+.blog-item img {
+  flex: 0 0 120px;
+}
+@media (min-width: 768px) {
+  .blog-item img {
+    flex: 0 0 160px;
+  }
+}
+
+
+/* -------- blog-body -------- */
+.blog-body {
+  display: flex;
+  flex-direction: column;
+  flex: 1 0 0;
+  padding: 1rem;
+}
+
+.blog-body time {
+  font-family: 'Quattrocento Sans', sans-serif;
+  font-size: 14px;
+}
+
+.blog-body h3 {
+  margin: .75rem 0 0;
+  font-size: 20px;
+  line-height: 1.1;
+}
+
+.blog-body a {
+  margin-top: auto;
+  color: #000;
+  text-transform: uppercase;
+}

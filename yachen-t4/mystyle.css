@@ -506,7 +506,7 @@ footer .container {
         background-size: 5px;
     }
     .copyright {
-        text-align-last: left;
+        text-align: left;
     }
     .footer-link {
         text-align: right;

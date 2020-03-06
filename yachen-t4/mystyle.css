@@ -170,8 +170,7 @@ main .container {
 
 .banner-content p {
     margin-bottom: 0px;
-    height: 200px;
-    overflow: scroll;
+    height: 250px;
     text-align: justify;
     line-height: 1.8;
     color: var(--own-color-darkBrown);
@@ -454,7 +453,7 @@ footer .container {
     margin-left: 10px;
 }
 
-@media screen and (min-width: 768px) {
+@media (min-width: 768px) {
     label {
         display: none;
     }
@@ -470,12 +469,6 @@ footer .container {
     }
     #burger:checked+.nav-link-wrapper {
         display: block;
-    }
-    .banner-content h2 {
-        font-size: 45px;
-    }
-    .banner-content p {
-        height: 110px;
     }
     .info {
         background: url(./image/ds_border_bg_b.png) repeat-y right;
@@ -517,5 +510,11 @@ footer .container {
     }
     .footer-link {
         text-align: right;
+    }
+}
+
+@media (min-width: 992px) {
+    .banner-content h2 {
+        font-size: 45px;
     }
 }

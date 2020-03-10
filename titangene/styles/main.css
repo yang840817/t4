@@ -634,6 +634,10 @@ footer {
   flex: 1 0 0;
 }
 
+.recent-post-body a {
+  color: #46301f;
+}
+
 .recent-post-body h3 {
   font-size: 16px;
 }

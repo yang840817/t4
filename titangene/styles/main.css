@@ -134,6 +134,9 @@ header {
 
 
 /* ================= main ================= */
+main {
+  background-image: url(../images/bg-body.png);
+}
 /* -------- banner -------- */
 .banner {
   border: 1px solid #fff;

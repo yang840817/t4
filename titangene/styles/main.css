@@ -487,3 +487,207 @@ header {
   color: #000;
   text-transform: uppercase;
 }
+
+
+
+
+/* ================= footer ================= */
+footer {
+  padding-top: 2rem;
+  border-top: 1px solid #fff;
+  background-color: #e2b241;
+  box-shadow: 0px -1px 8px 1px rgba(0,0,0,0.3);
+}
+
+
+/* -------- footer-gutters -------- */
+.footer_list {
+  padding-bottom: 1.25rem;
+  background: url(../images/ds_border_bg_d.png) repeat-x bottom/5px;
+}
+
+.footer_list .row {
+  margin: 0;
+}
+
+/* -------- footer-gutters -------- */
+/* .footer-gutters {
+  margin: 0;
+} */
+
+/* .footer_gutters > .col,
+.footer-gutters > [class*="col-"] {
+  padding: 0 2rem;
+}
+.footer_gutters > .col:first-of-type,
+.footer-gutters > [class*="col-"]:first-of-type {
+  padding-left: 0;
+}
+.footer_gutters > .col:last-of-type,
+.footer-gutters > [class*="col-"]:last-of-type {
+  padding-right: 0;
+} */
+
+
+/* -------- footer-item  -------- */
+.footer_item {
+  padding: 0 2rem;
+}
+.footer_item:first-of-type {
+  padding-left: 0;
+  background: url(../images/ds_border_bg_c.png) repeat-y right/7px;
+}
+.footer_item:last-of-type {
+  padding-right: 0;
+  background: url(../images/ds_border_bg_c.png) repeat-y left/7px;
+}
+
+
+/* -------- footer_subitem  -------- */
+.footer_subitem {
+  padding-bottom: 1.25rem;
+}
+.footer_subitem + .footer_subitem {
+  padding-top: 1.75rem;
+  background: url(../images/ds_border_bg_d.png) repeat-x top/5px;
+}
+.footer_subitem:last-of-type {
+  padding-bottom: 0;
+}
+
+
+/* -------- footer-title  -------- */
+.footer-title {
+  margin-bottom: 1.25rem;
+  font-size: 20px;
+  text-transform: uppercase;
+}
+
+
+/* -------- showroom -------- */
+.showroom img {
+  width: 100%;
+  margin-bottom: 1.25rem;
+}
+
+.showroom p {
+  font-family: 'Quattrocento Sans', sans-serif;
+  font-weight: bold;
+}
+
+.showroom address a {
+  display: block;
+  font-family: 'Quattrocento Sans', sans-serif;
+  color: #000;
+}
+.showroom address a + a {
+  margin-top: 1.25rem;
+}
+
+.showroom address a[href^="mailto"] {
+  text-decoration: underline;
+}
+
+/* -------- recent-post_item -------- */
+.recent-post_item {
+  display: flex;
+}
+.recent-post_item + .recent-post_item {
+  margin-top: 1.25rem;
+}
+
+.recent-post_item time {
+  flex: 0 0 50px;
+  height: 50px;
+  margin-right: .75rem;
+  border-radius: 4px;
+  background-color: #46301f;
+  color: #fff;
+  font-weight: bold;
+  text-align: center;
+}
+
+.recent-post-body {
+  flex: 1 0 0;
+}
+
+.recent-post-body h3 {
+  font-size: 16px;
+}
+
+.recent-post-body p {
+  font-family: 'Quattrocento Sans', sans-serif;
+  font-size: 15px;
+}
+
+
+/* -------- subscription -------- */
+.subscription input {
+  width: 100%;
+  padding: 3px;
+  border: 2px solid #af8112;
+  margin-bottom: 6px;
+}
+.subscription input::placeholder {
+  font-family: 'Quattrocento Sans', sans-serif;
+}
+
+.subscription button {
+  display: block;
+  height: 38px;
+  padding: 0 25px;
+  border: none;
+  line-height: 38px;
+  background: url(../images/buttons.png) no-repeat -13px -44px/265px;
+  color: #fff;
+  font-family: 'Oswald', sans-serif;
+  font-size: 18px;
+  text-transform: uppercase;
+}
+.subscription button:hover {
+  background: url(../images/buttons.png) no-repeat -148px -44px/265px;
+}
+
+
+/* -------- social_list -------- */
+.social_list {
+  font-size: 0;
+}
+
+.social_list a {
+  display: inline-block;
+  color: #2d1c15;
+}
+.social_list a + a {
+  margin-left: 32px;
+}
+
+.social_list i {
+  font-size: 3rem;
+}
+
+
+/* -------- footer-bar -------- */
+.footer-bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: .25rem 0 1rem;
+}
+
+
+/* -------- footer-nav -------- */
+.footer-nav a {
+  text-transform: uppercase;
+  color: #ab7d0f;
+}
+.footer-nav a + a {
+  margin-left: 1.25rem;
+}
+
+
+/* -------- copyright -------- */
+.copyright p {
+  margin: 0;
+  color: #ab7d0f;
+}

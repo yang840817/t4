@@ -312,7 +312,7 @@ header {
 .room-body p {
   margin: 0;
   color: #fff;
-  font-family: "Quattrocento Sans";
+  font-family: 'Quattrocento Sans', sans-serif;
   font-size: 18px;
   font-weight: bold;
   line-height: 1.4;

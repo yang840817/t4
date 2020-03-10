@@ -687,6 +687,12 @@ footer {
 
 
 /* -------- copyright -------- */
+@media (min-width: 768px) {
+  .copyright {
+    order: -1;
+  }
+}
+
 .copyright p {
   margin: 0;
   color: #ab7d0f;

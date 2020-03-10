@@ -1,16 +1,16 @@
 /* ============= debug ============= */
-* {
+/* * {
   outline: 1px solid red;
-  /* background-color: transparent !important; */
-  /* background-image: none !important; */
-}
+  background-color: transparent !important;
+  background-image: none !important;
+} */
 
-img {
-  /* opacity: .2; */
-}
+/* img {
+  opacity: .2;
+} */
 
 /* screen width: 1540px */
-body::before {
+/* body::before {
   content: "";
   background: url(../template_4.png) no-repeat;
   background-size: 100% auto;
@@ -22,9 +22,9 @@ body::before {
   top: 0;
   bottom: 0;
   opacity: .6;
-  /* opacity: 0; */
+  opacity: 0;
   z-index: -1;
-}
+} */
 
 
 

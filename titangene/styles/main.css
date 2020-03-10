@@ -89,12 +89,10 @@ header {
 }
 
 .custom_navbar img {
-  max-width: 380px;
   width: 100%;
 }
-@media (min-width: 768px) {
+@media (min-width: 992px) {
   .custom_navbar img {
-    max-width: 460px;
     width: 460px;
   }
 }

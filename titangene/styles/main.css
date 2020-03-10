@@ -616,7 +616,7 @@ footer {
   display: flex;
 }
 .recent-post_item + .recent-post_item {
-  margin-top: 1.25rem;
+  margin-top: 2.25rem;
 }
 
 .recent-post_item time {
@@ -639,6 +639,7 @@ footer {
 }
 
 .recent-post-body p {
+  margin: 0;
   font-family: 'Quattrocento Sans', sans-serif;
   font-size: 15px;
 }

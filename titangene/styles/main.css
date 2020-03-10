@@ -700,6 +700,19 @@ footer {
 
 
 /* -------- footer-nav -------- */
+.footer-nav {
+  flex: 0 0 100%;
+  justify-content: center;
+  margin-bottom: 1rem;
+}
+@media (min-width: 768px) {
+  .footer-nav {
+    flex: 0 1 auto;
+    justify-content: normal;
+    margin-bottom: 0;
+  }
+}
+
 .footer-nav a {
   text-transform: uppercase;
   color: #ab7d0f;

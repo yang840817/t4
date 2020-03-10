@@ -289,9 +289,12 @@ header {
   background: url(../images/ds_border_bg_a.png) repeat-x top/5px;
 }
 
+.room-body a {
+  color: #fec946;
+}
+
 .room-body h2 {
   margin-bottom: .75rem;
-  color: #fec946;
   font-size: 28px;
   font-weight: bold;
   text-transform: uppercase;

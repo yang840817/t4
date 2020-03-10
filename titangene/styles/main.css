@@ -188,12 +188,14 @@ header {
   display: block;
   height: 42px;
   line-height: 42px;
-  background-image: url(../images/buttons.png);
-  background-size: 270px;
+  background: url(../images/buttons.png) no-repeat 0 0/270px;
   color: #966a03;
   font-family: 'Oswald', sans-serif;
   font-size: 18px;
   text-transform: uppercase;
+}
+.banner-meta a:hover {
+  background: url(../images/buttons.png) no-repeat -138px 0/270px;
 }
 
 

@@ -34,6 +34,10 @@ body {
   font-family: 'Oswald', sans-serif;
 }
 
+address {
+  margin: 0;
+}
+
 
 
 
@@ -344,7 +348,6 @@ header {
 
 .contact {
   padding: 2.5rem 1.5rem;
-  margin: 0;
 }
 @media (min-width: 768px) {
   .contact {

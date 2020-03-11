@@ -58,6 +58,17 @@ address {
 header {
   background-color: #241b18;
   border-bottom: 1px solid #fff;
+  padding: 1rem;
+}
+@media (min-width: 768px) {
+  header {
+    padding: 2rem 0 1rem;
+  }
+}
+@media (min-width: 992px) {
+  header {
+    padding: 36px 0;
+  }
 }
 
 
@@ -65,17 +76,11 @@ header {
 .custom_navbar {
   flex-wrap: wrap;
   justify-content: center;
-  padding: 1rem;
+  padding: 0;
 }
 @media (min-width: 768px) {
   .custom_navbar {
     align-items: flex-end;
-    padding: 2rem 0 1rem;
-  }
-}
-@media (min-width: 992px) {
-  .custom_navbar {
-    padding: 36px 0;
   }
 }
 

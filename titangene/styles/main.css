@@ -683,8 +683,6 @@ footer {
   padding: 3px;
   border: 2px solid #af8112;
   margin-bottom: 6px;
-}
-.subscription input::placeholder {
   font-family: 'Quattrocento Sans', sans-serif;
 }
 

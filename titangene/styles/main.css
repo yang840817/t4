@@ -300,7 +300,6 @@ main {
 
 /* -------- room_body -------- */
 .room_body {
-  position: relative;
   padding: 1.5rem;
   background: url(../images/ds_border_bg_a.png) repeat-x top/5px;
 }

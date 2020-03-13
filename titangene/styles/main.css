@@ -680,15 +680,14 @@ footer {
 .recent-post_item time {
   height: 50px;
   flex: 0 0 50px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
   margin-right: .75rem;
   border-radius: 4px;
   background-color: #46301f;
   color: #fff;
+  font-size: 16px;
   font-weight: bold;
   text-align: center;
+  line-height: 25px;
 }
 
 .recent-post_body {

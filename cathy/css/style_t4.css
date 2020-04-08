@@ -1,0 +1,221 @@
+h1,h2,h3,h4,p,ol,ul,li{
+    margin: 0;
+}
+
+a{
+    display: inline-block;
+}
+
+a:hover{
+    text-decoration: none;
+}
+
+.menu{
+    background-color: #241B18;
+    border-bottom: solid 1px #fff;
+}
+
+@media(min-width: 768px){
+    .menu_area{
+        padding: 1rem 0rem;
+    }
+}
+
+.brand_logo{
+    flex: 0 1 70%;
+    margin: 0;
+}
+
+.brand_logo img{
+    max-width: 100%;
+}
+
+.button{
+    flex: 0 1 30%;
+    text-align: right;
+}
+
+.button_toggler{
+    padding: 0.2rem 0.5rem;
+    font-size: 1rem;
+    background-color: transparent;
+    border: solid 1.5px #fcc746;
+    border-radius: .25rem;
+}
+
+.button_icon{
+    display: inline-block;
+    vertical-align: middle;
+    content: "";
+    background: url(../img/menu-lines.svg) no-repeat center center;
+    background-size: 80% auto;
+}
+
+.menu_bar{
+    width: 30%;
+    text-align: center;
+    justify-content: flex-end;
+}
+
+.menu_button:hover{
+    background-color: #fcc746;
+}
+
+@media(min-width: 768px){
+    .menu_button:hover{
+        background-color: transparent;
+    }
+}
+
+.button_item{
+    color: #fff;
+    font-size: 18px;
+    font-family: 'Fjalla One', sans-serif;
+    text-transform: uppercase;
+}
+
+.button_item:hover{
+    color: #241B18;
+}
+
+@media(min-width: 768px){
+    .button_item:hover{
+        color: #fcc746;
+    }
+}
+
+.main_area{
+    background-image: url(../img/bg-body.png);
+}
+
+.main_container{
+    box-shadow:0 0 20px 5px #000;
+}
+
+.banner{
+    border: solid 1px #fff;
+    border-top: 0;
+}
+
+.banner_image{
+    height: 407px;
+    background-image: url(../img/chair.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.banner_text{
+    height: 407px;
+    background-image: url(../img/bg-pattern.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 15% 10%;
+}
+
+.banner_text h2{
+    font-family: 'Fjalla One', sans-serif;
+    text-transform: capitalize;
+    text-shadow: 2px 1px 1px #fff;
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+@media(min-width:768px){
+    .banner_text h2{
+        font-size: 3rem;
+    }
+}
+
+.banner_text p{
+    text-align: justify;
+}
+
+.item_content{
+    border: none;
+}
+
+.item_brief{
+    background-color: #4b3a33;
+}
+
+.middle_brief{
+    background-color: #241B18;
+}
+
+.item_brief h3{
+    font-size: 1.5rem;
+    font-family:'Fjalla One', sans-serif;
+    color: #fcc746;
+    text-transform: capitalize;
+}
+
+.item_brief p{
+    color: #fff;
+    text-align: justify;
+}
+
+.blog_info{
+    background-color: #fff;
+}
+
+.contact_us{
+    text-align: center;
+}
+
+@media(min-width:768px){
+    .contact_us{
+        text-align: left;
+    }
+}
+
+.contact_us span{
+    display: block;
+    font-size: 1.2rem;
+    font-family:'Fjalla One', sans-serif;
+    color: #7e7d80;
+    text-transform: capitalize;
+}
+
+.contact_us a{
+    font-size: 1.8rem;
+    font-family: 'Fjalla One', sans-serif;
+    color: #241B18;
+}
+
+.contact_us p{
+    font-size: 1.8rem;
+    font-family: 'Fjalla One', sans-serif;
+    color: #241B18;
+}
+
+.blog_title{
+    font-size: 1.2rem;
+    font-family:'Fjalla One', sans-serif;
+    color: #7e7d80;
+    text-transform: capitalize;
+}
+
+.blog_content{
+    display: flex;
+    justify-content: center;
+}
+
+.blog_brief{
+    background-color: #dddad3;
+}
+
+.blog_brief time{
+    font-size: 0.5rem;
+    color: #241B18;
+}
+
+.blog_brief p{
+    font-size: 1.2rem;
+    font-family: 'Fjalla One', sans-serif;
+    margin: 0.5rem 0;
+}
+
+.blog_brief a{
+    font-family: 'Fjalla One', sans-serif;
+    color: #241B18;
+}

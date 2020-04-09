@@ -118,12 +118,16 @@ a:hover{
 }
 
 .view_button{
-    width: 110px;
+    width: 113px;
     height: 35px;
     font-family: 'Fjalla One', sans-serif;
     font-size: 1.2rem;
     color: #af8112;
     background: url(../img/buttons.png) left 0px top 0px no-repeat;
+}
+
+.view_button:hover{
+    background: url(../img/buttons.png) left -114px top 0px no-repeat;
 }
 
 .banner_info{
@@ -183,6 +187,7 @@ a:hover{
     justify-content: center;
 }
 
+@
 
 .contact_us{
     text-align: center;
@@ -250,6 +255,10 @@ a:hover{
     background-color: #dddad3;
 }
 
+.blog_brief:hover{
+    background-color: #7e7d80;
+}
+
 .blog_brief time{
     font-size: 0.5rem;
     color: #241B18;
@@ -258,10 +267,11 @@ a:hover{
 .blog_brief p{
     font-size: 1.2rem;
     font-family: 'Fjalla One', sans-serif;
+    color: #241B18;
     margin: 0.5rem 0;
 }
 
-.blog_brief a{
+.blog_brief span{
     font-family: 'Fjalla One', sans-serif;
     color: #241B18;
 }

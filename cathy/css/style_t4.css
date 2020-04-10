@@ -43,6 +43,10 @@ a:hover{
     border-radius: .25rem;
 }
 
+.menu_bar{
+    text-align: center;
+}
+
 .button_icon{
     display: inline-block;
     vertical-align: middle;
@@ -202,8 +206,7 @@ a:hover{
     }
 }
 
-.contact_us span{
-    display: block;
+.contact_us h4{
     font-size: 1rem;
     color: #7e7d80;
     text-transform: uppercase;
@@ -290,8 +293,7 @@ a:hover{
     }
 }
 
-.showroom span{
-    display: block;
+.showroom h4{
     font-size: 1.2rem;
     font-family: 'Fjalla One', sans-serif;
     text-transform: uppercase;
@@ -299,7 +301,7 @@ a:hover{
 }
 
 @media(min-width: 768px){
-    .showroom span{
+    .showroom h4{
         text-align: left;
     }
 }
@@ -331,8 +333,7 @@ a:hover{
     }
 }
 
-.recent_blog_post_title{
-    display: block;
+.recent_blog_post_content h4{
     font-size: 1.2rem;
     font-family: 'Fjalla One', sans-serif;
     text-transform: uppercase;
@@ -340,7 +341,7 @@ a:hover{
 }
 
 @media(min-width:768px){
-    .recent_blog_post_title{
+    .recent_blog_post_content h4{
         text-align: left;
     }
 }
@@ -378,8 +379,7 @@ a:hover{
     padding-bottom: 1.5rem;
 }
 
-.join_us span{
-    display: block;
+.join_us h4{
     font-size: 1.2rem;
     font-family: 'Fjalla One', sans-serif;
     text-transform: uppercase;
@@ -387,7 +387,7 @@ a:hover{
 }
 
 @media(min-width: 768px){
-    .join_us span{
+    .join_us h4{
         text-align: left;
     }
 }
@@ -396,6 +396,12 @@ a:hover{
     font-size: 0.8rem;
     text-transform: capitalize;
     border: solid 3px #af8112;
+}
+
+.email_input_box::placeholder{
+    font-size: 0.5rem;
+    font-weight: 600cle;
+    color: #bbbbbb;
 }
 
 .email_input_button{
@@ -417,8 +423,13 @@ a:hover{
     padding: 1rem 0;
 }
 
-.social_media span{
-    display: block;
+@media(min-width: 768px){
+    .social_media{
+        text-align: left;
+    }
+}
+
+.social_media h4{
     font-size: 1.2rem;
     font-family: 'Fjalla One', sans-serif;
     text-transform: uppercase;

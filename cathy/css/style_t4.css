@@ -51,12 +51,6 @@ a:hover{
     background-size: 80% auto;
 }
 
-.menu_bar{
-    width: 30%;
-    text-align: center;
-    justify-content: flex-end;
-}
-
 .menu_button:hover{
     background-color: #fcc746;
 }
@@ -112,14 +106,17 @@ a:hover{
     text-align: center;
 }
 
+.image_info a{
+    width: 113px;
+    height: 35px;
+}
+
 .image_price{
     font-size: 1.5rem;
     line-height: 1.2;
 }
 
 .view_button{
-    width: 113px;
-    height: 35px;
     font-family: 'Fjalla One', sans-serif;
     font-size: 1.2rem;
     color: #af8112;
@@ -187,13 +184,13 @@ a:hover{
     justify-content: center;
 }
 
-@
 
 .contact_us{
-    text-align: center;
+    font-family:'Fjalla One', sans-serif;
     background: url(../img/separator-light.png) bottom repeat-x;
     background-size: 0.3rem 0.5rem;
     padding-bottom: 1.5rem;
+    text-align: center;
 }
 
 @media(min-width:992px){
@@ -208,20 +205,17 @@ a:hover{
 .contact_us span{
     display: block;
     font-size: 1rem;
-    font-family:'Fjalla One', sans-serif;
     color: #7e7d80;
     text-transform: uppercase;
 }
 
 .contact_us a{
     font-size: 1.8rem;
-    font-family: 'Fjalla One', sans-serif;
     color: #241B18;
 }
 
 .contact_us p{
     font-size: 1.8rem;
-    font-family: 'Fjalla One', sans-serif;
     color: #241B18;
 }
 
@@ -268,7 +262,6 @@ a:hover{
     font-size: 1.2rem;
     font-family: 'Fjalla One', sans-serif;
     color: #241B18;
-    margin: 0.5rem 0;
 }
 
 .blog_brief span{
@@ -338,7 +331,7 @@ a:hover{
     }
 }
 
-.recent_blog_post_title span{
+.recent_blog_post_title{
     display: block;
     font-size: 1.2rem;
     font-family: 'Fjalla One', sans-serif;
@@ -347,14 +340,13 @@ a:hover{
 }
 
 @media(min-width:768px){
-    .recent_blog_post_title span{
+    .recent_blog_post_title{
         text-align: left;
     }
 }
 
 .blog_article{
     display: flex;
-    align-items: flex-start;
 }
 
 .post_data{
@@ -474,6 +466,7 @@ a:hover{
 }
 
 .copyright_area{
+    font-family: 'Fjalla One', sans-serif;
     background: url(../img/separator-dark.png) top repeat-x;
     background-size: 0.3rem 0.5rem;
     padding: 1rem 0;
@@ -484,7 +477,6 @@ a:hover{
     flex-direction: column;
     font-size: 1.2rem;
     color: #af8112;
-    font-family: 'Fjalla One', sans-serif;
     text-align: center;
 }
 
@@ -524,7 +516,6 @@ a:hover{
 .page_link a{
     font-size: 1.2rem;
     color: #af8112;
-    font-family: 'Fjalla One', sans-serif;
     text-transform: capitalize;
     padding: 0 0.8rem;
 }

@@ -30,14 +30,14 @@ main{
   flex-direction: column;
   justify-content: center;
 }
-.banner_list_bg{
+.banner_list_background{
   background: url("./img/separator-light.png") repeat-x #4B3A33;
   background-size: 5px;
 }
-.banner_list_bg h3,.banner_list_center h3{
+.banner_list_background h3,.banner_list_center h3{
   color: #fec946;
 }
-.banner_list_bg p,.banner_list_center p{
+.banner_list_background p,.banner_list_center p{
   color: white;
 }
 .banner_list_center {
@@ -60,7 +60,7 @@ main{
 .banner .bg_img_chair_sale span{
   font-size:1.5rem;
 }
-.article_bg{
+.article_background{
   background-color: white;
 }
 .article_media{
@@ -83,11 +83,11 @@ main{
 .article_blog_text p,.article_blog_text span{
   font-weight:bold;
 }
-.footer_bg{
+.footer_background{
   border-top: 2px solid white;
   background: #e2b241;
 }
-footer .media_bg{
+footer .media_background{
   background: url("./img/separator-dark-vertical.png") repeat-x bottom;
   background-size: 12px;
 }

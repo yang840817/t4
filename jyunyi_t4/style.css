@@ -237,6 +237,7 @@ main .wrap {
 }
 
 @media (min-width: 768px) {
+
     .profile .brown_line_sm {
         display: none;
     }
@@ -417,12 +418,12 @@ h5 {
     }
 
     .blog_image {
-        flex: 1 1 45%;
+        flex: 0 0 45%;
         order: 2;
     }
 
     .blog_detail {
-        flex: 1 1 55%;
+        flex: 0 0 55%;
         order: 1;
     }
 

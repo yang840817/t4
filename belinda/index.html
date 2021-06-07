@@ -9,6 +9,8 @@
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/"
   crossorigin="anonymous">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@300;400;500;600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="./style.css">
 </head>
 <body>
@@ -51,17 +53,17 @@
   <main>
     <section class="container">
       <div class="row g-0">
-        <div class="col-lg-6">
+        <div class="col-md-7 col-lg-6">
           <div class="chair_advertisement">
-            <img class="img-fluid" src="./images/chair.jpg" alt="whicker chair">
+            <img src="./images/chair.jpg" alt="whicker chair">
             <div class="chair_info">
-              <p>Whicker Chair</p>
-              <p>$250.00</p>
-              <a href="##"></a>
+              <p class="chair_name">Whicker Chair</p>
+              <p class="chair_price">$250.00</p>
+              <a href="##">view details</a>
             </div>
           </div>
         </div>
-        <div class="col-lg-6">
+        <div class="col-md-4 order-md-3 col-lg-6 order-lg-0">
           <div class="product_description">
             <h3>This is just a placeholder</h3>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto, totam impedit quod iure soluta perferendis beatae debitis nam tenetur deleniti.</p>
@@ -69,81 +71,91 @@
         </div>
 
         <!--Gallery-->
-        <div class="col-lg-4">
-          <div class="card">
-            <img src="./images/living-room.jpg" class="card-img-top" alt="...">
+        <div class="col-md-5 col-lg-4">
+          <div class="card room_gallery">
+            <img src="./images/living-room.jpg" class="card-img-top" alt="living room">
             <div class="card-body">
-              <h5 class="card-title">Card title</h5>
-              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              <h2 class="card-title">Living Room</h2>
+              <p class="card-text">This website template has been designed by Free Website Template for you, for free. You can replace all text with your own text.</p>
             </div>
           </div>
         </div>
-        <div class="col-lg-4">
-          <div class="card">
-            <img src="./images/bedroom.jpg" class="card-img-top" alt="...">
+        <div class="col-md-4 col-lg-4">
+          <div class="card room_gallery">
+            <img src="./images/bedroom.jpg" class="card-img-top" alt="bed room">
             <div class="card-body">
-              <h5 class="card-title">Card title</h5>
-              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              <h2 class="card-title">Bedroom</h2>
+              <p class="card-text">This website template has been designed by Free Website Template for you, for free. You can replace all text with your own text.</p>
             </div>
           </div>
         </div>
-        <div class="col-lg-4">
-          <div class="card">
-            <img src="./images/kitchen.jpg" class="card-img-top" alt="...">
+        <div class="col-md-4 order-md-3 col-lg-4">
+          <div class="card room_gallery">
+            <img src="./images/kitchen.jpg" class="card-img-top" alt="kitchen">
             <div class="card-body">
-              <h5 class="card-title">Card title</h5>
-              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              <h2 class="card-title">Kitchen</h2>
+              <p class="card-text">This website template has been designed by Free Website Template for you, for free. You can replace all text with your own text.</p>
             </div>
           </div>
         </div>
       </div>
     </section>
 
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-4">
+    <!--Request & Blog-->
+    <div class="section">
+      <div class="container">
+        <div class="row g-0 request_and_post">
+          <div class="col-lg-4 request">
           <div class="order_info">
-            <p>For orders and inquiries please call:</p>
-            <a href="">760-962-9541</a>
-            <p>or you can visit us at:</p>
-            <p>This is just a placeholder</p>
+            <div class="contact_number">
+              <p>For orders and inquiries please call:</p>
+              <a href="tel:760-962-9541">760-962-9541</a>
+            </div>
+            <div class="location">
+              <p>or you can visit us at:</p>
+              <p>This is just a placeholder</p>
+            </div>
           </div>
-        </div>
-        <div class="col-lg-8">
+          </div>
+          <div class="col-lg-8 post">
           <h4>From the blog</h4>
           <div class="row">
-            <div class="col-lg-6">
-              <div class="card mb-3" style="max-width: 540px;">
+            <div class="col-md-6 post_item">
+              <div class="card mb-3" style="max-width: 360px;">
                 <div class="row g-0">
-                  <div class="col-md-8">
+                  <div class="col-6">
                     <div class="card-body">
-                      <h5 class="card-title">Card title</h5>
-                      <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                      <p class="release_date">April 16, 2011</p>
+                      <h2 class="card-title">This is just a placeholder</h2>
+                      <a href="##">Read More</a>
                     </div>
                   </div>
-                  <div class="col-md-4">
-                    <img src="./images/carving-small.png" alt="...">
+                  <div class="col-6">
+                    <img src="./images/carving-small.png" alt="a man hand planing wood">
                   </div>
                 </div>
               </div>
             </div>
-            <div class="col-lg-6">
-              <div class="card mb-3" style="max-width: 540px;">
+            <div class="col-md-6 post_item">
+              <div class="card mb-3" style="max-width: 360px;">
                 <div class="row g-0">
-                  <div class="col-md-8">
+                  <div class="col-6">
                     <div class="card-body">
-                      <h5 class="card-title">Card title</h5>
-                      <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                      <p class="release_date">April 15,2011</p>
+                      <h2 class="card-title">This is just a placeholder</h2>
+                      <a href="##">Read More</a>
                     </div>
                   </div>
-                  <div class="col-md-4">
-                    <img src="./images/resort-small.png" alt="...">
+                  <div class="col-6">
+                    <img src="./images/resort-small.png" alt="terrace facing ocean">
                   </div>
                 </div>
               </div>
             </div>
           </div>
+          </div>
         </div>
+      </div>
     </div>
 
   </main>
@@ -156,17 +168,16 @@
             <h4>Visit our showroom</h4>
             <img src="./images/show-room.png" alt="">
             <p>This is just a placeholder, so you can see what the site looks like</p>
-            <a href="">760-962-9541</a>
-            <a href="">info@carvedcreations.com</a>
+            <a href="tel:760-962-9541">760-962-9541</a>
+            <a href="mailto:info@carvedcreations.com">info@carvedcreations.com</a>
           </div>
         </div>
         <div class="col-lg-4">
+          <h4>Recent Blog Posts</h4>
           <div class="recent_posts">
-            <h4>Recent Blog Posts</h4>
             <div class="post_list">
               <div class="date">
-                <span>Apr</span>
-                <span>16</span>
+                <span>Apr <br>16</span>
               </div>
               <div class="post_info">
                 <h3>This is just a placeholder</h3>
@@ -175,8 +186,7 @@
             </div>
             <div class="post_list">
               <div class="date">
-                <span>Apr</span>
-                <span>16</span>
+                <span>Apr <br>15</span>
               </div>
               <div class="post_info">
                 <h3>This is just a placeholder</h3>
@@ -185,8 +195,7 @@
             </div>
             <div class="post_list">
               <div class="date">
-                <span>Apr</span>
-                <span>16</span>
+                <span>Apr <br>14</span>
               </div>
               <div class="post_info">
                 <h3>This is just a placeholder</h3>
@@ -201,27 +210,29 @@
               <h4>Join our newsletter</h4>
               <form>
                 <input type="text" id="fname" name="fname" placeholder="enter email adress here for updates"><br>
-                <input type="submit" value="sign up">
+                <button>Sign up</button>
               </form>
             </div>
             <div class="social_media">
-              <p>social media</p>
-              <a href="##"></a>
-              <a href="##"></a>
-              <a href="##"></a>
+              <h4>social media</h4>
+              <a href="##" class="facebook"></a>
+              <a href="##" class="google"></a>
+              <a href="##" class="twitter"></a>
             </div>
           </div>
         </div>
         <div class="col-lg-12">
-          <div class="copyright">
-            <p>copyright 2012.All rights reserved.</p>
-          </div>
-          <div class="footer_navbar">
-            <a href="##">Home</a>
-            <a href="##">About</a>
-            <a href="##">Gallery</a>
-            <a href="##">Blog</a>
-            <a href="##">Contact</a>
+          <div class="footer_bottom">
+            <div class="copyright">
+              <p>copyright 2012. All rights reserved.</p>
+            </div>
+            <div class="footer_navbar">
+              <a href="##">Home</a>
+              <a href="##">About</a>
+              <a href="##">Gallery</a>
+              <a href="##">Blog</a>
+              <a href="##">Contact</a>
+            </div>
           </div>
         </div>
       </div>

@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>CARVED CREATIONS</title>
+    <!-- google fonts -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&amp;family=Oswald:wght@200;300;400;500;600;700&amp;display=swap"
+      rel="stylesheet"
+    />
+    <!-- Bootstrap-->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x"
+      crossorigin="anonymous"
+    />
+
+    <!-- my css-->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="wrapper container">
+      <header>
+        <nav
+          class="mynavbar_container navbar navbar-expand-lg navbar-light p-2"
+        >
+          <h1 class="navbar-brand logobox">
+            <a href="#">
+              <img src="img/logo.png" alt="logo" class="w-100" />
+            </a>
+          </h1>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <div></div>
+            <div></div>
+            <div></div>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0 text-center">
+              <li class="nav-item">
+                <a
+                  class="text-white nav-link active"
+                  aria-current="page"
+                  href="##"
+                  >Home</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="text-white nav-link" href="##">About</a>
+              </li>
+              <li class="nav-item">
+                <a class="text-white nav-link" href="##" aria-current="page"
+                  >Gallery</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="text-white nav-link" href="##" aria-current="page"
+                  >Blog</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="text-white nav-link" href="#" aria-current="page"
+                  >Contact</a
+                >
+              </li>
+            </ul>
+            <form class="d-flex">
+              <input
+                class="form-control me-2"
+                type="search"
+                placeholder="Search Products Now!"
+                aria-label="Search"
+              />
+              <button class="btn btn-outline-warning" type="submit">
+                Search
+              </button>
+            </form>
+          </div>
+        </nav>
+      </header>
+      <main>
+        <!-- 768px down show : accordion -->
+        <div class="accordion" id="accordionExample">
+          <div class="accordion-item my-2">
+            <h2 class="myaccordion m-0" id="headingOne">
+              <figure class="main_products">
+                <img src="img/chair.jpg" alt="chair" class="w-100" />
+                <figcaption>
+                  <p class="title">Whicker Chair</p>
+                  <p class="price">$250.00</p>
+                  <!-- 觸及區 -->
+                  <p class="link">
+                    <a
+                      href="##"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#collapseOne"
+                      aria-expanded="true"
+                      aria-controls="collapseOne"
+                      >View Details</a
+                    >
+                  </p>
+                </figcaption>
+              </figure>
+            </h2>
+            <div
+              id="collapseOne"
+              class="accordion-collapse collapse"
+              aria-labelledby="headingOne"
+              data-bs-parent="#accordionExample"
+            >
+              <div class="accordion-body d-flex flex-column products_content">
+                <h2>This is just a place holder.</h2>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Itaque aut sit natus repellendus quisquam similique quod
+                  praesentium ut rem iure sunt corporis ipsam, laboriosam vitae?
+                  Architecto iusto voluptates ut commodi.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- 768px up show -->
+        <section class="intro_hightlight">
+          <div class="row g-0">
+            <div class="col-12 col-md-6">
+              <figure class="main_products">
+                <img src="img/chair.jpg" alt="chair" class="w-100" />
+                <figcaption>
+                  <p class="title">Whicker Chair</p>
+                  <p class="price">$250.00</p>
+                  <p class="link">
+                    <a href="##">View Details</a>
+                  </p>
+                </figcaption>
+              </figure>
+            </div>
+            <div class="col-md-6">
+              <div class="products_content">
+                <h2>This is just a place holder.</h2>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Itaque aut sit natus repellendus quisquam similique quod
+                  praesentium ut rem iure sunt corporis ipsam, laboriosam vitae?
+                  Architecto iusto voluptates ut commodi.
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="intro">
+          <div class="row g-0">
+            <div class="col-12 col-md-4">
+              <div class="card">
+                <img
+                  src="img/living-room.jpg"
+                  class="card-img-top"
+                  alt="living-room"
+                />
+                <div class="card-body">
+                  <h2 class="card-title">LIVING ROOM</h2>
+                  <p class="card-text">
+                    Modi fuga molestias voluptas deserunt facilis, sequi saepe
+                    necessitatibus nisi necessitatibus voluptates! Accusamus.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-md-4">
+              <div class="card">
+                <img src="img/kitchen.jpg" class="card-img-top" alt="kitchen" />
+                <div class="card-body">
+                  <h2 class="card-title">LIVING ROOM</h2>
+                  <p class="card-text">
+                    Modi fuga molestias voluptas deserunt facilis, sequi saepe
+                    necessitatibus nisi necessitatibus voluptates! Accusamus.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-md-4">
+              <div class="card">
+                <img
+                  src="img/bedroom.jpg"
+                  class="card-img-top"
+                  alt="bed-room"
+                />
+                <div class="card-body">
+                  <h2 class="card-title">bed room</h2>
+                  <p class="card-text">
+                    Modi fuga molestias voluptas deserunt facilis, sequi saepe
+                    necessitatibus nisi necessitatibus voluptates! Accusamus.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </main>
+      <section class="activity">
+        <div class="row g-0">
+          <div class="col-12 col-md-4">
+            <div>
+              <h3>for order and inquiries, please call:</h3>
+              <h3>
+                <a href="tel:123-456-789">123-456-789</a>
+              </h3>
+            </div>
+            <div>
+              <h3>or you can visit us at:</h3>
+              <h3>this just a place holder.</h3>
+            </div>
+          </div>
+          <div class="col-12 col-md-4">
+            <h3>from the blog</h3>
+            <div class="row g-0">
+              <div class="col-6">
+                <div class="card-body">
+                  <p>April 16, 2011</p>
+                  <h3>this is just a placeholder</h3>
+                  <a href="##">read more</a>
+                </div>
+              </div>
+              <div class="col-6">
+                <div>
+                  <img src="img/carving-small.png" alt="carving-image" />
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-md-4">
+            <div class="row g-0">
+              <div class="col-6">
+                <div class="card-body">
+                  <p>April 16, 2011</p>
+                  <h3>this is just a placeholder</h3>
+                  <a href="##">read more</a>
+                </div>
+              </div>
+              <div class="col-6">
+                <div>
+                  <img src="img/resort-small.png" alt="resort-image" />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <footer>
+        <div class="row">
+          <div class="col-12 col-md-4"></div>
+          <div class="col-12 col-md-4"></div>
+          <div class="col-12 col-md-4"></div>
+          <div class="col-12"></div>
+        </div>
+      </footer>
+    </div>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

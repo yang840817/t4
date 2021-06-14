@@ -11,6 +11,11 @@ body {
   background: #241b17;
   padding: 0;
 }
+@media (min-width: 992px) {
+  .wrapper {
+    width: 80%;
+  }
+}
 /* header */
 .logobox {
   flex: 1;
@@ -73,16 +78,16 @@ figcaption p {
 .products_content {
   background-image: url(img/bg-pattern.jpg);
   background-size: cover;
-  padding: 1 rem 2rem;
-  text-align: center;
+  padding: 1rem 2rem;
 }
 .products_content h2 {
   font-family: "Oswald", sans-serif;
-  font-size: 2rem;
+  font-size: 2.5rem;
   font-weight: 400;
   line-height: 1.4;
+  text-align: center;
   text-transform: uppercase;
-  margin-bottom: 16px;
+  margin-bottom: 32px;
 }
 
 @media (min-width: 768px) {
@@ -101,18 +106,23 @@ figcaption p {
     display: block;
   }
   .intro_hightlight .products_content {
-    padding: 1.5rem;
+    padding: 3rem 3rem 1rem;
+    min-height: 100%;
   }
 }
 
 /* intro */
-
-.intro .card-body {
-  background: #4b3a33;
-  /* border-top: solid;
-  border-image: url(img/separator-dark.png);
-  border-image-repeat: repeat; */
+.intro .card {
+  border: 0;
+  background-color: #4b3a33;
 }
+.intro .color {
+  background-color: #240f04;
+}
+.intro .card-body {
+  background: url(img/separator-light.png) repeat-x;
+}
+
 .intro .card-body h2 {
   font-size: 1.25rem;
   font-family: "Oswald", sans-serif;
@@ -142,6 +152,7 @@ figcaption p {
 }
 .activity_contact {
   padding: 1.5rem;
+  background: url(img/separator-light-vertical.png) repeat-y 100%;
 }
 .activity_contact h4 {
   font-weight: bold;
@@ -151,6 +162,7 @@ figcaption p {
   color: #333;
   cursor: pointer;
   word-spacing: 10px;
+  display: block;
 }
 .activity_contact_phone {
   margin-bottom: 30px;
@@ -197,24 +209,37 @@ figcaption p {
 
 footer {
   background-color: #e2b241;
+  padding-top: 20px;
 }
-.showroom {
+.showroom,
+.recentnews {
+  height: 100%;
   padding: 1.5rem;
+  /* 100%:從左邊為起始點，向右移動 */
+  background: url(img/separator-dark-vertical.png) repeat-y 100%;
 }
+.showroom a {
+  text-decoration: none;
+  color: #333;
+}
+
 .recentnews {
   padding: 1.5rem;
 }
 footer .title {
-  margin-bottom: 1.5rem;
+  font-size: 1rem;
+  margin-bottom: 1rem;
   text-transform: uppercase;
 }
 .recentnews_content {
   display: flex;
+  margin-bottom: 1.5rem;
 }
 .recentnews_content time {
   flex: 0 0 50px;
   height: 50px;
-  background-color: #46301f;
+  background: url(img/bg-time.png) no-repeat;
+  background-size: cover;
 
   /* font */
   color: #fff;
@@ -225,4 +250,72 @@ footer .title {
 
   /* space */
   margin-right: 10px;
+}
+
+.community {
+  height: 100%;
+  padding: 1.5rem;
+}
+.subscribe {
+  background: url(img/separator-dark.png) repeat-x bottom;
+  background-size: 5px;
+}
+
+.subscribe input {
+  width: 100%;
+  text-transform: uppercase;
+  border: 5px solid #b08200;
+  padding: 0.25rem;
+  margin-bottom: 10px;
+}
+
+.subscribe button {
+  background: url("img/buttons.png") no-repeat -13px -39px;
+  width: 83px;
+  height: 29px;
+  color: #fff;
+  text-transform: uppercase;
+  border: none;
+  margin-bottom: 1.5rem;
+}
+
+/* media */
+.media a {
+  margin-right: 1.5rem;
+}
+.media a:last-child {
+  margin-right: 0;
+}
+.media_facebook {
+  background: url("img/icons.png") no-repeat -46px -112px;
+  width: 33px;
+  height: 33px;
+  display: inline-block;
+}
+.media_google {
+  background: url("img/icons.png") no-repeat -46px -153px;
+  width: 34px;
+  height: 33px;
+  display: inline-block;
+}
+.media_twitter {
+  background: url("img/icons.png") no-repeat -46px -194px;
+  width: 40px;
+  height: 33px;
+  display: inline-block;
+}
+
+.copyright {
+  justify-content: space-between;
+  padding: 1.5rem 1.5rem;
+  background: url(img/separator-dark.png) repeat-x;
+  text-transform: uppercase;
+  color: #b08200;
+}
+.copyright a {
+  text-decoration: none;
+  color: #b08200;
+}
+.copyright a + a {
+  margin-left: 10px;
 }

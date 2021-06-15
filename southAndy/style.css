@@ -1,5 +1,5 @@
 * {
-  outline: solid 1px green;
+  outline: solid 1px red;
 }
 body {
   margin: 0;
@@ -7,16 +7,16 @@ body {
   font-family: "Oswald", sans-serif;
 }
 
-.wrapper {
+/* header */
+header {
   background: #241b17;
   padding: 0;
 }
-@media (min-width: 992px) {
-  .wrapper {
+@media (min-width: 1024px) {
+  header .container {
     width: 80%;
   }
 }
-/* header */
 .logobox {
   flex: 1;
 }
@@ -34,8 +34,24 @@ body {
 .navbar-nav {
   text-transform: uppercase;
 }
+.mynavbar_container form {
+  display: flex;
+}
+@media (min-width: 1024px) {
+  .mynavbar_container form {
+    display: none;
+  }
+  .mynavbar_container a {
+    font-size: 20px;
+  }
+}
 
 /* main */
+@media (min-width: 992px) {
+  .wrapper {
+    width: 80%;
+  }
+}
 figure.main_products {
   position: relative;
   margin: 0;
@@ -79,6 +95,11 @@ figcaption p {
   background-image: url(img/bg-pattern.jpg);
   background-size: cover;
   padding: 1rem 2rem;
+
+  /* layout */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 .products_content h2 {
   font-family: "Oswald", sans-serif;
@@ -211,23 +232,29 @@ footer {
   background-color: #e2b241;
   padding-top: 20px;
 }
+footer .information {
+  margin: 12px 0;
+}
+@media (min-width: 1024px) {
+  footer .container {
+    width: 80%;
+  }
+}
 .showroom,
 .recentnews {
-  height: 100%;
-  padding: 1.5rem;
   /* 100%:從左邊為起始點，向右移動 */
   background: url(img/separator-dark-vertical.png) repeat-y 100%;
+}
+.showroom .imagebox {
+  margin-bottom: 10px;
 }
 .showroom a {
   text-decoration: none;
   color: #333;
 }
 
-.recentnews {
-  padding: 1.5rem;
-}
 footer .title {
-  font-size: 1rem;
+  font-size: 1.25rem;
   margin-bottom: 1rem;
   text-transform: uppercase;
 }
@@ -252,10 +279,6 @@ footer .title {
   margin-right: 10px;
 }
 
-.community {
-  height: 100%;
-  padding: 1.5rem;
-}
 .subscribe {
   background: url(img/separator-dark.png) repeat-x bottom;
   background-size: 5px;
@@ -307,7 +330,7 @@ footer .title {
 
 .copyright {
   justify-content: space-between;
-  padding: 1.5rem 1.5rem;
+  padding: 1.5rem 0;
   background: url(img/separator-dark.png) repeat-x;
   text-transform: uppercase;
   color: #b08200;
@@ -318,4 +341,14 @@ footer .title {
 }
 .copyright a + a {
   margin-left: 10px;
+}
+
+/* effect */
+
+.mynavbar_container a:hover,
+.activity_contact_phone a:hover,
+.blog_newer a:hover,
+.blog_older a:hover {
+  background-color: #b08200;
+  color: #fff;
 }

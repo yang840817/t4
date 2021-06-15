@@ -11,6 +11,11 @@ body {
 header {
   background: #241b17;
   padding: 0;
+
+  /* fixed navbar */
+  position: sticky;
+  top: 0;
+  z-index: 1;
 }
 @media (min-width: 1024px) {
   header .container {
@@ -37,8 +42,14 @@ header {
 .mynavbar_container form {
   display: flex;
 }
-@media (min-width: 1024px) {
+.mynavbar_container footer {
+  display: block;
+}
+@media (min-width: 992px) {
   .mynavbar_container form {
+    display: none;
+  }
+  .mynavbar_container footer {
     display: none;
   }
   .mynavbar_container a {
@@ -188,6 +199,7 @@ figcaption p {
 .activity_contact_phone {
   margin-bottom: 30px;
 }
+/* blog */
 
 .activity_blog {
   padding: 1.5rem;
@@ -219,11 +231,19 @@ figcaption p {
 
 .blog_newer {
   display: flex;
-  margin-right: 16px;
+  margin-bottom: 16px;
 }
 .blog_older {
   display: flex;
-  margin-left: 16px;
+}
+@media (min-width: 1024px) {
+  .blog_newer {
+    margin-right: 16px;
+    margin-bottom: 0;
+  }
+  .blog_older {
+    margin-left: 16px;
+  }
 }
 
 /* footer */
@@ -231,11 +251,16 @@ figcaption p {
 footer {
   background-color: #e2b241;
   padding-top: 20px;
+  display: none;
 }
+
 footer .information {
   margin: 12px 0;
 }
 @media (min-width: 1024px) {
+  footer {
+    display: block;
+  }
   footer .container {
     width: 80%;
   }
@@ -347,6 +372,7 @@ footer .title {
 
 .mynavbar_container a:hover,
 .activity_contact_phone a:hover,
+.activity_contact_web a:hover,
 .blog_newer a:hover,
 .blog_older a:hover {
   background-color: #b08200;

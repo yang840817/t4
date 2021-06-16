@@ -58,9 +58,6 @@ footer {
   flex: 1 0 auto;
   text-align: center;
 }
-.navigation_collapse {
-  text-align: center;
-}
 .navigation button {
   border:none;
 }
@@ -390,10 +387,6 @@ footer .subtitle {
     background-size: 5px 7px;
   }
   .social_media {
-    background: url(./img/separator-dark.png) repeat-x;
-    background-size: 7px 5px;
-  }
-  .footer .col:last-child {
     background: url(./img/separator-dark.png) repeat-x;
     background-size: 7px 5px;
   }

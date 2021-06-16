@@ -17,7 +17,7 @@ body {
   border-bottom: 1px solid white;
 }
 main {
-  background-image: url(/img/bg-body.png);
+  background-image: url(./img/bg-body.png);
   background-position: center;
   padding:0;
 }
@@ -119,14 +119,14 @@ figcaption a {
   font-weight: 600;
 }
 figcaption a:hover {
-  background: url('./img/buttons.png') no-repeat -114px 0;
+  background: url(./img/buttons.png) no-repeat -114px 0;
 	width: 109px;
 	height: 34px;
   cursor: pointer;
   color: #4a3a33;
 }
 .product_caption {
-  background-image: url(/img/bg-pattern.jpg);
+  background-image: url(./img/bg-pattern.jpg);
   background-position: center;
   background-size:cover; /*不會有黑邊*/
   justify-content: center;
@@ -262,46 +262,46 @@ footer .subtitle {
   color: #241b18;
 }
 .join_message button {
-  background: url('./img/buttons.png') no-repeat -13px -39px;
+  background: url(./img/buttons.png) no-repeat -13px -39px;
 	width: 83px;
 	height: 26px;
   color: white;
   border: none;
 }
 .join_message button:hover {
-  background: url('./img/buttons.png') no-repeat -127px -39px;
+  background: url(./img/buttons.png) no-repeat -127px -39px;
     width: 83px;
     height: 26px;
 }
 
 /* ~social media */
 .facebook {
-  background: url('./img/icons.png') no-repeat -46px -112px;
+  background: url(./img/icons.png) no-repeat -46px -112px;
 	width: 40px;
 	height: 33px;
 }
 .facebook:hover {
-  background: url('./img/icons.png') no-repeat 0 -112px;
+  background: url(./img/icons.png) no-repeat 0 -112px;
 	width: 40px;
 	height: 33px;
 }
 .google_plus {
-  background: url('./img/icons.png') no-repeat -46px -153px;
+  background: url(./img/icons.png) no-repeat -46px -153px;
 	width: 40px;
 	height: 33px;
 }
 .google_plus:hover {
-  background: url('./img/icons.png') no-repeat 0 -153px;
+  background: url(./img/icons.png) no-repeat 0 -153px;
 	width: 40px;
 	height: 33px;
 }
 .twitter {
-  background: url('./img/icons.png') no-repeat -46px -194px;
+  background: url(./img/icons.png) no-repeat -46px -194px;
 	width: 40px;
 	height: 33px;
 }
 .twitter:hover {
-  background: url('./img/icons.png') no-repeat 0 -194px;
+  background: url(./img/icons.png) no-repeat 0 -194px;
 	width: 40px;
 	height: 33px;
 }

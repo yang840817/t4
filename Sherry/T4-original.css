@@ -1,0 +1,402 @@
+* {
+  /* outline: 1px #9e5d08 solid; */
+}
+body {
+  font-family:'Oswald', sans-serif;
+  color:#241b18;
+}
+.subtitle {
+  font-size: 1.25rem;
+  font-weight: 500;
+}
+/*~ 大區塊留白區 */
+/*手機左右留白0.5rem*/
+.header {
+  padding: 0.5rem;
+  background-color: #241b18;
+  border-bottom: 1px solid white;
+}
+main {
+  background-image: url(/img/bg-body.png);
+  background-position: center;
+  padding:0;
+}
+footer {
+  padding: 1rem 0.5rem;
+  background-color: #e2b240;
+  border-top: 1px solid white;
+  box-shadow: 0 2px 7px #131212;
+}
+@media (min-width: 768px) {
+  /*ipad左右留白2rem*/
+  .header {
+    padding: 1.5rem 2rem;
+  }
+  .main {
+    padding:0 2rem;
+  }
+  .footer {
+    padding:1.5rem 2rem;
+  }
+}
+@media (min-width: 992px) {
+  /*桌機左右留白6rem*/
+  .header {
+    padding: 1.5rem 6rem;
+  }
+  .main {
+    padding:0 6rem;
+  }
+  .footer {
+    padding:1.5rem 6rem;
+  }
+}
+
+/* -header */
+.logo_box {
+  height:40px; /*logo高度*/
+  flex: 1 0 auto;
+  text-align: center;
+}
+.navigation_collapse {
+  text-align: center;
+}
+.navigation button {
+  border:none;
+}
+.navigation a { /*nav字顏色*/
+  color:white !important;
+}
+.navigation a:hover {
+  color:#fac547 !important;
+}
+@media (min-width: 768px) {
+  .header {
+    position: unset; /*取消固定上方*/
+  }
+  .navigation {
+    justify-content: space-between;
+  }
+  .logo_box {
+    height:50px;
+    flex: 0 0 auto;
+  }
+  .navigation_collapse {
+    flex-grow: 0;
+  }
+}
+@media (min-width: 992px) {
+  .logo_box {
+    height:60px;
+  }
+}
+
+/* -Main */
+/* ~椅子區 */
+.main_product figure {
+  position: relative;
+}
+.main_product figure img {
+  object-fit: cover;
+  object-position: center;
+}
+figure figcaption {
+  position: absolute;
+  right: 5%;
+  bottom: 10%;
+  text-align: center;
+  font-family: 'Open Sans', sans-serif;
+}
+figcaption span{
+  font-size: 0.9rem;
+  font-family: 'Quattrocento Sans', sans-serif;
+}
+figcaption a {
+  background: url(./img/buttons.png) no-repeat 0 0;
+	width: 109px;
+	height: 34px;
+  color: #ab7d0f;
+  text-decoration: none;
+  padding: 5px;
+  font-family:'Oswald', sans-serif;
+  font-weight: 600;
+}
+figcaption a:hover {
+  background: url('./img/buttons.png') no-repeat -114px 0;
+	width: 109px;
+	height: 34px;
+  cursor: pointer;
+  color: #4a3a33;
+}
+.product_caption {
+  background-image: url(/img/bg-pattern.jpg);
+  background-position: center;
+  background-size:cover; /*不會有黑邊*/
+  justify-content: center;
+  align-items: center;
+}
+.product_caption h2 {
+  font-size: 2.5rem;
+  font-weight: 400;
+  text-shadow: 1px 1px white;
+  text-align: center;
+}
+.product_caption p {
+  word-spacing: 5px;
+  font-family: 'Quattrocento Sans', sans-serif;
+}
+@media (min-width: 768px) {
+  .main_product {
+    border: 1px solid white;
+  }
+}
+
+/* ~卡片區 */
+.room_display .subtitle {
+  color:#fac547;
+}
+.room_display {
+  color: white;
+}
+.room_display .card, .card-img-top {
+  border:none;
+  border-radius: 0;
+}
+.room_display .card {
+  background-color: transparent;
+}
+.room_display .row .col:nth-child(odd){
+  background-color:#4a3a33;
+}
+.room_display .row .col:nth-child(even) {
+  background-color:#241b18;
+}
+.room_display .card-text {
+  color:white;
+  font-family: 'Quattrocento Sans', sans-serif;
+}
+
+/* ~information */
+.information {
+  background-color:white;
+}
+.contact_info .subtitle {
+  font-size: 0.9rem;
+  color: #7b7b7b;
+}
+.contact_info a {
+  text-decoration: none;
+  font-weight: 400;
+  font-size:1.75rem;
+  color: #241b18;
+  word-spacing: 3px;
+}
+.contact_info a:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+/* ~blog */
+.blog_info .subtitle {
+  color: #7b7b7b;
+}
+.blog_body .card {
+  background-color: #dddad3;
+  border: 1px solid #dee2e6;
+  border-radius: 0;
+}
+.blog_body .card-body {
+  font-size:1.25rem;
+}
+.blog_date {
+  font-size: 1rem;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.blog_body .card a {
+  text-decoration: none;
+  color: #241b18;
+}
+.blog_body .card a:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+@media (min-width: 768px) {
+  .blog_body .card-body{
+    font-size:1rem;
+  }
+  .blog_date {
+    font-size: 0.75rem;
+  }
+}
+
+/* -footer */
+footer .subtitle {
+  color:#241b18;
+}
+
+/* ~showroom */
+.showroom_info a, .showroom_info p{
+  color:#4a3a33;
+  font-family: 'Quattrocento Sans', sans-serif;
+}
+
+/* ~recent posts */
+.post_content {
+  gap:0.5rem;
+  color:#4a3a33;
+}
+.date_img {
+  flex: 0 0 50px;
+  height: 50px;
+  background: url(./img/bg-time.png) no-repeat;
+  background-size: cover;
+  color:white;
+  text-align: center;
+  padding: 0 5px;
+}
+.recent_posts p {
+  font-family: 'Quattrocento Sans', sans-serif;
+  font-size: 0.8rem;
+}
+
+/* ~join our newsletter */
+.join_message input {
+  color: #241b18;
+}
+.join_message button {
+  background: url('./img/buttons.png') no-repeat -13px -39px;
+	width: 83px;
+	height: 26px;
+  color: white;
+  border: none;
+}
+.join_message button:hover {
+  background: url('./img/buttons.png') no-repeat -127px -39px;
+    width: 83px;
+    height: 26px;
+}
+
+/* ~social media */
+.facebook {
+  background: url('./img/icons.png') no-repeat -46px -112px;
+	width: 40px;
+	height: 33px;
+}
+.facebook:hover {
+  background: url('./img/icons.png') no-repeat 0 -112px;
+	width: 40px;
+	height: 33px;
+}
+.google_plus {
+  background: url('./img/icons.png') no-repeat -46px -153px;
+	width: 40px;
+	height: 33px;
+}
+.google_plus:hover {
+  background: url('./img/icons.png') no-repeat 0 -153px;
+	width: 40px;
+	height: 33px;
+}
+.twitter {
+  background: url('./img/icons.png') no-repeat -46px -194px;
+	width: 40px;
+	height: 33px;
+}
+.twitter:hover {
+  background: url('./img/icons.png') no-repeat 0 -194px;
+	width: 40px;
+	height: 33px;
+}
+
+/* ~footer nav */
+.footer_links {
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.footer_nav {
+  width: 100%;
+}
+.footer_nav a {
+  text-decoration: none;
+  flex: 1 0 auto;
+  color:#ab7d0f;
+  text-align: center;
+}
+.footer_nav a:hover {
+  text-decoration: underline;
+}
+.copyright {
+  color:#ab7d0f;
+}
+.copyright span {
+  font-size: 0.75rem;
+}
+@media (min-width: 768px) {
+  .footer_links {
+    justify-content: space-between;
+    flex-direction: row-reverse;
+  }
+  .footer_nav {
+    width: 40%;
+  }
+}
+/* ~那些斜線們 */
+.room_display .card-body {
+  background: url(./img/separator-light.png) repeat-x;
+  background-size: 7px 5px;
+}
+.contact_info {
+  background: url(./img/separator-light-vertical.png) bottom repeat-x ;
+  background-size: 7px 5px;
+}
+.footer .col:first-child,.footer .col:nth-child(2) {
+  background: url(./img/separator-dark-vertical.png) bottom repeat-x;
+  background-size: 7px 5px;
+}
+.social_media {
+  background: url(./img/separator-dark.png) repeat-x;
+  background-size: 7px 5px;
+}
+.footer .col:last-child {
+  background: url(./img/separator-dark.png) repeat-x;
+  background-size: 7px 5px;
+}
+
+@media (min-width: 768px) {
+  .footer .col:first-child {
+    background: url(./img/separator-dark-vertical.png) right repeat-y;
+    background-size: 7px 5px;
+  }
+  .footer .col:nth-child(2) {
+    background-image: none;
+  }
+  .footer .col:nth-child(3) {
+    background: url(./img/separator-dark.png) repeat-x;
+    background-size: 7px 5px;
+  }
+}
+@media (min-width: 992px) {
+  .contact_info {
+    background: url(./img/separator-light-vertical.png) 100% repeat-y ;
+    background-size: 7px 5px;
+  }
+  .footer .col:first-child {
+    background: url(./img/separator-dark-vertical.png) repeat-y 100%;
+    background-size: 5px 7px;
+  }
+  .footer .col:nth-child(3) {
+    background: url(./img/separator-dark-vertical.png) repeat-y;
+    background-size: 5px 7px;
+  }
+  .social_media {
+    background: url(./img/separator-dark.png) repeat-x;
+    background-size: 7px 5px;
+  }
+  .footer .col:last-child {
+    background: url(./img/separator-dark.png) repeat-x;
+    background-size: 7px 5px;
+  }
+}
+
+

@@ -1,5 +1,5 @@
 * {
-  outline: solid 1px red;
+  /* outline: solid 1px red; */
 }
 body {
   margin: 0;
@@ -40,11 +40,20 @@ header {
 .navbar-nav {
   text-transform: uppercase;
 }
+/* 375~768 px setting */
+.mynavbar_container .subscribe {
+  margin-top: 10px;
+}
+
 .mynavbar_container form {
   display: flex;
+  flex-direction: row;
 }
 .mynavbar_container footer {
   display: block;
+}
+.mynavbar_container .copyright {
+  flex-direction: column;
 }
 @media (min-width: 992px) {
   .mynavbar_container form {
@@ -253,12 +262,22 @@ figcaption p {
 
 footer {
   background-color: #e2b241;
+  border-top: 1px solid #fff;
+  box-shadow: 0px -5px 5px 0 rgb(126, 122, 124);
   padding-top: 20px;
+
+  /* ! 768px 以下不顯示 */
   display: none;
+  text-align: center;
 }
 
 footer .information {
   margin: 12px 0;
+}
+@media (min-width: 768px) {
+  footer {
+    text-align: left;
+  }
 }
 @media (min-width: 1024px) {
   footer {
@@ -270,9 +289,23 @@ footer .information {
 }
 .showroom,
 .recentnews {
-  /* 100%:從左邊為起始點，向右移動 */
-  background: url(img/separator-dark-vertical.png) repeat-y 100%;
+  background: url(img/separator-dark.png) repeat-x left bottom;
+  padding: 10px 12px;
 }
+
+/* 768px setting */
+@media (min-width: 768px) {
+  .showroom,
+  .recentnews {
+    /* 100%:從左邊為起始點，向右移動 */
+    background: url(img/separator-dark-vertical.png) repeat-y 100%;
+    padding: 0 12px;
+  }
+  .recentnews_content {
+    margin-bottom: 1.5rem;
+  }
+}
+
 .showroom .imagebox {
   margin-bottom: 10px;
 }
@@ -288,7 +321,7 @@ footer .title {
 }
 .recentnews_content {
   display: flex;
-  margin-bottom: 1.5rem;
+  margin-bottom: 1rem;
 }
 .recentnews_content time {
   flex: 0 0 50px;
@@ -311,7 +344,9 @@ footer .title {
   background: url(img/separator-dark.png) repeat-x bottom;
   background-size: 5px;
 }
-
+.community .media {
+  margin-top: 10px;
+}
 .subscribe input {
   width: 100%;
   text-transform: uppercase;

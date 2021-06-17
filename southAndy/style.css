@@ -5,6 +5,8 @@ body {
   margin: 0;
   background-image: url(img/bg-body.png);
   font-family: "Oswald", sans-serif;
+  background-size: contain;
+  background-repeat: repeat;
 }
 
 /* header */
@@ -19,6 +21,9 @@ header {
 }
 .logobox {
   flex: 1;
+}
+.logobox a {
+  display: inline-block;
 }
 
 @media (min-width: 1024px) {
@@ -77,6 +82,14 @@ figure.main_products {
   position: relative;
   margin: 0;
 }
+.main_products {
+  height: 100%;
+  object-fit: cover;
+}
+.main_products img {
+  height: 100%;
+  object-fit: cover;
+}
 .main_products figcaption {
   position: absolute;
   right: 5%;
@@ -103,13 +116,12 @@ figcaption p {
   width: 109px;
   color: #241b17;
   font-family: "Oswald", sans-serif;
-}
-.main_products .link a {
   text-decoration: none;
   color: #333;
   cursor: pointer;
   line-height: 34px;
   font-size: 1rem;
+  text-align: center;
 }
 
 .products_content {
@@ -196,15 +208,16 @@ figcaption p {
   padding: 1.5rem;
   background: url(img/separator-light-vertical.png) repeat-y 100%;
 }
-.activity_contact h4 {
-  font-weight: bold;
-}
+
 .activity_contact a {
   text-decoration: none;
-  color: #333;
   cursor: pointer;
   word-spacing: 10px;
   display: block;
+  font-weight: 400;
+  font-size: 1.75rem;
+  color: #241b18;
+  word-spacing: 3px;
 }
 .activity_contact_phone {
   margin-bottom: 30px;
@@ -250,11 +263,7 @@ figcaption p {
 
 @media (min-width: 1024px) {
   .blog_newer {
-    margin-right: 16px;
     margin-bottom: 0;
-  }
-  .blog_older {
-    margin-left: 16px;
   }
 }
 
@@ -343,6 +352,11 @@ footer .title {
 .subscribe {
   background: url(img/separator-dark.png) repeat-x bottom;
   background-size: 5px;
+}
+@media (min-width: 768px) {
+  .subscribe form {
+    flex-direction: column;
+  }
 }
 .community .media {
   margin-top: 10px;

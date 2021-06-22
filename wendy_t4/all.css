@@ -1,14 +1,14 @@
 .template {
     max-width: 100%;
 }
-* {
+/* * {
     outline: red solid 1px;
-}
+} */
 /* css reset */
-* {
+/* * {
     margin: 0;
     padding: 0;
-}
+} */
 /* header */
 
 body {
@@ -57,27 +57,16 @@ header .wrap_menu {
     font-weight: 600;
 }
 .wrap_menu a:hover {
-    color: rgb(32, 21, 18);
+    color: rgb(255, 201, 71);
 }
-@media (min-width: 992px) {
-    .wrap_menu a:hover {
-        color: rgb(255, 201, 71);
-    }
+.wrap_menu a:focus {
+    color: pink;
 }
-
 .wrap_menu button {
     background-color: rgb(255, 201, 71);
 }
 .header_menu li {
     text-align: center;
-}
-.header_menu li:hover {
-    background-color: rgb(255, 201, 71);
-}
-@media (min-width: 992px) {
-    .header_menu li:hover {
-        background-color: initial;
-    }
 }
 #present {
     font-size: 18px;
@@ -109,7 +98,6 @@ main {
 }
 @media (min-width: 992px) {
     .container .chair_price {
-        /* background-color: orange; */
         position: absolute;
         right: 40px;
         bottom: 40px;
@@ -207,11 +195,6 @@ h3 {
     flex-direction: column;
     background-color: #fff;
 }
-@media (min-width: 992px) {
-    .information {
-        flex-direction: row;
-    }
-}
 .information h4 {
     font-size: 18px;
     color: rgb(124, 124, 124);
@@ -233,9 +216,6 @@ h3 {
         height: 100%;
         width: 10px;
     }
-}
-.contact {
-    flex-direction: column;
 }
 @media (min-width: 992px) {
     .contact {
@@ -293,7 +273,7 @@ h3 {
     }
 }
 .information .card {
-    border: 3px solid rgb(241, 240, 235);
+    border: 1px solid rgb(241, 240, 235);
 }
 .blog .resort {
     margin-top: 20px;
@@ -317,9 +297,13 @@ footer {
 .showroom .card a:hover {
     color: red;
 }
-footer .showroom {
-    padding: 0 16px 0 0;
+@media(min-width: 992px){
+    footer .showroom {
+        padding: 0 16px 0 0;
+    }
+
 }
+
 .showroom .card {
     background-color: rgb(226, 179, 63);
     border: 0;
@@ -463,7 +447,6 @@ footer h5 {
         margin-left: 20px;
     }
 }
-
 @media (min-width: 992px) {
     .footer_inner {
         display: flex;
@@ -481,9 +464,6 @@ nav {
         justify-content: space-around;
     }
 }
-/* nav a {
-    flex-shrink: 1;
-} */
 footer nav a:hover {
     color: red;
     font-weight: 600;

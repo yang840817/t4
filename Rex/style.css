@@ -1,0 +1,26 @@
+body {
+  background-image: url(./img/bg-body.png);
+}
+
+header {
+  background-color: #241C18;
+}
+
+h1 {
+  width: 75%;
+  /* padding: 1rem; */
+}
+
+h1 img {
+  max-width: 100%;
+}
+
+/* @media (min-width: 768px) {
+  h1 img {
+    padding: 1.5rem;
+  }
+} */
+
+.accordion-item .modify_accordion_body  {
+  background-image: url(./img/bg-pattern.jpg);
+}

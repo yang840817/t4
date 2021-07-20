@@ -5,20 +5,21 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <link href="https://fonts.googleapis.com/css2?family=Pathway+Gothic+One&family=Roboto+Slab&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="./style.css">
   <title>T4 Rex</title>
 </head>
 <body>
   <header>
-    <div class="container">
+    <div class="container px-0">
       <nav class="navbar navbar-expand-lg navbar-dark">
-        <div class="container-fluid">
+        <div class="container-fluid modify_container">
           <h1><a href="##"><img src="./img/logo.png" alt="carved creations"></a></h1>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
           <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav">
+            <ul class="navbar-nav modify_navbar_nav">
               <li class="nav-item">
                 <a class="nav-link active" aria-current="page" href="#">HOME</a>
               </li>
@@ -40,136 +41,142 @@
       </nav>
     </div>
   </header>
-  <div class="container">
-
-    <main>
-      <section>
+  <main>
+    <div class="container modify_container px-0">
+      <section class="accordion_box">
         <div class="accordion accordion-flush" id="accordionFlushExample">
           <div class="accordion-item">
             <h2 class="accordion-header" id="flush-headingOne">
-              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
-                <div class="card bg-dark text-white">
-                  <img src="./img/chair.jpg" class="card-img" alt="chair">
+              <button class="accordion-button collapsed modify_accordion_button" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                <div class="card modify_card bg-dark text-white">
+                  <img src="./img/chair.jpg" class="card-img modify_img" alt="chair">
                   <div class="card-img-overlay">
-                    <p class="card-title">Whicker Chair</p>
-                    <p class="card-text">$250.00</p>
-                    <p class="card-text">VIEW DETAILS</p>
+                    <div class="price_box">
+                      <p class="card-title mb-1 item_name">Whicker Chair</p>
+                      <p class="card-text mb-1 price">$250.00</p>
+                      <a href="##" class="item_info">VIEW DETAILS</a>
+                    </div>
                   </div>
                 </div>
               </button>
             </h2>
             <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
               <div class="accordion-body modify_accordion_body">
-                <h2>This is just a place holder.</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum eligendi eius sapiente itaque incidunt sunt tempora ut possimus maxime esse, error neque provident voluptates explicabo saepe culpa optio! Quam, consequatur?</p>
+                <h2>THIS IS JUST A PLACE HOLDER.</h2>
+                <p>You can remove any link to our website from this website template, you're free to use this website template without linking back to us. This is just a place holder, so you can see what the site would look like. this is just a place holder.</p>
               </div>
             </div>
           </div>
         </div>
       </section>
       <article>
-        <div class="card">
-          <img src="./img/living-room.jpg" class="card-img-top" alt="living-room">
-          <div class="card-body">
+        <div class="card modify_card">
+          <img src="./img/living-room.jpg" alt="living-room">
+          <div class="card-body room_card_text">
             <h3>LIVING ROOM</h3>
             <p class="card-text">This website template has been designed by Free Website Template for you, for free. You can replace all text with your own text.</p>
           </div>
         </div>
-        <div class="card">
-          <img src="./img/bedroom.jpg" class="card-img-top" alt="bedroom">
-          <div class="card-body">
+        <div class="card modify_card">
+          <img src="./img/bedroom.jpg" alt="bedroom">
+          <div class="card-body room_card_text">
             <h3>BEDROOM</h3>
             <p class="card-text">You can remove any link to our website from this website template, you're free to use this website template without linking back to us.</p>
           </div>
         </div>
-        <div class="card">
-          <img src="./img/kitchen.jpg" class="card-img-top" alt="kitchen">
-          <div class="card-body">
+        <div class="card modify_card">
+          <img src="./img/kitchen.jpg" alt="kitchen">
+          <div class="card-body room_card_text">
             <h3>KITCHEN</h3>
             <p class="card-text">If you're having problems editing this website template, then don't hesitate to ask for help on the Forums.</p>
           </div>
         </div>
       </article>
-      <section>
-        <div class="contact_bolg">
-          <h4>FOR ORDER AND INQUIRIES PLEASE CALL:</h4>
-          <p>760-962-9541</p>
-          <h4>OR YOU CAN VISIT US AT:</h4>
-          <p>THIS IS JUST A PLACE HOLDER.</p>
-        </div>
-        <div>
+      <section class="contact_bolg">
+        <div class="p-3">
           <h4>FROM THE BLOG</h4>
-          <div class="card mb-3">
+          <div class="card mb-3 blog_card">
             <div class="row g-0">
               <div class="col-6">
                 <div class="card-body">
-                  <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                  <p class="card-text"><small class="text-muted">April 16, 2011</small></p>
                   <h5 class="card-title">This is just a place holder.</h5>
                   <p class="card-text">READ MORE</p>
                 </div>
               </div>
               <div class="col-6">
-                <img src="./img/carving-small.png" class="img-fluid rounded-start" alt="carving-small">
+                <img src="./img/carving-small.png" class="img-fluid modify_blog_img" alt="carving-small">
               </div>
             </div>
           </div>
-          <div class="card mb-3">
+          <div class="card mb-3 blog_card">
             <div class="row g-0">
               <div class="col-6">
                 <div class="card-body">
-                  <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                  <p class="card-text"><small class="text-muted">April 15, 2011</small></p>
                   <h5 class="card-title">This is just a place holder.</h5>
                   <p class="card-text">READ MORE</p>
                 </div>
               </div>
               <div class="col-6">
-                <img src="./img/resort-small.png" class="img-fluid rounded-start" alt="resort-small">
+                <img src="./img/resort-small.png" class="img-fluid modify_blog_img" alt="resort-small">
               </div>
             </div>
           </div>
-          April 16, 2011
-            This is just a place holder.
-            READ MORE
+        </div>
+        <div class="p-3 pt-0">
+          <div class="pt-4 divide_line">
+            <h4>FOR ORDER AND INQUIRIES PLEASE CALL:</h4>
+            <p>760-962-9541</p>
+            <h4>OR YOU CAN VISIT US AT:</h4>
+            <p>THIS IS JUST A PLACE HOLDER.</p>
+          </div>
         </div>
       </section>
       <section></section>
-    </main>
-    <footer>
-      VISIT OUR SHOWROOM
-  show room
-  This is just a place holder, so you can see what the site would look like.
-
-  760-962-9541
-  info@cervedcrestions.com
-  RECENT BLOG POSTS
-  APR
-  16
-  This is just a place holder.
-  This is just a place holder, so you can see what the site would look like.
-
-  APR
-  15
-  This is just a place holder.
-  This is just a place holder, so you can see what the site would look like.
-
-  APR
-  14
-  This is just a place holder.
-  This is just a place holder, so you can see what the site would look like.
-
-  JOIN OUR NEWSLETTER
-  Enter Email Address Here For Updates
-  SIGN UP
-  SOCIAL MEDIA
-    
-  HOME
-  ABOUT
-  GALLERY
-  BLOG
-  CONTACT
-  © COPYRIGHT 2012 ALL RIGHT RESERVED.
-    </footer>
-  </div>
+    </div>
+  </main>
+  <footer>
+    <div class="container">
+      <div>
+        <h5>VISIT OUR SHOWROOM</h5>
+        <img src="./img/show-room.png" alt="show room">
+        <p>This is just a place holder, so you can see what the site would look like.</p>
+        <p>760-962-9541</p>
+        <p>info@cervedcrestions.com</p>
+      </div>
+      <div>
+        <h5>RECENT BLOG POSTS</h5>
+        <div>APR 16</div>
+        <p>This is just a place holder.</p>
+        <p>This is just a place holder, so you can see what the site would look like.</p>
+        <div>APR 15</div>
+        <p>This is just a place holder.</p>
+        <p>This is just a place holder, so you can see what the site would look like.</p>
+        <div>APR 14</div>
+        <p>This is just a place holder.</p>
+        <p>This is just a place holder, so you can see what the site would look like.</p>APR
+      </div>
+      <div>
+        <h5>JOIN OUR NEWSLETTER</h5>
+        Enter Email Address Here For Updates
+        SIGN UP
+        SOCIAL MEDIA
+      </div>
+      <div class="row copyright_nav">
+        <div class="col col-12 col-md-6">
+          <p>&copy;COPYRIGHT 2012 ALL RIGHT RESERVED.</p>
+        </div>
+        <div class="col col-12 col-md-6">
+          <a href="##">HOME</a>
+          <a href="##">ABOUT</a>
+          <a href="##">GALLERY</a>
+          <a href="##">BLOG</a>
+          <a href="##">CONTACT</a>
+        </div>
+      </div>
+    </div>
+  </footer>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-p34f1UUtsS3wqzfto5wAAmdvj+osOnFyQFpp4Ua3gs/ZVWx6oOypYoCJhGGScy+8" crossorigin="anonymous"></script>
 </body>
 </html>

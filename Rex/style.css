@@ -1,26 +1,172 @@
+* {
+  /* outline: 1px solid rgba(253, 44, 44, 0.5); */
+}
+
 body {
   background-image: url(./img/bg-body.png);
 }
-
+/* ~---NAV--- */
 header {
   background-color: #241C18;
 }
-
 h1 {
   width: 75%;
   /* padding: 1rem; */
 }
-
 h1 img {
   max-width: 100%;
 }
 
-/* @media (min-width: 768px) {
-  h1 img {
-    padding: 1.5rem;
-  }
-} */
+.modify_container {
+  max-width: 1050px;
+}
+
+.modify_navbar_nav {
+  text-align: center;
+  font-family: 'Pathway Gothic One';
+}
+.navbar-nav.modify_navbar_nav .nav-link.active {
+  color: #FFC947;
+}
+.navbar-nav.modify_navbar_nav .nav-link {
+  color: #FFFFFF;
+}
+.navbar-nav.modify_navbar_nav .nav-link:hover {
+  color: #FFC947;
+}
+
+/* ~---手風琴--- */
+
+.accordion_box {
+  border: 1px solid white;
+}
+.modify_accordion_button {
+  padding: 0;
+}
+
+.modify_accordion_button:after {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+}
 
 .accordion-item .modify_accordion_body  {
   background-image: url(./img/bg-pattern.jpg);
+}
+
+.price_box {
+  position: absolute;
+  right: 1.5rem;
+  bottom: 1rem;
+  text-align: center;
+}
+
+.item_name {
+  font-size: .9rem;
+  font-weight: 300;
+  color: black;
+}
+.price {
+  font-size: 1.5rem;
+  color: black;
+}
+.item_info {
+  display: inline-block;
+  background: url(./img/buttons.png) no-repeat 0 0;
+  width: 109px;
+  height: 34px;
+  text-decoration: none;
+  font-size: 1.3rem;
+  font-family: 'Pathway Gothic One';
+  line-height: 1.7;
+  color: #966A0F;
+}
+
+.modify_accordion_body h2 {
+  font-family: 'Pathway Gothic One';
+  font-size: 2.5rem;
+  text-align: center;
+  text-shadow: white 1px 1px;
+}
+
+
+/* ~---Room Card--- */
+article .card:nth-child(2n+1) {
+  background-color: #4C3A33;
+}
+
+article .card:nth-child(2n+0) {
+  background-color: #241C18;
+}
+
+.room_card_text {
+  background: url(./img/ds_border_bg_a.png) repeat-x top/5px;
+  color: #FFFFFF;
+}
+.room_card_text h3 {
+  color: #FFCC48;
+  font-family: 'Pathway Gothic One';
+}
+
+
+/* ~---blog--- */
+.divide_line {
+  background: url(./img/ds_border_bg_a.png) repeat-x top/5px;
+}
+
+.contact_bolg {
+  background-color: #FFFFFF;
+}
+
+.blog_card {
+  background-color: #DDDAD3;
+  border: none;
+  border-radius: 0;
+}
+
+.modify_blog_img {
+  width: 100%;
+}
+
+.contact_bolg h4 {
+  color: #7B7B7B;
+  font-size: 1rem;
+  font-family: 'Pathway Gothic One';
+}
+
+.contact_bolg h4 + p {
+  font-size: 1.3rem;
+  font-family: 'Pathway Gothic One';
+}
+
+footer {
+  background-color: #E2B241;
+}
+
+footer a {
+  
+  text-decoration: none;
+  font-size: 1rem;
+  font-family: 'Pathway Gothic One';
+  /* line-height: 1.7; */
+  color: #966A0F;
+}
+
+.copyright_nav {
+  flex-direction: column-reverse;
+}
+@media (min-width: 768px) {
+  .copyright_nav {
+    flex-direction: unset;
+  }
+}
+
+/* ~---共用--- */
+.modify_card {
+  border: none;
+  border-radius: 0;
+}
+
+.modify_img {
+  border-radius: 0;
 }

@@ -8,11 +8,11 @@
 }
 .modify_img {
   border-radius: 0;
+  width: 100%;
 }
 h1, h2, h3, h4, h5, h6 {
   font-family: 'Pathway Gothic One';
 }
-
 body {
   background-image: url(./img/bg-body.png);
 }
@@ -24,16 +24,13 @@ header {
 }
 h1 {
   width: 75%;
-  /* padding: 1rem; */
 }
 h1 img {
   max-width: 100%;
 }
-
 .modify_container {
   max-width: 1050px;
 }
-
 .modify_navbar_nav {
   text-align: center;
   font-family: 'Pathway Gothic One';
@@ -49,7 +46,6 @@ h1 img {
 }
 
 /* ~---手風琴--- */
-
 .accordion_box {
   border: 1px solid white;
   border-top: 0;
@@ -57,27 +53,20 @@ h1 img {
 .modify_accordion_button {
   padding: 0;
 }
-
-.modify_accordion_button:after {
-  position: absolute;
-  right: 0;
-  bottom: 0;
+.accordion-button {
+  display: block;
 }
-
-/* .accordion-item .modify_accordion_body  {
-  background-image: url(./img/bg-pattern.jpg);
-} */
+.modify_accordion_button:after {
+  display: none;
+}
 
 .price_box {
   position: absolute;
-  right: 1.5rem;
+  width: fit-content;
+  right: 1rem;
   bottom: 1rem;
   text-align: center;
 }
-@media (min-wid: 576px) {
-
-}
-
 .item_name {
   font-size: .9rem;
   font-weight: 300;
@@ -86,7 +75,9 @@ h1 img {
 .price {
   font-size: 1.5rem;
   color: black;
+  line-height: 1.8rem;
 }
+
 .item_info {
   display: inline-block;
   background: url(./img/buttons.png) no-repeat 0 0;
@@ -114,23 +105,21 @@ h1 img {
   text-align: center;
   text-shadow: white 1px 1px;
 }
-.special_item {
+.activity_box {
   border: 1px solid white;
   border-top: 0;
 }
-.special_item h2 {
+.activity_box h2 {
   font-size: 2.5rem;
   text-align: center;
   text-shadow: white 1px 1px;
 }
-
-.special_pic {
-  background: url(./img/chair.jpg) no-repeat center/cover;
-  height: 407px;
+.activity_item {
+  position: relative;
+  padding: 0;
 }
-.special_text {
+.activity_text {
   background: url(./img/bg-pattern.jpg) no-repeat center/cover;
-  height: 407px;
 }
 
 .text_box {
@@ -138,18 +127,20 @@ h1 img {
   top: 50%;
   transform: translateY(-50%);
 }
-
-@media (min-width: 426px) {
+.text_box h2, .text_box p {
+  padding: 1rem;
+}
+@media (min-width: 768px) {
   section .accordion_box {
     display: none;
   }
 }
 
-section .special_item {
+section .activity_box {
   display: none;
 }
-@media (min-width: 426px) {
-  section .special_item {
+@media (min-width: 768px) {
+  section .activity_box {
     display: flex;
   }
 }
@@ -167,6 +158,11 @@ article .card:nth-child(2n+0) {
   background: url(./img/ds_border_bg_a.png) repeat-x top/4px;
   color: #FFFFFF;
 }
+@media (min-width: 768px) {
+  .room_card_text {
+    padding: 1rem 2rem;
+  }
+}
 .room_card_text h3 {
   color: #FFCC48;
 }
@@ -179,13 +175,28 @@ article .card:nth-child(2n+0) {
 .from_the_blog {
   background: url(./img/ds_border_bg_a.png) repeat-x bottom/4px;
   order: 1;
-}
-.contact_box {
-  order: 2;
+  padding: 1rem 1rem 1.5rem 1rem;
 }
 @media (min-width: 768px) {
   .from_the_blog {
-    background: url(./img/ds_border_bg_b.png) repeat-y left/5px;
+    padding: 1rem 2rem 1.5rem 2rem;
+  }
+}
+.contact_box {
+  order: 2;
+  padding: 1rem;
+}
+@media (min-width: 768px) {
+  .contact_box {
+    padding: 1rem 2rem;
+  }
+}
+.contact_box p:last-child {
+  margin-bottom: 0;
+}
+@media (min-width: 576px) {
+  .from_the_blog {
+    background: url(./img/ds_border_bg_b.png) repeat-y left/6px;
     order: 2;
   }
   .contact_box {
@@ -198,21 +209,47 @@ article .card:nth-child(2n+0) {
   border: none;
   border-radius: 0;
 }
-
-.blog_card h5 {
+.blog_card + .blog_card {
+  margin-top: 1rem;
+}
+@media (min-width: 768px) {
+  .blog_card {
+    /* margin-right: 2rem; */
+  }
+  .blog_card + .blog_card {
+    margin-top: 0;
+  }
+}
+.blog_card .card-body {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  height: 100%;
 }
 
+.blog_card h5 {
+  font-size: 1rem;
+  /* font-weight: 600; */
+  flex: 1;
+}
+.card-text {
+  font-size: .8rem;
+}
+p.card-text {
+  font-size: .8rem;
+  font-family: 'Pathway Gothic One';
+}
 .modify_blog_img {
   width: 100%;
 }
 
 .contact_bolg h4 {
   color: #7B7B7B;
-  font-size: 1rem;
+  font-size: 1.2rem;
 }
 
 .contact_bolg h4 + p {
-  font-size: 1.3rem;
+  font-size: 1.5rem;
   font-family: 'Pathway Gothic One';
 }
 
@@ -220,11 +257,23 @@ article .card:nth-child(2n+0) {
 footer {
   background-color: #E2B241;
   border-top: 1px solid white;
-  box-shadow: 3px 0 5px black;
+  box-shadow: 3px 0 6px black;
 }
 .showroom_pic {
   width: 100%;
 }
+
+.visit_showroom {
+  font-size: .9rem;
+  font-weight: 300;
+}
+a.visit_showroom {
+  font-size: .9rem;
+  font-weight: 300;
+  color: #212529;
+  text-decoration: underline;
+}
+
 .blog_post {
   display: flex;
   gap: 1rem;
@@ -243,16 +292,18 @@ footer {
   padding: 0 7px;
   line-height: 1.3;
 }
-
 .blog_post h6 {
   font-size: 1.2rem;
   font-weight: 700;
 }
-
 .blog_post p {
   font-size: .8rem;
   font-weight: 300;
 }
+.blog_post + .blog_post {
+  margin-top: 1rem;
+}
+
 .sign_up_button {
   background: url(./img/buttons.png) no-repeat -13px -39px;
 	width: 83px;
@@ -264,6 +315,13 @@ footer {
 .sign_up_button:hover {
   background: url(./img/buttons.png) no-repeat -127px -39px;
 }
+
+.input_mail {
+  width: 100%;
+  border: 2px solid #AF8114;
+  border-radius: 0;
+}
+
 /* ~---SOCIAL MEDIA--- */
 .social_icons {
   display: flex;
@@ -297,19 +355,6 @@ footer {
   background: url(./img/icons.png) no-repeat 0 -194px;
 }
 
-.item_info {
-  display: inline-block;
-  background: url(./img/buttons.png) no-repeat 0 0;
-  width: 109px;
-  height: 34px;
-  text-decoration: none;
-  font-size: 1.3rem;
-  font-family: 'Pathway Gothic One';
-  line-height: 1.7;
-  color: #966A0F;
-}
-
-
 .copyright_and_nav {
   flex-direction: column-reverse;
   font-size: 1rem;
@@ -319,7 +364,7 @@ footer {
 }
 @media (min-width: 768px) {
   .copyright_and_nav {
-    flex-direction: unset;
+    flex-direction: row;
     justify-content: space-between;
   }
 }
@@ -350,16 +395,23 @@ footer a {
   text-decoration: none;
   color: #966A0F;
 }
-
+.footer_item {
+  padding: 1rem 1rem;
+}
+@media (min-width: 768px) {
+  .footer_item {
+    padding: 1rem 2rem;
+  }
+}
+.footer_item p:last-child {
+  margin-bottom: 0;
+}
 .footer_item + .footer_item {
   background: url(./img/ds_border_bg_d.png) repeat-x top/4px;
 }
 @media (min-width: 768px) {
-  /* .footer_item + .footer_item {
-    background: initial;
-  } */
   footer .row-cols-md-3 > .footer_item + .footer_item {
-    background: url(./img/ds_border_bg_c.png) repeat-y left/5px;
+    background: url(./img/ds_border_bg_c.png) repeat-y left/6px;
   }
   .social_box {
     background: url(./img/ds_border_bg_d.png) repeat-x top/4px;

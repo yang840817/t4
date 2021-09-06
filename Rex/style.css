@@ -2,19 +2,11 @@
   /* outline: 1px solid rgba(253, 44, 44, 0.5); */
 }
 /* ~---共用--- */
-.modify_card {
-  border: none;
-  border-radius: 0;
-}
-.modify_img {
-  border-radius: 0;
-  width: 100%;
-}
 h1, h2, h3, h4, h5, h6 {
   font-family: 'Pathway Gothic One';
 }
 body {
-  background-image: url(./img/bg-body.png);
+  background: url(./img/bg-body.png) center/100%;
 }
 
 /* ~---NAV--- */
@@ -22,15 +14,37 @@ header {
   background-color: #241C18;
   border-bottom: 1px solid white;
 }
-h1 {
+.logo_width {
   width: 75%;
+  margin-bottom: 0;
+}
+h1 > a, h1 > a > img {
+  display: inline-block;
 }
 h1 img {
   max-width: 100%;
 }
-.modify_container {
+.nav_width {
+  display: flex;
+  flex-wrap: wrap;
+  flex: 1;
+  justify-content: space-between;
+  margin: auto;
   max-width: 1050px;
 }
+@media (min-width: 768px) {
+  .nav_width {
+    flex-wrap: nowrap;
+  }
+  .navbar-collapse {
+    flex-grow: 0;
+  }
+}
+.main_width,
+.footer_width {
+  max-width: 1050px;
+  padding: 0;
+} 
 .modify_navbar_nav {
   text-align: center;
   font-family: 'Pathway Gothic One';
@@ -49,6 +63,9 @@ h1 img {
 .accordion_box {
   border: 1px solid white;
   border-top: 0;
+}
+.accordion_img {
+  width: 100%;
 }
 .modify_accordion_button {
   padding: 0;
@@ -116,7 +133,6 @@ h1 img {
 }
 .activity_item {
   position: relative;
-  padding: 0;
 }
 .activity_text {
   background: url(./img/bg-pattern.jpg) no-repeat center/cover;
@@ -153,7 +169,10 @@ article .card:nth-child(2n+1) {
 article .card:nth-child(2n+0) {
   background-color: #241C18;
 }
-
+.card {
+  border: none;
+  border-radius: 0;
+}
 .room_card_text {
   background: url(./img/ds_border_bg_a.png) repeat-x top/4px;
   color: #FFFFFF;
@@ -213,9 +232,6 @@ article .card:nth-child(2n+0) {
   margin-top: 1rem;
 }
 @media (min-width: 768px) {
-  .blog_card {
-    /* margin-right: 2rem; */
-  }
   .blog_card + .blog_card {
     margin-top: 0;
   }
@@ -263,11 +279,11 @@ footer {
   width: 100%;
 }
 
-.visit_showroom {
+.showroom_content {
   font-size: .9rem;
   font-weight: 300;
 }
-a.visit_showroom {
+.showroom_mail {
   font-size: .9rem;
   font-weight: 300;
   color: #212529;
@@ -366,6 +382,7 @@ a.visit_showroom {
   .copyright_and_nav {
     flex-direction: row;
     justify-content: space-between;
+    margin: auto;
   }
 }
 

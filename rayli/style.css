@@ -3,6 +3,7 @@
   --main-color-2: rgb(255, 201, 71);
   --main-color-3: rgb(153, 110, 6);
   --main-color-4: rgb(74, 58, 51);
+  --main-color-5: rgb(226, 178, 64);
 }
 
 /* reset */
@@ -14,6 +15,7 @@ a {
 /* nav */
 
 .my_nav {
+  padding: 1.5rem 0;
   background-color: var(--main-color-1);
 }
 
@@ -79,8 +81,8 @@ a {
 
 .onsale_info {
   position: absolute;
-  right: 1rem;
-  bottom: 1rem;
+  right: 1.5rem;
+  bottom: 1.5rem;
   width: fit-content;
   text-align: center;
 }
@@ -116,18 +118,18 @@ a {
 }
 
 .intro h2 {
-  font-size: 2.5rem;
-  font-weight: 400;
+  font-size: 2rem;
+  font-weight: 600;
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
   text-align: center;
   text-shadow: 1px 1px snow;
+  text-transform: uppercase;
 }
 
 /* rooms */
 
 .room_img {
   width: 100%;
-  height: 100%;
 }
 
 .room_img img {
@@ -172,7 +174,12 @@ a {
 
 /* visit and blogs */
 
+.visit_and_blogs > .row > * {
+  background-color: snow;
+}
+
 .visit_and_blogs .gray_header {
+  margin: 0;
   color: rgb(123, 123, 123);
   font-size: 1.3rem;
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
@@ -193,11 +200,11 @@ a {
   left: 0;
   width: 100%;
   height: 6px;
-  background: url("./img/separator-dark.png") repeat-x;
+  background: url("./img/separator-light.png") repeat-x;
 }
 
 .visit_us p:not(.gray_header) {
-  margin: 0;
+  /* margin: 0; */
   font-size: 2rem;
   font-weight: 600;
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
@@ -214,13 +221,14 @@ a {
 
 .blog_post_img img {
   width: 100%;
+  height: 100%;
   object-fit: cover;
 }
 
 .blog_post_text {
   padding: 1rem;
   background-color: rgb(221, 218, 211);
-  color: rgb(74, 58, 51);
+  color: var(--main-color-4);
 }
 
 .blog_post_text .post_name {
@@ -237,4 +245,338 @@ a {
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
 }
 
+.blog_post_text .read_more a {
+  display: inline-block;
+  color: inherit;
+}
+
+.blog_post_text .read_more a:hover {
+  color: var(--main-color-3);
+}
+
 /* footer */
+
+footer {
+  padding: 1rem 0;
+  background-color: var(--main-color-5);
+}
+
+.contacts {
+  color: var(--main-color-4);
+}
+
+.contacts .row {
+  padding: 1rem 2.5rem;
+}
+
+.contacts .row > div::after,
+.newsletter_and_social .newsletter::after {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 6px;
+  margin: 1rem 0;
+  background: url(./img/separator-dark.png) repeat-x;
+}
+
+.contacts .footer_header {
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-size: 1.5rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  color: var(--main-color-4);
+}
+
+.showroom_img img {
+  width: 100%;
+  object-fit: cover;
+}
+
+.showroom p:not(.footer_header) {
+  margin-top: 1rem;
+}
+
+.showroom a {
+  display: block;
+  margin-top: 2rem;
+  color: inherit;
+}
+
+.showroom a[href^="mailto"] {
+  text-decoration: underline;
+}
+
+.recent_post {
+  display: flex;
+  gap: 1rem;
+}
+
+.recent_post .recent_post_date {
+  flex: 0 0 auto;
+  width: 60px;
+  height: 60px;
+  background: url("./img/bg-time.png") no-repeat;
+  background-size: cover;
+  color: snow;
+  text-align: center;
+  text-transform: uppercase;
+  line-height: 30px;
+  font-size: 1.3rem;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-weight: 600;
+}
+
+.recent_post .recent_post_header {
+  margin: 0;
+  font-size: 1.2rem;
+  font-weight: 600;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  line-height: 1;
+}
+
+.newsletter input[type="email"] {
+  display: block;
+  width: 100%;
+  height: 2rem;
+  font-size: 1rem;
+  border: 3px solid var(--main-color-3);
+}
+
+.newsletter input[type="submit"] {
+  display: block;
+  padding: 0;
+  width: 85px;
+  line-height: 35px;
+  color: snow;
+  border: none;
+  background: url("./img/buttons.png") no-repeat -13px -35px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-weight: 600;
+}
+
+.social_icons {
+  font-size: 0;
+}
+
+.social_icons a {
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+}
+
+.social_icons a:not(:first-child) {
+  margin-left: 1rem;
+}
+
+.social_icons a.facebook {
+  background: url("./img/icons.png") no-repeat -43px -108px;
+}
+
+.social_icons a.google_plus {
+  background: url("./img/icons.png") no-repeat -43px -149px;
+}
+
+.social_icons a.twitter {
+  background: url("./img/icons.png") no-repeat -46px -189px;
+}
+
+.copyright_and_back_links {
+  display: flex;
+  flex-direction: column-reverse;
+  padding: 0 2.5rem;
+  color: rgb(171, 125, 15);
+  font-size: 1.2rem;
+  font-weight: 600;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+
+.copyright_text p {
+  margin: 1rem 0 0 0;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.back_links {
+  display: flex;
+  font-size: 0;
+  justify-content: space-evenly;
+}
+
+.back_links a {
+  display: inline-block;
+  color: inherit;
+  font-size: 1.2rem;
+}
+
+.back_links a:hover {
+  color: var(--main-color-1);
+}
+
+@media (min-width: 576px) {
+  .my_nav .container-fluid {
+    padding: 0 2.5rem;
+  }
+
+  .logo {
+    width: fit-content;
+  }
+
+  main {
+    background: url("./img/bg-body.png") repeat-y top center;
+  }
+
+  main > section > .row {
+    padding: 0 2.5rem;
+  }
+
+  .from_the_blog .blog_post {
+    display: flex;
+    flex-direction: row-reverse;
+  }
+
+  .blog_post > * {
+    flex: 1 0 50%;
+  }
+}
+
+@media (min-width: 768px) {
+  .my_nav .container-fluid {
+    justify-content: space-between;
+    gap: 3rem;
+  }
+
+  .my_nav .navbar-collapse {
+    flex-grow: 0;
+  }
+
+  .intro article {
+    min-height: 100%;
+  }
+
+  .room {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+  }
+
+  .room_text {
+    flex-grow: 1;
+    padding: 1.5rem;
+  }
+
+  .visit_us {
+    height: 100%;
+    padding: 1.5rem;
+  }
+
+  .visit_us::after {
+    width: 7px;
+    height: 100%;
+    left: unset;
+    right: 0;
+    background: url("./img/separator-light-vertical.png") repeat-y;
+  }
+
+  .from_the_blog {
+    padding: 1.5rem;
+  }
+}
+
+@media (min-width: 992px) {
+  /* 設計稿各元素兩邊寬 */
+  .my_nav .container-fluid,
+  main > section > .row,
+  footer .contacts .row,
+  footer .copyright_and_back_links {
+    margin: 0 auto;
+    padding-right: 1rem;
+    padding-left: 1rem;
+    max-width: calc(992px + 2rem);
+  }
+
+  .intro article {
+    padding: 4rem 3rem;
+  }
+
+  .intro h2 {
+    font-size: 2.5rem;
+  }
+
+  .room_text h3 {
+    font-size: 1.3rem;
+  }
+
+  .visit_and_blogs .gray_header {
+    font-size: 1rem;
+  }
+
+  .from_the_blog .blog_posts {
+    display: flex;
+    gap: 2.5rem;
+  }
+
+  .from_the_blog .post_name,
+  .from_the_blog .read_more {
+    font-size: 1rem;
+  }
+
+  .contacts .footer_header {
+    font-size: 1rem;
+  }
+
+  .contacts .row > div {
+    position: relative;
+  }
+
+  .contacts .row > div:not(:last-child) {
+    padding-right: calc(1.5rem + 7px);
+  }
+
+  .contacts .row > div:not(:first-child) {
+    padding-left: 1.5rem;
+  }
+
+  .contacts .row > div::after {
+    width: 7px;
+    height: 100%;
+    margin: 0;
+    position: absolute;
+    top: 0;
+    right: 0;
+    background: url("./img/separator-dark-vertical.png") repeat-y;
+  }
+
+  .contacts .row > div:last-child::after {
+    display: none;
+  }
+
+  .contacts .row::after {
+    content: "";
+    width: 100%;
+    height: 7px;
+    background: url(./img/separator-dark.png) repeat-x;
+    margin-top: 1.5rem;
+  }
+
+  .recent_post .recent_post_date {
+    width: 42px;
+    height: 42px;
+    line-height: 21px;
+    font-size: 0.9rem;
+  }
+
+  .copyright_and_back_links {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .copyright_text p {
+    margin: 0;
+  }
+
+  .back_links {
+    gap: 1rem;
+  }
+
+  /* 字級要調 */
+}

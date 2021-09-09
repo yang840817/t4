@@ -1,9 +1,9 @@
 :root {
   --main-color-1: rgb(36, 27, 24);
-  --main-color-2: rgb(255, 201, 71);
+  --main-color-2: rgb(74, 58, 51);
   --main-color-3: rgb(153, 110, 6);
-  --main-color-4: rgb(74, 58, 51);
-  --main-color-5: rgb(226, 178, 64);
+  --main-color-4: rgb(226, 178, 64);
+  --main-color-5: rgb(255, 201, 71);
 }
 
 /* reset */
@@ -12,11 +12,14 @@ a {
   text-decoration: none;
 }
 
-/* nav */
+/* header */
 
-.my_nav {
-  padding: 1.5rem 0;
+header {
   background-color: var(--main-color-1);
+}
+
+.header_contents {
+  padding: 1.5rem 0;
 }
 
 .logo {
@@ -57,7 +60,7 @@ a {
 }
 
 .my_nav .navbar-nav .nav-link:hover {
-  color: var(--main-color-2);
+  color: var(--main-color-5);
 }
 
 /* intro */
@@ -106,8 +109,9 @@ a {
   background: url("./img/buttons.png") no-repeat;
   color: var(--main-color-3);
   text-transform: uppercase;
-  font-size: 0.9rem;
+  font-size: 1rem;
   font-weight: 700;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
   text-align: center;
 }
 
@@ -134,13 +138,12 @@ a {
 
 .room_img img {
   width: 100%;
-  height: 100%;
   object-fit: cover;
 }
 
 .room_text {
   position: relative;
-  background-color: var(--main-color-4);
+  background-color: var(--main-color-2);
   padding: 1.5rem 2.5rem;
 }
 
@@ -149,7 +152,7 @@ a {
 }
 
 .room_text h3 {
-  color: var(--main-color-2);
+  color: var(--main-color-5);
   font-size: 1.5rem;
   font-weight: 600;
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
@@ -174,7 +177,7 @@ a {
 
 /* visit and blogs */
 
-.visit_and_blogs > .row > * {
+.visit_and_blogs {
   background-color: snow;
 }
 
@@ -204,7 +207,6 @@ a {
 }
 
 .visit_us p:not(.gray_header) {
-  /* margin: 0; */
   font-size: 2rem;
   font-weight: 600;
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
@@ -228,7 +230,7 @@ a {
 .blog_post_text {
   padding: 1rem;
   background-color: rgb(221, 218, 211);
-  color: var(--main-color-4);
+  color: var(--main-color-2);
 }
 
 .blog_post_text .post_name {
@@ -258,15 +260,19 @@ a {
 
 footer {
   padding: 1rem 0;
-  background-color: var(--main-color-5);
+  background-color: var(--main-color-4);
+}
+
+.footer_contents {
+  margin: 0 2.5rem;
 }
 
 .contacts {
-  color: var(--main-color-4);
+  color: var(--main-color-2);
 }
 
 .contacts .row {
-  padding: 1rem 2.5rem;
+  padding: 1rem 0;
 }
 
 .contacts .row > div::after,
@@ -284,7 +290,7 @@ footer {
   font-size: 1.5rem;
   font-weight: 600;
   text-transform: uppercase;
-  color: var(--main-color-4);
+  color: var(--main-color-2);
 }
 
 .showroom_img img {
@@ -383,7 +389,6 @@ footer {
 .copyright_and_back_links {
   display: flex;
   flex-direction: column-reverse;
-  padding: 0 2.5rem;
   color: rgb(171, 125, 15);
   font-size: 1.2rem;
   font-weight: 600;
@@ -413,8 +418,12 @@ footer {
 }
 
 @media (min-width: 576px) {
+  .header_contents {
+    margin: 0 2.5rem;
+  }
+
   .my_nav .container-fluid {
-    padding: 0 2.5rem;
+    padding: 0;
   }
 
   .logo {
@@ -425,8 +434,8 @@ footer {
     background: url("./img/bg-body.png") repeat-y top center;
   }
 
-  main > section > .row {
-    padding: 0 2.5rem;
+  .main_contents {
+    margin: 0 2.5rem;
   }
 
   .from_the_blog .blog_post {
@@ -484,14 +493,16 @@ footer {
 
 @media (min-width: 992px) {
   /* 設計稿各元素兩邊寬 */
-  .my_nav .container-fluid,
-  main > section > .row,
-  footer .contacts .row,
-  footer .copyright_and_back_links {
+  .header_contents,
+  .main_contents,
+  .footer_contents {
     margin: 0 auto;
-    padding-right: 1rem;
-    padding-left: 1rem;
+    padding: 0 1rem;
     max-width: calc(992px + 2rem);
+  }
+
+  footer {
+    padding: 1rem 0;
   }
 
   .intro article {
@@ -521,7 +532,7 @@ footer {
   }
 
   .contacts .footer_header {
-    font-size: 1rem;
+    font-size: 1.2rem;
   }
 
   .contacts .row > div {
@@ -568,6 +579,7 @@ footer {
   .copyright_and_back_links {
     flex-direction: row;
     justify-content: space-between;
+    font-size: 1rem;
   }
 
   .copyright_text p {
@@ -577,6 +589,4 @@ footer {
   .back_links {
     gap: 1rem;
   }
-
-  /* 字級要調 */
 }

@@ -72,12 +72,9 @@ header {
 
 .onsale {
   position: relative;
-  width: 100%;
-  height: 100%;
 }
 
 .onsale_img {
-  width: 100%;
   height: 100%;
 }
 
@@ -121,6 +118,7 @@ header {
 }
 
 .onsale_info a:hover {
+  background: url("./img/buttons.png") no-repeat 100% 0;
   color: blue;
 }
 
@@ -188,7 +186,6 @@ header {
 
 .visit_and_blogs {
   background-color: snow;
-  box-shadow: inset 0 -3px 7px rgba(0, 0, 0, 0.356);
 }
 
 .visit_and_blogs .visit_and_blogs_header {
@@ -279,6 +276,7 @@ header {
 footer {
   padding: 1rem 0;
   background-color: var(--main-color-4);
+  box-shadow: 0 -1px 10px black;
 }
 
 .footer_contents {
@@ -379,6 +377,7 @@ footer {
 }
 
 .newsletter input[type="submit"]:hover {
+  background: url("./img/buttons.png") no-repeat -127px -35px;
   color: red;
 }
 
@@ -400,17 +399,27 @@ footer {
   background: url("./img/icons.png") no-repeat -43px -108px;
 }
 
+.social_icons a.facebook:hover {
+  background: url("./img/icons.png") no-repeat 3px -108px;
+}
+
 .social_icons a.google_plus {
   background: url("./img/icons.png") no-repeat -43px -149px;
+}
+.social_icons a.google_plus:hover {
+  background: url("./img/icons.png") no-repeat 3px -149px;
 }
 
 .social_icons a.twitter {
   background: url("./img/icons.png") no-repeat -46px -189px;
 }
+.social_icons a.twitter:hover {
+  background: url("./img/icons.png") no-repeat 0 -189px;
+}
 
 .copyright_and_back_links {
   display: flex;
-  flex-direction: column-reverse;
+  flex-direction: column;
   color: rgb(171, 125, 15);
   font-size: 1.2rem;
   font-weight: 600;
@@ -425,12 +434,10 @@ footer {
 
 .back_links {
   display: flex;
-  font-size: 0;
   justify-content: space-evenly;
 }
 
 .back_links a {
-  display: inline-block;
   color: inherit;
   font-size: 1.2rem;
 }
@@ -614,7 +621,7 @@ footer {
 
   .copyright_and_back_links {
     padding: 1rem 0;
-    flex-direction: row;
+    flex-direction: row-reverse;
     justify-content: space-between;
     font-size: 1rem;
   }

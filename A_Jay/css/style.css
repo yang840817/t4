@@ -55,6 +55,9 @@ header {
 .logo img {
   max-width: 100%;
 }
+.nav_modify.navbar {
+  padding: 1.5rem 0;
+}
 .nav_modify.navbar-light .navbar-nav .nav-link.active {
   color: var(--accent-color);
 }
@@ -62,6 +65,7 @@ header {
   color: #fff;
   text-align: center;
   text-transform: uppercase;
+  font-weight: 600;
 }
 .nav_modify.navbar-light .navbar-nav .nav-link:hover {
   color: var(--accent-color);
@@ -80,7 +84,8 @@ main {
   background: center / contain url(../images/bg-body.png) repeat;
 }
 .main_container {
-  box-shadow: 3px 1px 20px #000, -3px 1px 20px #000;
+  background-color: #fff;
+  box-shadow: inset 0 -10px 10px -10px #888;
 }
 @media (min-width: 576px) {
   main {
@@ -194,7 +199,6 @@ main {
 }
 /* contact */
 .contact_container {
-  background-color: #fff;
   padding: 0.5rem 0;
 }
 .contact_container > .row > div:first-child {
@@ -208,7 +212,7 @@ main {
   }
 }
 .contact_container > .row > div {
-  padding: 1rem;
+  padding: 1rem 1rem 1.5rem 1rem;
 }
 
 .contact_info h4 {
@@ -252,12 +256,13 @@ main {
   display: flex;
 }
 .blog_item {
-  width: 100%;
   display: flex;
+  width: 100%;
 }
 
 .blog_info {
-  padding: 1rem 2rem 1rem 1rem;
+  flex: 0 0 50%;
+  padding: 1rem 1.5rem 1rem 1rem;
   background-color: #dcdad3;
 }
 .blog_info span {
@@ -278,7 +283,9 @@ main {
   color: #4a3833;
   text-transform: uppercase;
 }
-
+.blog_img {
+  flex: 0 0 50%;
+}
 .blog_img img {
   width: 100%;
   height: 100%;
@@ -288,7 +295,6 @@ main {
 footer {
   border-top: 1px solid #fff;
   background-color: var(--secondary-color);
-  box-shadow: 0 -1px 10px #999;
 }
 .footer_container {
   font-size: 1rem;
@@ -373,7 +379,17 @@ footer h5 {
 .post_item {
   display: flex;
   align-items: flex-start;
-  margin-bottom: 1rem;
+}
+.post_item {
+  margin-bottom: 2rem;
+}
+@media (min-width: 992px) {
+  .post_item {
+    margin-bottom: 0;
+  }
+  .post_item:not(:last-child) {
+    margin-bottom: 2rem;
+  }
 }
 .post_date {
   display: block;
@@ -397,13 +413,13 @@ footer h5 {
   background-size: 5px 5px;
 }
 
-.login input[type="email"] {
+.signup input[type="email"] {
   display: block;
   width: 100%;
   border: 2px solid #af8111;
   margin-bottom: 0.5rem;
 }
-.login input[type="submit"] {
+.signup input[type="submit"] {
   width: 83px;
   height: 26px;
   margin-bottom: 1rem;
@@ -413,6 +429,9 @@ footer h5 {
   font-weight: 600;
   background-color: #fff;
   background: url(../images/buttons.png) no-repeat -13px -39px;
+}
+.signup input[type="submit"]:hover {
+  background: url(../images/buttons.png) no-repeat -127px -39px;
 }
 .social {
   padding: 1rem 0;
@@ -424,22 +443,31 @@ footer h5 {
   display: block;
 }
 .social_icon a:not(:first-child) {
-  margin-left: 1rem;
+  margin-left: 2rem;
 }
 .social_icon .facebook {
   background: url(../images/icons.png) no-repeat -46px -112px;
   width: 33px;
   height: 33px;
 }
+.social_icon .facebook:hover {
+  background: url(../images/icons.png) no-repeat 0 -112px;
+}
 .social_icon .google {
   background: url(../images/icons.png) no-repeat -46px -153px;
   width: 34px;
   height: 33px;
 }
+.social_icon .google:hover {
+  background: url(../images/icons.png) no-repeat 0 -153px;
+}
 .social_icon .twitter {
   background: url(../images/icons.png) no-repeat -46px -194px;
   width: 40px;
   height: 33px;
+}
+.social_icon .twitter:hover {
+  background: url(../images/icons.png) no-repeat 0 -194px;
 }
 
 .copyright {
@@ -450,7 +478,7 @@ footer h5 {
 }
 @media (min-width: 992px) {
   .copyright {
-    padding: 1rem 0;
+    padding: 0;
   }
 }
 .declaration {
@@ -460,6 +488,7 @@ footer h5 {
 }
 @media (min-width: 992px) {
   .declaration {
+    padding: 10px 0;
     text-align: left;
   }
 }
@@ -473,7 +502,7 @@ footer h5 {
 }
 .footer_nav a {
   display: inline-block;
-  padding: 0 5px;
+  padding: 10px 5px;
   color: #b8840c;
   text-transform: uppercase;
 }

@@ -91,33 +91,14 @@ header {
 }
 
 .navbar_modify a.nav-link {
-  /* color: white;
+  color: white;
   font-family: var(--display);
   text-transform: uppercase;
-  vertical-align: bottom; */
-
-  /* hover效果 */
-  position: relative;
-  display: inline-block;
   vertical-align: bottom;
-  overflow: hidden;
-  color: transparent;
-  background: linear-gradient(
-    to right,
-    var(--yellow-normal),
-    var(--yellow-normal) 50%,
-    white 50%
-  );
-  background-clip: text;
-  -webkit-background-clip: text;
-  /* -webkit-text-fill-color: transparent; */
-  background-size: 200% 100%;
-  background-position: 100%;
-  transition: background-position 275ms ease;
 }
 
 .navbar_modify a.nav-link:hover {
-  background-position: 0 100%;
+  text-shadow: 1px 1px var(--yellow-normal);
 }
 
 .navbar_modify a.nav-link.active {
@@ -152,7 +133,6 @@ header {
 /* ----banner---- */
 main {
   background-image: url(image/bg-body.png);
-  padding: 0 1rem;
 }
 
 .banner {
@@ -160,7 +140,18 @@ main {
 }
 
 .banner_image {
+  display: block;
   position: relative;
+  overflow: hidden;
+  height: 100%;
+}
+
+.banner_image img {
+  object-fit: cover;
+}
+
+.banner_image:hover img {
+  transform: scale(1.1);
 }
 
 .product {
@@ -268,7 +259,6 @@ main {
 
 /* contact and blogpost */
 .contact {
-  background-color: white;
   padding: 20px 15px 15px;
 }
 
@@ -416,6 +406,8 @@ footer {
   padding: 15px 0;
   background: var(--yellow-normal);
   color: var(--brown-normal);
+  border-top: 1px solid white;
+  box-shadow: 0 0px 10px grey;
 }
 
 .footer_content > div {
@@ -423,7 +415,7 @@ footer {
 }
 
 @media (min-width: 992px) {
-  .footer_content > div {
+  .footer_content > div:not(:last-child) {
     margin-bottom: 15px;
   }
 }
@@ -433,22 +425,28 @@ footer {
   font-size: 22px;
 }
 
-.showroom_image {
-  margin: 0 auto 10px;
-  max-width: 550px;
+.showroom {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
-.showroom_image + p {
-  margin-bottom: 10px;
+.showroom > *:not(:last-child) {
+  margin-bottom: 5px;
+}
+
+.showroom_image {
+  margin: 0 auto 5px;
+  max-width: 550px;
 }
 
 .showroom a {
   display: block;
-  margin-bottom: 10px;
 }
 
 .showroom a:hover {
   color: var(--brown-dark);
+  text-decoration: underline;
 }
 
 /* footer_近期發文 */
@@ -538,15 +536,32 @@ footer {
 
 .newsletter input {
   margin-bottom: 10px;
-  min-width: 280px;
-  max-width: 400px;
+  padding-left: 5px;
+  width: 100%;
   border: 3px solid var(--yellow-dark);
   line-height: 2;
+}
+
+@media (min-width: 768px) {
+  .newsletter input {
+    width: 320px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .newsletter input {
+    width: 100%;
+  }
 }
 
 .newsletter input::placeholder {
   color: var(--brown-normal);
   text-transform: capitalize;
+}
+
+.newsletter input:focus {
+  outline: none;
+  border-color: var(--brown-dark);
 }
 
 .newsletter button {

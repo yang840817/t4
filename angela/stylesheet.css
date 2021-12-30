@@ -191,6 +191,8 @@ main {
 
 .banner_info {
   padding: 1rem 1rem;
+  height: 100%;
+  width: 100%;
   background-image: url(image/bg-pattern.jpg);
   background-repeat: round;
   display: flex;
@@ -216,17 +218,17 @@ main {
   font-family: var(--font-content);
 }
 
-.category_card {
-  position: relative;
-  /* relative to category name, for stretch the link */
-}
-
-.category_card:nth-child(odd) {
+.category_list li:nth-child(odd) {
   background-color: var(--brown-normal);
 }
 
-.category_card:nth-child(even) {
+.category_list li:nth-child(even) {
   background-color: var(--brown-dark);
+}
+
+.category_card {
+  position: relative;
+  /* relative to category name, for stretch the link */
 }
 
 .category_body {
@@ -278,10 +280,20 @@ main {
   font-weight: 600;
 }
 
+.contact a:hover {
+  text-decoration: underline;
+}
+
 .connect {
-  padding: 10px 0;
+  padding: 0 15px;
   justify-content: center;
   background-color: white;
+}
+
+@media (min-width: 768px) {
+  .connect {
+    padding: 15px 0;
+  }
 }
 
 /* blog post區塊的排版 */
@@ -319,12 +331,13 @@ main {
 
   display: flex;
   flex-direction: row;
+  margin: 0 auto 0;
   max-width: 270px;
   border: 2px solid white;
 }
 
 .post_card:first-child {
-  margin: 0 0 15px 0;
+  margin: 0 auto 15px;
 }
 
 @media (min-width: 576px) {
@@ -333,7 +346,7 @@ main {
   }
 
   .post_card:first-child {
-    margin: 0 0 0 0;
+    margin: 0 auto;
   }
 }
 
@@ -389,6 +402,10 @@ main {
   color: var(--brown-normal);
 }
 
+.blog_link:hover span {
+  text-decoration: underline;
+}
+
 .blog_link::after {
   content: "";
   position: absolute;
@@ -410,13 +427,9 @@ footer {
   box-shadow: 0 0px 10px grey;
 }
 
-.footer_content > div {
-  padding: 15px;
-}
-
 @media (min-width: 992px) {
-  .footer_content > div:not(:last-child) {
-    margin-bottom: 15px;
+  .footer_content > div:last-child {
+    margin-top: 15px;
   }
 }
 
@@ -425,14 +438,22 @@ footer {
   font-size: 22px;
 }
 
+.showroom_wrap {
+  padding: 0 0 15px 0;
+}
+
+@media (min-width: 768px) {
+  .showroom_wrap {
+    padding: 0 20px 15px 0;
+  }
+}
+
 .showroom {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-}
-
-.showroom > *:not(:last-child) {
-  margin-bottom: 5px;
+  /* padding: 0 15px; */
+  height: 100%;
 }
 
 .showroom_image {
@@ -450,30 +471,35 @@ footer {
 }
 
 /* footer_近期發文 */
-.recent_post {
+.recent_post_wrap {
+  padding: 15px 0 15px 0;
   background: top url(image/separator-dark.png) repeat-x;
 }
 
 @media (min-width: 768px) {
-  .recent_post {
+  .recent_post_wrap {
+    padding: 0 30px 15px 30px;
     background: left url(image/separator-dark-vertical.png) repeat-y;
   }
 }
 
 @media (min-width: 992px) {
-  .recent_post {
+  .recent_post_wrap {
     /* background: right url(image/separator-dark-vertical.png) repeat-y; */
   }
 }
 
 .recent_post li {
   display: flex;
+}
+
+.recent_post li:not(:last-child) {
   margin-bottom: 15px;
 }
 
 .date_icon {
   flex: 0 0 40px;
-  margin-right: 15px;
+  margin-right: 10px;
   height: 40px;
 
   background: url(image/bg-time.png) no-repeat;
@@ -491,10 +517,28 @@ footer {
   font-size: 18px;
   text-transform: unset;
 }
+
+.follow_wrap {
+  padding: 15px 0 15px 0;
+  background: top url(image/separator-dark.png) repeat-x;
+}
+@media (min-width: 768px) {
+  .follow_wrap {
+    margin: 10px 0 0 0;
+  }
+}
+
+@media (min-width: 992px) {
+  .follow_wrap {
+    margin: 0 0 0 0;
+    padding: 0 0 15px 30px;
+  }
+}
+
 .follow {
   display: flex;
   flex-wrap: wrap;
-  background: top url(image/separator-dark.png) repeat-x;
+  text-align: center;
 }
 
 .follow > div {
@@ -511,9 +555,11 @@ footer {
 }
 
 @media (min-width: 992px) {
+  .follow_wrap {
+    background: left url(image/separator-dark-vertical.png) repeat-y;
+  }
   .follow {
     display: block;
-    background: left url(image/separator-dark-vertical.png) repeat-y;
   }
 }
 
@@ -566,6 +612,7 @@ footer {
 
 .newsletter button {
   display: block;
+  margin: 0 auto;
   background: url("image/buttons.png") no-repeat -13px -39px;
   width: 83px;
   height: 26px;
@@ -573,6 +620,12 @@ footer {
   color: white;
   text-transform: uppercase;
   font-weight: 500;
+}
+
+@media (min-width: 768px) {
+  .newsletter button {
+    margin: unset;
+  }
 }
 
 .newsletter button:hover {
@@ -602,7 +655,13 @@ footer {
 
 .media_icons {
   display: flex;
-  column-gap: 15px;
+  justify-content: space-around;
+}
+
+@media (min-width: 768px) {
+  .media_icons {
+    column-gap: 20px;
+  }
 }
 
 .facebook {
@@ -641,12 +700,15 @@ footer {
   height: 33px;
 }
 
+.bottom_wrap {
+  padding: 15px 0 0 0;
+  background: url(image/separator-dark.png) repeat-x;
+}
+
 .footer_content .bottom {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  padding: 12px;
-  background: url(image/separator-dark.png) repeat-x;
 }
 
 @media (min-width: 576px) {

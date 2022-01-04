@@ -118,11 +118,14 @@ header {
 }
 
 .navbar_modify .offcanvas-header button {
-  vertical-align: middle;
   color: white;
   opacity: 1;
   background: none;
   /* 拿掉bs5引入的background的icon圖檔 */
+}
+
+.navbar_modify .offcanvas-header button i {
+  display: block;
 }
 
 .navbar_modify .offcanvas-title {
@@ -133,10 +136,12 @@ header {
 /* ----banner---- */
 main {
   background-image: url(image/bg-body.png);
+  background-repeat: repeat-y;
+  background-size: contain;
 }
 
 .banner {
-  border-bottom: 1px solid white;
+  border: 1px solid white;
 }
 
 .banner_image {
@@ -144,10 +149,6 @@ main {
   position: relative;
   overflow: hidden;
   height: 100%;
-}
-
-.banner_image img {
-  object-fit: cover;
 }
 
 .banner_image:hover img {
@@ -200,18 +201,25 @@ main {
   justify-content: center;
 }
 
+.banner_heading {
+  text-transform: uppercase;
+  text-align: center;
+  text-shadow: 1px 1px white;
+  font-size: 32px;
+  font-family: var(--font-display);
+  margin-bottom: 10px;
+}
+
 @media (min-width: 768px) {
   .banner_info {
     padding: 0 4rem;
   }
 }
 
-.banner_heading {
-  text-transform: uppercase;
-  text-align: center;
-  text-shadow: 1px 1px white;
-  font-family: var(--font-display);
-  margin-bottom: 10px;
+@media (min-width: 992px) {
+  .banner_heading {
+    margin-bottom: 15px;
+  }
 }
 
 .banner_heading + p {
@@ -385,17 +393,22 @@ main {
 }
 
 .post_sum {
-  margin-bottom: 10px;
+  margin-bottom: 20px;
   text-transform: capitalize;
   font-weight: 600;
 }
 
 .blog_link {
-  bottom: 0;
   color: var(--brown-normal);
   text-transform: uppercase;
   font-weight: 600;
-  font-size: 15px;
+  font-size: 14px;
+}
+
+@media (min-width: 992px) {
+  .blog_link {
+    font-size: 16px;
+  }
 }
 
 .blog_link:hover {

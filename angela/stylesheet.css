@@ -310,12 +310,13 @@ main {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  padding: 15px;
+  padding: 15px 0;
   background: bottom url(image/separator-light.png) repeat-x;
 }
 
 @media (min-width: 768px) {
   .blog {
+    padding: 15px 15px;
     background: left url(image/separator-light-vertical.png) repeat-y;
   }
 }
@@ -333,18 +334,11 @@ main {
   justify-content: space-around;
 }
 
-.post_card {
-  /* for stretch blog link */
-  position: relative;
-
-  display: flex;
-  flex-direction: row;
-  margin: 0 auto 0;
-  max-width: 270px;
-  border: 2px solid white;
+.blog_post > div {
+  padding: 0 0;
 }
 
-.post_card:first-child {
+.blog_post > div:first-child {
   margin: 0 auto 15px;
 }
 
@@ -353,9 +347,25 @@ main {
     justify-content: space-around;
   }
 
-  .post_card:first-child {
-    margin: 0 auto;
+  .blog_post > div:first-child {
+    margin: 0 auto 0;
   }
+}
+
+@media (min-width: 992px) {
+  .blog_post > div {
+    padding: 0 10px;
+  }
+}
+
+.post_card {
+  /* for stretch blog link */
+  position: relative;
+
+  display: flex;
+  flex-direction: row;
+  margin: 0 auto 0;
+  border: 2px solid white;
 }
 
 @media (min-width: 1200px) {
@@ -465,7 +475,6 @@ footer {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  /* padding: 0 15px; */
   height: 100%;
 }
 
@@ -493,12 +502,6 @@ footer {
   .recent_post_wrap {
     padding: 0 30px 15px 30px;
     background: left url(image/separator-dark-vertical.png) repeat-y;
-  }
-}
-
-@media (min-width: 992px) {
-  .recent_post_wrap {
-    /* background: right url(image/separator-dark-vertical.png) repeat-y; */
   }
 }
 
@@ -677,6 +680,12 @@ footer {
   }
 }
 
+@media (min-width: 992px) {
+  .media_icons {
+    column-gap: normal;
+  }
+}
+
 .facebook {
   background: url("image/icons.png") no-repeat -46px -112px;
   width: 33px;
@@ -713,19 +722,19 @@ footer {
   height: 33px;
 }
 
-.bottom_wrap {
+.footer_bottom_wrap {
   padding: 15px 0 0 0;
   background: url(image/separator-dark.png) repeat-x;
 }
 
-.footer_content .bottom {
+.footer_content .footer_bottom {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
 }
 
 @media (min-width: 576px) {
-  .footer_content .bottom {
+  .footer_content .footer_bottom {
     justify-content: space-between;
   }
 }

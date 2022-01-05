@@ -214,7 +214,14 @@ main {
 .contact_container > .row > div {
   padding: 1rem 1rem 1.5rem 1rem;
 }
-
+.contact_info {
+  text-align: center;
+}
+@media (min-width: 768px) {
+  .contact_info {
+    text-align: left;
+  }
+}
 .contact_info h4 {
   margin-bottom: 0.5rem;
   font-size: 1rem;

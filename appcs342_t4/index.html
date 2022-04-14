@@ -30,7 +30,7 @@
         <!-- Navbar -->
         <nav class="navbar navbar-expand-lg navbar-dark p-0">
           <div
-            class="container-fluid p-0 justify-content-center justify-content-md-evenly"
+            class="container-fluid p-0 justify-content-center justify-content-sm-evenly"
           >
             <h1 class="m-0">
               <a class="d-block" href="##">
@@ -57,11 +57,11 @@
               id="navbarNavAltMarkup"
             >
               <div class="navbar-nav">
-                <a href="#">Home</a>
-                <a href="#">About</a>
-                <a href="#">Gallery</a>
-                <a href="#">Blog</a>
-                <a href="#">Contact</a>
+                <a class="nav-link" href="#">Home</a>
+                <a class="nav-link" href="#">About</a>
+                <a class="nav-link" href="#">Gallery</a>
+                <a class="nav-link" href="#">Blog</a>
+                <a class="nav-link" href="#">Contact</a>
               </div>
             </div>
           </div>
@@ -94,11 +94,11 @@
             </div>
           </div>
         </section>
-        <section>
+        <section class="product_list">
           <!-- card -->
           <div class="row g-0">
             <div class="col-12 col-md-4">
-              <div class="card card_light">
+              <div class="card card_article">
                 <img
                   src="./img/living-room.jpg"
                   class="card-img-top"
@@ -115,7 +115,7 @@
               </div>
             </div>
             <div class="col-12 col-md-4">
-              <div class="card card_dark">
+              <div class="card card_article_dark">
                 <img
                   src="./img/bedroom.jpg"
                   class="card-img-top"
@@ -132,7 +132,7 @@
               </div>
             </div>
             <div class="col-12 col-md-4">
-              <div class="card card_light">
+              <div class="card card_article">
                 <img
                   src="./img/kitchen.jpg"
                   class="card-img-top"
@@ -153,13 +153,13 @@
           <div class="row g-0">
             <div class="col-12 col-lg-4">
               <div class="content_box">
-                <div class="content">
+                <div class="content mb-4">
                   <h4>for order and inquiries please call:</h4>
                   <a class="text_information" href="tel: +7609629541"
                     >760-962-9541</a
                   >
                 </div>
-                <div class="content pt-0">
+                <div class="content">
                   <h4>or you can visit us at:</h4>
                   <a class="text_information" href="http://maps.google.com/?q="
                     >This is just a place holders.</a
@@ -168,10 +168,10 @@
               </div>
             </div>
             <div class="col-12 col-lg-8">
-              <div class="blog p-3">
+              <div class="blog p-4">
                 <h4 class="mb-4">FROM THE BLOG</h4>
                 <div class="row">
-                  <div class="col-12 col-lg-6 pb-3">
+                  <div class="col-12 col-sm-6 pb-3">
                     <div class="card">
                       <div class="row g-0">
                         <div class="col-6">
@@ -183,7 +183,7 @@
                             <a class="card-text">READ MORE</a>
                           </div>
                         </div>
-                        <div class="col">
+                        <div class="col-6">
                           <img
                             class="w-100"
                             src="./img/carving-small.png"
@@ -193,7 +193,7 @@
                       </div>
                     </div>
                   </div>
-                  <div class="col-12 col-lg-6">
+                  <div class="col-12 col-sm-6">
                     <div class="card">
                       <div class="row g-0">
                         <div class="col-6">
@@ -205,7 +205,7 @@
                             <a class="card-text">READ MORE</a>
                           </div>
                         </div>
-                        <div class="col">
+                        <div class="col-6">
                           <img
                             class="w-100"
                             src="./img/resort-small.png"
@@ -222,8 +222,8 @@
         </section>
       </main>
       <footer>
-        <div class="row g-0">
-          <div class="col-12 col-lg-4">
+        <div class="row g-0 mb-3">
+          <div class="col-12 col-lg-4 py-3 py-lg-0 pe-lg-3">
             <div class="showroom_box">
               <h5>VISIT OUR SHOWROOM</h5>
               <img class="w-100" src="./img/show-room.png" alt="showroom" />
@@ -239,11 +239,11 @@
               >
             </div>
           </div>
-          <div class="col-12 col-md-6 col-lg-4">
+          <div class="col-12 col-md-6 col-lg-4 py-3 py-lg-0">
             <div class="posts_box">
               <h5>RECENT BLOG POSTS</h5>
               <div>
-                <div class="posts_img">
+                <div class="time">
                   <p>APR 16</p>
                 </div>
                 <div class="post_contant">
@@ -255,7 +255,7 @@
                 </div>
               </div>
               <div>
-                <div class="posts_img">
+                <div class="time">
                   <p>APR 15</p>
                 </div>
                 <div class="post_contant">
@@ -267,7 +267,7 @@
                 </div>
               </div>
               <div>
-                <div class="posts_img">
+                <div class="time">
                   <p>APR 14</p>
                 </div>
                 <div class="post_contant">
@@ -280,20 +280,22 @@
               </div>
             </div>
           </div>
-          <div class="col-12 col-md-6 col-lg-4">
+          <div class="col-12 col-md-6 col-lg-4 py-3 py-lg-0">
             <div class="newsletter_box">
               <h5>VISIT OUR SHOWROOM</h5>
-              <input
-                class="w-100 mb-2"
-                type="email"
-                name="Email"
-                placeholder="Enter Email Address Here for Updates"
-              />
-              <button class="d-block" type="submit">SIGN UP</button>
+              <form>
+                <input
+                  class="w-100 mb-2"
+                  type="email"
+                  name="Email"
+                  placeholder="Enter Email Address Here for Updates"
+                />
+                <button class="d-block" type="submit">SIGN UP</button>
+              </form>
             </div>
-            <div class="social_box">
+            <div class="social_box pt-4">
               <h5>SOCIAL MEDIA</h5>
-              <div>
+              <div class="social_icon">
                 <a class="d-inline-block" href="##"
                   ><i class="fa-brands fa-facebook-square"></i
                 ></a>

@@ -1,0 +1,53 @@
+/* header: 不會改變的 */
+header {
+  width: 100%;
+  background-color: #241B18;
+  border-bottom: 1px solid white;
+}
+
+.header .navbar-nav .nav-item .nav-link {
+  color: white;
+}
+
+.my_navbar .navbar-dark .navbar-toggler {
+  border: initial;
+  box-shadow: initial;
+}
+
+.my_navbar .navbar-nav .nav-item .nav-link:hover {
+  color: #FFC947;
+}
+
+.my_navbar .navbar-nav .nav-link.active {
+  color:#FFC947;
+}
+
+.navbar-nav {
+  gap: 10px;
+  font-size: 14px;
+  text-transform: uppercase;
+  align-items: center;
+  font-family: 'Oswald', sans-serif;
+}
+
+.navbar-collapse {
+  align-self: flex-end;
+}
+
+@media (min-width: 480px) {
+  /* 空間變大的的漢堡space-between */
+  .my_navbar .container-fluid {
+    justify-content: space-between;
+  }
+  /* collaspe的內容跟著漢堡靠右邊 */
+  .navbar-nav {
+    align-items: flex-end;
+  } 
+}
+
+@media (min-width:768px) {
+  /* 單指nav 在橫列nav的狀態是靠右邊的 */
+  .my_navbar .navbar-collapse {
+    justify-content: flex-end;
+  } 
+}

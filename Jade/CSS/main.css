@@ -4,19 +4,17 @@
   position: relative;
 }
 
-.banner__text a:hover {
-  opacity: 0.8;
-}
-
 .banner__text {
   position: absolute;
   right: 0;
   bottom: 0;
-
-  padding: 16px;
-
+  
   text-align: center;
   line-height: 1;
+}
+
+.banner__text a:hover {
+  opacity: 0.8;
 }
 
 .banner__text h2 {
@@ -25,6 +23,10 @@
 
 .banner__text p {
   font-size: 24px;
+}
+
+.banner__text img {
+  object-fit: cover;
 }
 
 @media (min-width: 768px) {
@@ -40,7 +42,6 @@
 /* summary */
 
 .summary {
-  height: 100%;
   background-image: url(/image/bg-pattern.jpg);
 }
 
@@ -58,7 +59,7 @@
 .summary__text p{
   text-align: left;
   font-size: 14px;
-  line-height: 1.8;
+  line-height: 2;
 }
 
 @media (min-width:768px) {
@@ -115,7 +116,6 @@
   background-color: white;
 }
 
-
 .contact__text {
   font-family: 'Oswald', sans-serif; 
   text-align: center;
@@ -154,7 +154,6 @@
 }
 
 /* card */
-
 
 h5.blog_card_title {
   font-family: 'Oswald', sans-serif;

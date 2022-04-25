@@ -54,7 +54,6 @@
   }
 }
 
-
 /* info */
 
 .info {
@@ -151,7 +150,14 @@
   text-align: center;
 }
 
+.form__items {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 .form__items input {
+  width: 70%;
   border: #AB7D10 4px solid;
 }
 
@@ -187,6 +193,13 @@
 }
 
 @media (min-width:768px) {
+  .form__items {
+    align-items: flex-start;
+  }
+  .form__items input {
+    width: 90%;
+  }
+
   .related {
     background: initial;
   }
@@ -198,7 +211,6 @@
   .media__items {
     justify-content: flex-start;
   }
-  
 }
 
 /* copyright */

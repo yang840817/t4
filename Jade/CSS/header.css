@@ -34,15 +34,27 @@ header {
   align-self: flex-end;
 }
 
+.header_logo {
+  width: 80%;
+}
+
+.my_navbar button {
+  width: 20%;
+}
+
 @media (min-width: 480px) {
-  /* 空間變大的的漢堡space-between */
   .my_navbar .container-fluid {
     justify-content: space-between;
   }
-  /* collaspe的內容跟著漢堡靠右邊 */
   .navbar-nav {
     align-items: flex-end;
   } 
+  .header_logo {
+    width: initial;
+  }
+  .my_navbar button {
+    width: initial;
+  }
 }
 
 @media (min-width:768px) {

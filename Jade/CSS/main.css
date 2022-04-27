@@ -1,3 +1,7 @@
+main {
+  box-shadow: 15px 0 20px -15px black, -15px 0 20px -15px black;
+}
+
 /* banner */
 
 .banner {
@@ -17,20 +21,22 @@
   opacity: 0.8;
 }
 
-.banner__text h2 {
+.banner__text img {
+  object-fit: cover;
+}
+
+.banner__text h3 {
   font-size: 14px;
+  font-weight: 400;
 }
 
 .banner__text p {
   font-size: 24px;
 }
 
-.banner__text img {
-  object-fit: cover;
-}
 
 @media (min-width: 768px) {
-  .banner__text h2 {
+  .banner__text h3 {
     font-size: 16px;
   }
   
@@ -41,8 +47,14 @@
 
 /* summary */
 
-.summary {
+.features .col-md-6:last-of-type {
   background-image: url(/image/bg-pattern.jpg);
+}
+
+.features {
+  border-left: 1px solid white;
+  border-right: 1px solid white;
+  border-bottom: 1px solid white;
 }
 
 .summary__text {
@@ -63,11 +75,6 @@
 }
 
 @media (min-width:768px) {
-  .feature {
-    border-left: 1px solid white;
-    border-right: 1px solid white;
-    border-bottom: 1px solid white;
-  }
   .summary__text h2{
     font-size: 35px;
   }
@@ -116,6 +123,8 @@
   background-color: white;
 }
 
+/* contact */
+
 .contact__text {
   font-family: 'Oswald', sans-serif; 
   text-align: center;
@@ -125,7 +134,7 @@
   font-size: 30px;
 }
 
-.contact__text p {
+.contact__text h3 {
   font-family: 'Oswald', sans-serif;
   font-size: 16px;
   text-transform:uppercase;
@@ -137,7 +146,7 @@
 }
 
 .about .col-md-8 {
-  background: url("../image/separator-dark.png") repeat-x;
+  background: url("../image/separator-light.png") repeat-x;
 }
 
 @media (min-width: 768px) {
@@ -145,9 +154,9 @@
     text-align: left;
   }
   .about .col-md-8 {
-    background: initial;
+    background: none;
   }
-  .about .col-md-4:first-of-type {
+  .about .col-md-4 {
     background: url(/image/separator-light-vertical.png) repeat-y right;
   }
   
@@ -155,7 +164,7 @@
 
 /* card */
 
-h5.blog_card_title {
+h3.blog_card__title {
   font-family: 'Oswald', sans-serif;
   font-size: 16px;
   color: #7B7B7B;
@@ -163,26 +172,30 @@ h5.blog_card_title {
   text-transform:uppercase;
 }
 
-.card_text h5{
+.card__text {
+  color: #4A3A33;
+}
+
+.card__text h4{
   font-size: 12px;
   font-weight: 300;
 }
 
-.card_text p{
+.card__text p{
   font-family: 'Oswald', sans-serif;
   font-size: 14px;
   text-transform:uppercase; 
 }
 
-.card_text a {
+.card__text a {
   font-family: 'Oswald', sans-serif;
   font-size: 14px;
   text-transform: uppercase;
   text-decoration: none;
-  color: black;
+  color: #4A3A33;
 }
 
-.card_text a:hover{
+.card__text a:hover{
   color: #af831a;
 }
 
@@ -198,12 +211,12 @@ h5.blog_card_title {
   background-color: #DDDAD3;
 }
 
-.card_text {
+.card__text {
   flex: 1 1 0;
 }
 
 @media (min-width:992px) {
-  h5.blog_card_title {
+  h3.blog_card__title {
     text-align: left;
   }
 

@@ -1,12 +1,13 @@
 footer {
   background-color: #E2B240;
   border-top: 1px solid white;
+  box-shadow: 0 -8px 15px -8px grey;
 }
 
 /* 字體大小統一管理 */
 
 /* 標題 */
-.related h5, .blog_list h5, .info h5 {
+.related h3, .blog_list h3, .info h3 {
   font-family: 'Oswald', sans-serif;
   font-size: 16px;
   text-transform: uppercase;
@@ -17,29 +18,15 @@ footer {
   font-size: 12px;
 }
 
-.blog_list__text h6 {
+.blog_list__text h4 {
   font-size: 14px;
+  font-family: 'Oswald', sans-serif;
 }
 
 .calendar__date {
   font-size: 14px;
 }
 
-.blog_list__text h6 {
-  font-family: 'Oswald', sans-serif;
-}
-
-/* 字型對齊 */
-
-@media (min-width:768px) {
-  .related h5, .blog_list h5, .info h5 {
-    font-size: 16px;
-  }
-
-  .info p, .info h4, .blog_list__text p{
-    font-size: 12px;
-  }
-}
 
 
 @media (min-width:768px) {
@@ -85,7 +72,7 @@ footer {
   gap: 10px;
 }
 
-.blog_list__text h6 {
+.blog_list__text h4 {
   font-weight: bold;
 }
 
@@ -116,11 +103,12 @@ footer {
 }
 
 /* 會改變的 */
+
 .blog_list {
   background: url("../image/separator-dark.png") repeat-x;
 }
 
-.blog_list h5 {
+.blog_list h3 {
   text-align: center;
   text-transform: uppercase;
 }
@@ -134,9 +122,9 @@ footer {
 
 @media (min-width:768px) {
   .blog_list {
-    background: initial;
+    background: none;
   }
-  .blog_list h5{
+  .blog_list h3{
     text-align: left;
   }
   .blog_list__items {
@@ -203,7 +191,7 @@ footer {
     width: 90%;
   }
   .related {
-    background: initial;
+    background: none;
   }
   .related {
     text-align: left;

@@ -162,12 +162,6 @@ footer {
 
 /* 會改變的 */
 
-.form__items {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
 .form__items input {
   width: 70%;
   border: #AB7D10 4px solid;
@@ -177,16 +171,8 @@ footer {
   text-align: center;
 }
 
-.media__items {
-  display: flex;
-  justify-content: center;
-  gap: 20px;
-}
-
 @media (min-width:768px) {
-  .form__items {
-    align-items: flex-start;
-  }
+
   .form__items input {
     width: 90%;
   }
@@ -195,9 +181,6 @@ footer {
   }
   .related {
     text-align: left;
-  }
-  .media__items {
-    justify-content: flex-start;
   }
 }
 

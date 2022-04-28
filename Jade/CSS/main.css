@@ -34,7 +34,7 @@ main {
   padding: 10px;
   width: 110px;
   height: 35px;
-  background-image: url(../image/buttons.png);
+  background-image: url("../image/buttons.png");
   background-position: 0 0;
 
   font-family: 'Oswald', sans-serif;
@@ -63,7 +63,7 @@ main {
 /* summary */
 
 .features .col-md-6:last-of-type {
-  background-image: url(/image/bg-pattern.jpg);
+  background-image: url("../image/bg-pattern.jpg");
 }
 
 .features {
@@ -172,7 +172,7 @@ main {
     background: none;
   }
   .about .col-md-4 {
-    background: url("/image/separator-light-vertical.png") repeat-y right;
+    background: url("../image/separator-light-vertical.png") repeat-y right;
   }
   
 }

@@ -31,11 +31,11 @@ footer {
 
 @media (min-width:768px) {
   .footer .col-md-4:first-of-type {
-    background: url(../image/separator-dark-vertical.png) repeat-y right;
+    background: url("../image/separator-dark-vertical.png") repeat-y right;
   }
   
   .footer .col-md-4:nth-of-type(2) {
-    background: url(../image/separator-dark-vertical.png) repeat-y right;
+    background: url("../image/separator-dark-vertical.png") repeat-y right;
   }
 }
 
@@ -105,7 +105,7 @@ footer {
 /* 會改變的 */
 
 .blog_list {
-  background: url(../image/separator-dark.png) repeat-x;
+  background: url("../image/separator-dark.png") repeat-x;
 }
 
 .blog_list h3 {
@@ -148,7 +148,7 @@ footer {
   padding: 1px;
   width: 85px;
   height: 27px;
-  background-image: url(../image/buttons.png);
+  background-image: url("../image/buttons.png");
   background-position: -12px -104px;
 
   font-family: 'Oswald', sans-serif;
@@ -168,27 +168,27 @@ footer {
 }
 
 .related__items:last-of-type {
-  background: url(../image/separator-dark.png) repeat-x;
+  background: url("../image/separator-dark.png") repeat-x;
 }
 
 .related {
-  background: url(../image/separator-dark.png) repeat-x;
+  background: url("../image/separator-dark.png") repeat-x;
 }
 
 .facebook_icon {
   width: 33px;
   height: 33px;
-  background: url(../image/icons.png) no-repeat -46px -112px;
+  background: url("../image/icons.png") no-repeat -46px -112px;
 }
 
 .google_icon {
 	width: 34px;
 	height: 33px;
-  background: url(../image/icons.png) no-repeat -46px -153px;
+  background: url("../image/icons.png") no-repeat -46px -153px;
 }
 
 .twitter_icon {
-  background: url(../image/icons.png) no-repeat -46px -194px;
+  background: url("../image/icons.png") no-repeat -46px -194px;
 	width: 40px;
 	height: 33px;
 
@@ -224,7 +224,7 @@ footer {
 
 .footer__copyright__item {
   font-size: 12px;
-  background: url(../image/separator-dark.png) repeat-x;
+  background: url("../image/separator-dark.png") repeat-x;
 }
 
 .copyright {

@@ -129,7 +129,7 @@ main {
 }
 
 .product__text {
-  background: url(../image/separator-light.png) repeat-x;
+  background: url("../image/separator-light.png") repeat-x;
 }
 
 /* about */
@@ -161,7 +161,7 @@ main {
 }
 
 .about .col-md-8 {
-  background: url(../image/separator-light.png) repeat-x;
+  background: url("../image/separator-light.png") repeat-x;
 }
 
 @media (min-width: 768px) {
@@ -172,7 +172,7 @@ main {
     background: none;
   }
   .about .col-md-4 {
-    background: url(/image/separator-light-vertical.png) repeat-y right;
+    background: url("/image/separator-light-vertical.png") repeat-y right;
   }
   
 }

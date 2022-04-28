@@ -17,10 +17,6 @@ main {
   line-height: 1;
 }
 
-.banner__text a:hover {
-  opacity: 0.8;
-}
-
 .banner__text img {
   object-fit: cover;
 }
@@ -32,6 +28,25 @@ main {
 
 .banner__text p {
   font-size: 24px;
+}
+
+.banner__icon {
+  padding: 10px;
+  width: 110px;
+  height: 35px;
+  background-image: url(../image/buttons.png);
+  background-position: 0 0;
+
+  font-family: 'Oswald', sans-serif;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #956A01;
+  font-size: 15px;
+}
+
+.banner__icon:hover {
+  opacity: 0.8;
+  color: #956A01;
 }
 
 
@@ -146,7 +161,7 @@ main {
 }
 
 .about .col-md-8 {
-  background: url("../image/separator-light.png") repeat-x;
+  background: url(../image/separator-light.png) repeat-x;
 }
 
 @media (min-width: 768px) {

@@ -11,6 +11,7 @@ body {
 
 .header {
   background-color: #241b18;
+  border-bottom:2px solid #fff ;
 }
 
 .header .bg-light {
@@ -27,7 +28,17 @@ body {
 }
 
 .header h1 a {
-  width: 80%;
+  width: 100%;
+}
+
+.header button span {
+  height: unset;
+  width: unset;
+}
+
+header button svg {
+  height: 40px;
+  width: 40px;
 }
 
 .header .navbar-toggler:focus {
@@ -48,6 +59,12 @@ body {
 
 .header .navbar-nav .nav-link {
   color: #ffffff;
+}
+
+@media screen and (min-width: 768px) {
+  .header h1 a {
+    width: 80%;
+  }
 }
 
 @media screen and (min-width: 992px) {
@@ -78,10 +95,16 @@ body {
   background-color: #fff;
 }
 
+.main section:first-child {
+  border:2px solid #fff ;
+  border-top:unset ;
+}
+
 /* footer */
 
 .footer {
   background-color: #e2b241;
+  border-top: 2px solid #fff;
 }
 
 @media screen and (min-width: 576px) {

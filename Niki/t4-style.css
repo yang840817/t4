@@ -3,5 +3,25 @@
   font-family: Arial, Helvetica, sans-serif;
 }
 
+/* header */
+
+.header {
+  background-color: #241b18;
+}
+
+/* main */
+
+.main {
+  background: url("img/bg-body.png") center / cover repeat-y;
+}
+
+.main .container {
+  background-color: #fff;
+}
+
+.footer {
+  background-color: #e2b241;
+}
+
 @media screen and (min-width: 576px) {
 }

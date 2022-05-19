@@ -190,6 +190,7 @@ header button path {
 .introduction .card {
   border-radius: 0;
   background-image: url("img/bg-pattern.jpg");
+  background-size: cover;
 }
 
 /* classify */

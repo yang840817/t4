@@ -11,7 +11,7 @@ body {
 
 .header {
   background-color: #241b18;
-  border-bottom:2px solid #fff ;
+  border-bottom: 2px solid #fff;
 }
 
 .header .bg-light {
@@ -19,7 +19,7 @@ body {
 }
 
 .header .navbar {
-  text-transform:uppercase;
+  text-transform: uppercase;
   font-weight: bolder;
 }
 
@@ -39,6 +39,10 @@ body {
 header button svg {
   height: 40px;
   width: 40px;
+}
+
+header button path {
+  stroke: #f7c947;
 }
 
 .header .navbar-toggler:focus {
@@ -71,6 +75,28 @@ header button svg {
   .header .nav-link + .nav-link {
     margin-left: 24px;
   }
+
+  .header .nav-link {
+    position: relative;
+    z-index: 1;
+  }
+
+  .header .container .nav-link:hover {
+    color: #241b18;
+  }
+
+  .header .container .nav-link:hover::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: #f7c947;
+    z-index: -1;
+  }
 }
 
 @media screen and (min-width: 1200px) {
@@ -96,8 +122,8 @@ header button svg {
 }
 
 .main section:first-child {
-  border:2px solid #fff ;
-  border-top:unset ;
+  border: 2px solid #fff;
+  border-top: unset;
 }
 
 /* footer */

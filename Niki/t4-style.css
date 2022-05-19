@@ -261,7 +261,20 @@ header button path {
 .contact-us .card {
   border: 0;
   border-radius: 0;
+  text-transform: uppercase;
 }
+
+/* blog */
+
+.blog .card {
+  border: 0;
+  border-radius: 0;
+}
+
+.blog .card-body :not(time) {
+  text-transform: uppercase;
+}
+
 
 /* footer */
 

@@ -283,5 +283,16 @@ header button path {
   border-top: 2px solid #fff;
 }
 
+.visit h3 {
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.visit .card {
+  border: 0;
+  border-radius: 0;
+  background: unset;
+}
+
 @media screen and (min-width: 576px) {
 }

@@ -283,6 +283,14 @@ header button path {
   border-top: 2px solid #fff;
 }
 
+/* visit */
+
+.visit {
+  background-image: url("img/separator-dark-vertical.png");
+  background-repeat: repeat-y;
+  background-position: right 6px;
+}
+
 .visit h3 {
   font-weight: bold;
   text-transform: uppercase;

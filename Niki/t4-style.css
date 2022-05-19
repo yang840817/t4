@@ -126,6 +126,52 @@ header button path {
   border-top: unset;
 }
 
+/* main-products */
+
+.main-products figcaption {
+  right: 16px;
+  bottom: 16px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.main-products p {
+  margin-bottom: 0;
+}
+
+.main-products__name {
+  text-transform: capitalize;
+}
+
+.main-products__details {
+  color: #976b04;
+  font-weight: bolder;
+  text-transform: uppercase;
+  position: relative;
+  z-index: 1;
+}
+
+.main-products__details::before {
+  content: "";
+  position: absolute;
+  top: -40%;
+  left: -10%;
+  height: 180%;
+  width: 120%;
+  background-image: url(img/buttons.png);
+  background-size: 240px;
+  background-position: 0px 0px;
+  z-index: -1;
+}
+
+/* introduction */
+
+.introduction .card {
+  border-radius: 0;
+  background-image: url("img/bg-pattern.jpg");
+}
+
 /* footer */
 
 .footer {

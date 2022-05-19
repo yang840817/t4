@@ -206,6 +206,17 @@ header button path {
 
 .classify .card-body {
   background-color: #4b3a32;
+  position: relative;
+}
+
+.classify .card-body::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 6px;
+  top: 0; 
+  left: 0;
+  background-image: url(img/separator-light.png);
 }
 
 .classify:nth-child(4) .card-body {
@@ -214,6 +225,8 @@ header button path {
 
 .classify .card-title {
   color: #f7c947;
+  text-transform: uppercase;
+  font-weight: bolder;
 }
 
 .classify .card-text {

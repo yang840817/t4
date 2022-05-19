@@ -1,5 +1,5 @@
 * {
-  outline: solid red 1px;
+  /* outline: solid red 1px; */
   font-family: Arial, Helvetica, sans-serif;
 }
 
@@ -121,9 +121,14 @@ header button path {
   background-color: #fff;
 }
 
-.main section:first-child {
-  border: 2px solid #fff;
-  border-top: unset;
+.main .introduction {
+  border-right: 2px solid #fff;
+  border-bottom: 2px solid #fff;
+}
+
+.main .main-products {
+  border-left: 2px solid #fff;
+  border-bottom: 2px solid #fff;
 }
 
 /* main-products */
@@ -170,6 +175,33 @@ header button path {
 .introduction .card {
   border-radius: 0;
   background-image: url("img/bg-pattern.jpg");
+}
+
+/* classify */
+
+.classify .card {
+  border-radius: 0;
+  border: 0;
+}
+
+.classify .card-img-top {
+  border-radius: 0;
+}
+
+.classify .card-body {
+  background-color: #4b3a32;
+}
+
+.classify:nth-child(4) .card-body {
+  background-color: #241b18;
+}
+
+.classify .card-title {
+  color: #f7c947;
+}
+
+.classify .card-text {
+  color: #fff;
 }
 
 /* footer */

@@ -275,7 +275,6 @@ header button path {
   text-transform: uppercase;
 }
 
-
 /* footer */
 
 .footer {
@@ -301,6 +300,16 @@ header button path {
   border-radius: 0;
   background: unset;
 }
+
+/* blog-renew */
+
+/* e-mail  */
+
+/* media-link */
+
+/* copyright */
+
+/* under-nav */
 
 @media screen and (min-width: 576px) {
 }

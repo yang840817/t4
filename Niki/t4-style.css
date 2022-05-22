@@ -324,6 +324,40 @@ hr.separate {
 
 /* media-link */
 
+.media-link .card {
+  background-color: unset;
+  border-radius: 0;
+  border: 0;
+}
+
+.media-link .btn-primary {
+  color: unset;
+  background-color: unset;
+  border: 0;
+  height: 80px;
+  width: 80px;
+  background-image: url("img/icons.png");
+  background-size: 200px;
+  border-radius: 0;
+}
+
+.media-link .btn-primary + .btn-primary {
+  margin-left: 24px;
+}
+
+.media-link .btn-primary:nth-child(1) {
+  background-position: 95px 270px;
+}
+
+.media-link .btn-primary:nth-child(2) {
+  background-position: 95px 174px;
+}
+
+.media-link .btn-primary:nth-child(3) {
+  background-position: 81px 80px;
+  background-size: 176px 528px;
+}
+
 /* copyright */
 
 /* under-nav */

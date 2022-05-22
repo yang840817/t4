@@ -282,23 +282,24 @@ header button path {
   border-top: 2px solid #fff;
 }
 
+.footer h5 {
+  font-family: "Oswald", sans-serif;
+  text-transform: uppercase;
+  margin-bottom: 24px;
+}
+
+footer .card {
+  background-color: unset;
+  border-radius: 0;
+  border: 0;
+}
+
 /* visit */
 
 .visit {
   background-image: url("img/separator-dark-vertical.png");
   background-repeat: repeat-y;
   background-position: right 6px;
-}
-
-.visit h3 {
-  font-weight: bold;
-  text-transform: uppercase;
-}
-
-.visit .card {
-  border: 0;
-  border-radius: 0;
-  background: unset;
 }
 
 /* blog-renew */
@@ -323,12 +324,6 @@ hr.separate {
 }
 
 /* media-link */
-
-.media-link .card {
-  background-color: unset;
-  border-radius: 0;
-  border: 0;
-}
 
 .media-link .btn-primary {
   color: unset;
@@ -359,6 +354,10 @@ hr.separate {
 }
 
 /* copyright */
+
+.copyright span {
+  text-transform: uppercase;
+}
 
 /* under-nav */
 

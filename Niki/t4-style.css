@@ -303,7 +303,24 @@ header button path {
 
 /* blog-renew */
 
+.blog-renew + div {
+  background-image: url(img/separator-dark-vertical.png);
+  background-repeat: repeat-y;
+  background-position: left 6px;
+}
+
 /* e-mail  */
+
+/* separate */
+
+hr.separate {
+  background-image: url("img/separator-dark.png");
+  background-clip: content-box;
+  height: 6px;
+  padding: 0 16px;
+  background-color:unset;
+  opacity: unset;
+}
 
 /* media-link */
 

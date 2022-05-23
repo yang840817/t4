@@ -61,10 +61,9 @@ header button path {
   color: #f7c947;
 }
 
-
 .header .navbar-nav .nav-link {
   color: #ffffff;
-  transition:unset;
+  transition: unset;
   position: relative;
 }
 
@@ -88,6 +87,16 @@ header button path {
   background-position: 0px 18px;
 }
 
+.header .navbar-collapse {
+  padding: 0 16px;
+  position: absolute;
+  top: 100%;
+  right: 0;
+  z-index: 1;
+  width: 100%;
+  background: #241b18b0;
+}
+
 @media screen and (min-width: 768px) {
   .header h1 a {
     width: 80%;
@@ -97,6 +106,12 @@ header button path {
 @media screen and (min-width: 992px) {
   .header .nav-link + .nav-link {
     margin-left: 24px;
+  }
+
+  .header .navbar-collapse {
+    position: unset;
+    width: unset;
+    background-color: unset;
   }
 
   .header .nav-link {
@@ -141,7 +156,7 @@ header button path {
 }
 
 .main .container {
-  background-color: #fff;
+  /* background-color: #fff; */
   position: relative;
 }
 
@@ -157,13 +172,23 @@ header button path {
 }
 
 .main .introduction {
-  border-right: 2px solid #fff;
-  border-bottom: 2px solid #fff;
+  border: 2px solid #fff;
+  border-top: unset;
 }
 
 .main .main-products {
-  border-left: 2px solid #fff;
-  border-bottom: 2px solid #fff;
+  border: 2px solid #fff;
+  border-top: unset;
+}
+
+@media screen and (min-width: 768px) {
+  .main .introduction {
+    border-left: unset;
+  }
+
+  .main .main-products {
+    border-right: unset;
+  }
 }
 
 /* main-products */
@@ -175,26 +200,20 @@ header button path {
   grid-auto-rows: 20px;
   text-align: center;
   align-items: center;
+  color: #030303;
 }
 
 .main-products p {
   margin-bottom: 0;
+  width: 120px;
 }
 
 .main-products__name {
   text-transform: capitalize;
-  grid-row-start: 1;
-  grid-row-end: 2;
-}
-
-.main-products__price {
-  grid-row-start: 2;
-  grid-row-end: 3;
 }
 
 .main-products__details {
-  grid-row-start: 3;
-  grid-row-end: 5;
+  grid-row-start: span 2;
   color: #976b04;
   font-weight: bolder;
   text-transform: uppercase;
@@ -206,9 +225,9 @@ header button path {
   content: "";
   position: absolute;
   top: -40%;
-  left: -10%;
+  left: 1%;
   height: 180%;
-  width: 120%;
+  width: 100%;
   background-image: url(img/buttons.png);
   background-size: 240px;
   background-position: 0px 0px;
@@ -216,7 +235,7 @@ header button path {
 }
 
 .main-products__details:hover::before {
-  background-position: -122px 0px;
+  background-position: -120px 0px;
 }
 
 /* introduction */

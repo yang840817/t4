@@ -65,6 +65,8 @@ header button path {
   color: #ffffff;
   transition: unset;
   position: relative;
+  padding: 16px 0;
+  z-index: 2;
 }
 
 .header .navbar-nav .nav-link:hover {
@@ -181,7 +183,7 @@ header button path {
   border-top: unset;
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 992px) {
   .main .introduction {
     border-left: unset;
   }
@@ -285,6 +287,72 @@ header button path {
   border-radius: 0;
   background-image: url("img/bg-pattern.jpg");
   background-size: cover;
+}
+
+.introduction .card-body {
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+.introduction .card-title {
+  font-weight: 600;
+  text-shadow: 1px 1px #ffffff;
+  font-size: calc(24px + 12 * (100vw - 375px) / 200);
+}
+
+.introduction .card-text {
+  text-align: start;
+  font-size: calc(16px + 8 * (100vw - 375px) / 200);
+}
+
+@media screen and (min-width: 576px) {
+  .introduction .card-title {
+    font-size: 36px;
+  }
+
+  .introduction .card-text {
+    font-size: 24px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .introduction .card-body {
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+  .introduction .card-title {
+    font-size: 48px;
+  }
+
+  .introduction .card-text {
+    font-size: 36px;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .introduction .card-title {
+    font-size: 36px;
+  }
+
+  .introduction .card-text {
+    font-size: 20px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .introduction .card-title {
+    font-size: 48px;
+  }
+
+  .introduction .card-text {
+    font-size: 24px;
+  }
+}
+
+@media screen and (min-width: 1400px) {
+  .introduction .card-text {
+    font-size: 28px;
+  }
 }
 
 /* classify */

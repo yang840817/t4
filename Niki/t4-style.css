@@ -61,9 +61,31 @@ header button path {
   color: #f7c947;
 }
 
+
 .header .navbar-nav .nav-link {
   color: #ffffff;
   transition:unset;
+  position: relative;
+}
+
+.header .navbar-nav .nav-link:hover {
+  color: #ffffff;
+}
+
+.header .nav-link.active:hover {
+  color: #f7c947;
+}
+
+.header .nav-link:hover:before {
+  content: "";
+  position: absolute;
+  display: block;
+  height: 100%;
+  width: 120%;
+  transform: translate(-10%, 0%);
+  background: url(img/separator-light.png);
+  background-repeat: repeat-x;
+  background-position: 0px 18px;
 }
 
 @media screen and (min-width: 768px) {

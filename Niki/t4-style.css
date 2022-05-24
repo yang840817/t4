@@ -94,7 +94,7 @@ header button path {
   position: absolute;
   top: 100%;
   right: 0;
-  z-index: 1;
+  z-index: 2;
   width: 100%;
   background: #241b18b0;
 }
@@ -106,7 +106,7 @@ header button path {
 }
 
 @media screen and (min-width: 992px) {
-  .header .nav-link + .nav-link {
+  .header .nav-link+.nav-link {
     margin-left: 24px;
   }
 
@@ -140,13 +140,13 @@ header button path {
 }
 
 @media screen and (min-width: 1200px) {
-  .header .nav-link + .nav-link {
+  .header .nav-link+.nav-link {
     margin-left: 36px;
   }
 }
 
 @media screen and (min-width: 1400px) {
-  .header .nav-link + .nav-link {
+  .header .nav-link+.nav-link {
     margin-left: 48px;
   }
 }
@@ -252,6 +252,7 @@ header button path {
     right: 36px;
     bottom: 24px;
   }
+
   .main-products p {
     width: 140px;
   }
@@ -272,7 +273,7 @@ header button path {
     left: -11px;
     height: 53px;
     width: 165px;
-    background-image: url(img/buttons.png);
+    background-image: url("img/buttons.png");
     background-size: 338px;
   }
 
@@ -320,6 +321,7 @@ header button path {
     padding-top: 50px;
     padding-bottom: 50px;
   }
+
   .introduction .card-title {
     font-size: 48px;
   }
@@ -357,6 +359,28 @@ header button path {
 
 /* classify */
 
+.classify .carousel-item {
+  position: relative;
+}
+
+.classify .carousel-item span {
+  font-weight: bold;
+  position: absolute;
+  text-align: center;
+  width: 120px;
+  padding: 7px 0;
+  bottom: 20px;
+  right: 20px;
+  color: #976b04;
+  text-transform: uppercase;
+  background-image: url(img/buttons.png);
+  background-size: 240px;
+  background-position: 2px -1px;
+  background-repeat: no-repeat;
+}
+
+/* classify */
+
 .classify .card {
   border-radius: 0;
   border: 0;
@@ -378,7 +402,7 @@ header button path {
   height: 6px;
   top: 0;
   left: 0;
-  background-image: url(img/separator-light.png);
+  background-image: url("img/separator-light.png");
 }
 
 .classify:nth-child(5) .card-body {
@@ -455,7 +479,7 @@ footer .card {
 
 /* blog-renew */
 
-.blog-renew + div {
+.blog-renew+div {
   background-image: url(img/separator-dark-vertical.png);
   background-repeat: repeat-y;
   background-position: left 6px;
@@ -487,7 +511,7 @@ hr.separate {
   border-radius: 0;
 }
 
-.media-link .btn-primary + .btn-primary {
+.media-link .btn-primary+.btn-primary {
   margin-left: 24px;
 }
 
@@ -512,5 +536,4 @@ hr.separate {
 
 /* under-nav */
 
-@media screen and (min-width: 576px) {
-}
+@media screen and (min-width: 576px) {}

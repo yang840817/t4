@@ -158,7 +158,7 @@ header button path {
 }
 
 .main .container {
-  /* background-color: #fff; */
+  background-color: #fff;
   position: relative;
 }
 
@@ -381,9 +381,14 @@ header button path {
 
 /* classify */
 
+.classify {
+  background-color: #4b3a32;
+}
+
 .classify .card {
   border-radius: 0;
   border: 0;
+  background-color: unset;
 }
 
 .classify .card-img-top {
@@ -391,7 +396,6 @@ header button path {
 }
 
 .classify .card-body {
-  background-color: #4b3a32;
   position: relative;
   border-top: 6px solid transparent;
 }
@@ -423,21 +427,9 @@ header button path {
 /* contact-us , blog h4 */
 
 .main h4 {
-  font-size: 16px;
+  font-size: 24px;
   color: #818181;
   font-family: 'Pathway Gothic One';
-}
-
-@media screen and (min-width: 992px) {
-  .main h4 {
-    font-size: 24px;
-  }
-}
-
-@media screen and (min-width: 1200px) {
-  .main h4 {
-    font-size: 24px;
-  }
 }
 
 
@@ -475,7 +467,7 @@ header button path {
 }
 
 .contact-us .card-text {
-  font-size: 24px;
+  font-size: 32px;
   font-family: 'Oswald', sans-serif;
 }
 
@@ -533,6 +525,10 @@ header button path {
 }
 
 /* blog */
+
+.blog {
+  background-color: #ffffff;
+}
 
 .blog .card {
   border: 0;

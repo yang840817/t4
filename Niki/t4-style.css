@@ -305,12 +305,12 @@ header button path {
 .introduction .card-title {
   font-weight: 600;
   text-shadow: 1px 1px #ffffff;
-  font-size: calc(24px + 12 * (100vw - 375px) / 200);
+  font-size: calc(2px + 6vw );
 }
 
 .introduction .card-text {
   text-align: start;
-  font-size: calc(16px + 8 * (100vw - 375px) / 200);
+  font-size: calc(1px +  4vw );
 }
 
 @media screen and (min-width: 576px) {
@@ -531,7 +531,7 @@ header button path {
     content: unset;
   }
 
-  .contact-us .card-text a{
+  .contact-us .card-text a {
     text-align: justify;
   }
 }
@@ -839,13 +839,6 @@ hr.separate {
 
 /* media-link */
 
-.separate + div {
-  border-left: 0;
-  background-image: unset;
-  background-origin: border-box;
-  background-repeat: repeat-y;
-}
-
 .media-link .btn-primary {
   color: unset;
   background-color: unset;
@@ -889,7 +882,20 @@ hr.separate {
 @media screen and (min-width: 768px) {
   .separate + div {
     border-left: 6px solid transparent;
+    position: relative;
+  }
+
+  .separate + div::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -7px;
+    width: 7px;
+    height: 100%;
     background-image: url("img/separator-dark-vertical.png");
+    background-clip: content-box;
+    background-repeat: repeat-y;
+    padding: 12px 0;
   }
 }
 
@@ -902,7 +908,10 @@ hr.separate {
 @media screen and (min-width: 1200px) {
   .separate + div {
     border-left: 0;
-    background-image: unset;
+  }
+
+  .separate + div::before {
+    content: unset;
   }
 }
 

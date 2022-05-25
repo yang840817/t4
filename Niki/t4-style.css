@@ -224,11 +224,15 @@ header button path {
 }
 
 .main-products__details {
+  position: relative;
+  z-index: 1;
+}
+
+.main-products__details a {
   color: #976b04;
   font-weight: bolder;
   text-transform: uppercase;
-  position: relative;
-  z-index: 1;
+  text-decoration: none;
   font-size: 16px;
   line-height: 2.4em;
 }
@@ -236,11 +240,11 @@ header button path {
 .main-products__details::before {
   content: "";
   position: absolute;
-  top: -1px;
+  top: -3px;
   left: -11px;
   height: 42px;
   width: 129px;
-  background-image: url(img/buttons.png);
+  background-image: url("img/buttons.png");
   background-size: 260px;
   background-repeat: no-repeat;
   z-index: -1;
@@ -257,7 +261,7 @@ header button path {
   }
 
   .main-products p {
-    width: 140px;
+    width: 150px;
   }
 
   .main-products__name {
@@ -273,10 +277,10 @@ header button path {
   }
 
   .main-products__details::before {
-    left: -11px;
+    top: -8px;
+    left: -9px;
     height: 53px;
     width: 165px;
-    background-image: url("img/buttons.png");
     background-size: 338px;
   }
 
@@ -527,7 +531,7 @@ header button path {
     content: unset;
   }
 
-  .contact-us .card-text {
+  .contact-us .card-text a{
     text-align: justify;
   }
 }
@@ -559,8 +563,10 @@ header button path {
   font-family: "Oswald", sans-serif;
 }
 
-.blog p {
+.blog a {
   font-family: "Oswald", sans-serif;
+  text-decoration: none;
+  color: #4b3a32;
 }
 
 @media screen and (min-width: 576px) {
@@ -638,7 +644,7 @@ footer .card {
   border: 0;
 }
 
-.footer > * > .row {
+.footer > * > .row:first-child {
   background-image: url("img/separator-dark.png");
   background-repeat: repeat-x;
   background-position: bottom;
@@ -731,8 +737,6 @@ footer .card {
   font-weight: bold;
   color: #ffffff;
   text-align: center;
-  /* background-image: url("img/bg-time.png");
-  background-size: 100% 100%; */
 }
 
 .blog-renew .card-body {
@@ -750,7 +754,7 @@ footer .card {
 
 /*  */
 
-.footer section > div:last-child {
+.footer section > div:nth-child(3) {
   background-image: url("img/separator-dark.png");
   background-repeat: repeat-x;
   border-top: 6px solid transparent;
@@ -759,7 +763,7 @@ footer .card {
 }
 
 @media screen and (min-width: 1200px) {
-  .footer section > div:last-child {
+  .footer section > div:nth-child(3) {
     background-image: url("img/separator-dark-vertical.png");
     background-repeat: repeat-y;
     border-top: 0px solid transparent;
@@ -861,8 +865,16 @@ hr.separate {
   background-position: 95px 270px;
 }
 
+.media-link .btn-primary:nth-child(1):hover {
+  background-position: 2px 270px;
+}
+
 .media-link .btn-primary:nth-child(2) {
   background-position: 95px 174px;
+}
+
+.media-link .btn-primary:nth-child(2):hover {
+  background-position: 2px 174px;
 }
 
 .media-link .btn-primary:nth-child(3) {
@@ -870,10 +882,20 @@ hr.separate {
   background-size: 176px 528px;
 }
 
+.media-link .btn-primary:nth-child(3):hover {
+  background-position: -1px 80px;
+}
+
 @media screen and (min-width: 768px) {
   .separate + div {
     border-left: 6px solid transparent;
     background-image: url("img/separator-dark-vertical.png");
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .media-link .btn-primary + .btn-primary {
+    margin-left: 36px;
   }
 }
 
@@ -888,9 +910,43 @@ hr.separate {
 
 .copyright span {
   text-transform: uppercase;
+  font-family: "Oswald", sans-serif;
+  color: #ab7d10;
+  text-align: center;
+  display: block;
 }
 
 /* under-nav */
+
+.under-nav .nav {
+  text-align: center;
+}
+
+.under-nav .nav-link {
+  flex: 1 1 0;
+  text-transform: uppercase;
+  font-family: "Oswald", sans-serif;
+  color: #ab7d10;
+}
+
+.under-nav .nav-link:hover {
+  color: #4b3a33;
+}
+
+@media screen and (min-width: 768px) {
+  .under-nav .nav {
+    justify-content: end;
+  }
+
+  .under-nav .nav-link {
+    padding: 8px 0;
+    flex: unset;
+  }
+
+  .under-nav .nav-link + .nav-link {
+    margin-left: 16px;
+  }
+}
 
 @media screen and (min-width: 576px) {
 }

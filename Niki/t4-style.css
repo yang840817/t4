@@ -106,7 +106,7 @@ header button path {
 }
 
 @media screen and (min-width: 992px) {
-  .header .nav-link+.nav-link {
+  .header .nav-link + .nav-link {
     margin-left: 24px;
   }
 
@@ -140,13 +140,13 @@ header button path {
 }
 
 @media screen and (min-width: 1200px) {
-  .header .nav-link+.nav-link {
+  .header .nav-link + .nav-link {
     margin-left: 36px;
   }
 }
 
 @media screen and (min-width: 1400px) {
-  .header .nav-link+.nav-link {
+  .header .nav-link + .nav-link {
     margin-left: 48px;
   }
 }
@@ -419,7 +419,7 @@ header button path {
 .classify .card-title {
   color: #f7c947;
   text-transform: uppercase;
-  font-family: 'Oswald', sans-serif;
+  font-family: "Oswald", sans-serif;
   font-weight: bolder;
 }
 
@@ -433,7 +433,7 @@ header button path {
 .main h4 {
   font-size: 24px;
   color: #818181;
-  font-family: 'Pathway Gothic One';
+  font-family: "Pathway Gothic One";
 }
 
 @media screen and (min-width: 768px) {
@@ -442,14 +442,13 @@ header button path {
   }
 }
 
-
 /* contact-us */
 
 .contact-us {
   background-color: #ffffff;
   position: relative;
   border-bottom: 7px solid transparent;
-  row-gap: 16px;
+  row-gap: 24px;
 }
 
 .contact-us::after {
@@ -471,7 +470,13 @@ header button path {
 
 .contact-us .card-text {
   font-size: 32px;
-  font-family: 'Oswald', sans-serif;
+  font-family: "Oswald", sans-serif;
+}
+
+.contact-us a {
+  color: #000000;
+  font-family: "Oswald", sans-serif;
+  text-decoration: none;
 }
 
 @media screen and (min-width: 768px) {
@@ -489,7 +494,7 @@ header button path {
 }
 
 @media screen and (min-width: 992px) {
-  .contact-us>div:last-child {
+  .contact-us > div:last-child {
     border-left: 6px solid transparent;
   }
 
@@ -509,7 +514,7 @@ header button path {
     padding: 8px 0 16px;
   }
 
-  .contact-us>div:last-child {
+  .contact-us > div:last-child {
     border-left: unset;
   }
 
@@ -546,16 +551,16 @@ header button path {
 }
 
 .blog time {
-  font-family: 'Open Sans', sans-serif;
+  font-family: "Open Sans", sans-serif;
   font-weight: 600;
 }
 
 .blog h5 {
-  font-family: 'Oswald', sans-serif;
+  font-family: "Oswald", sans-serif;
 }
 
 .blog p {
-  font-family: 'Oswald', sans-serif;
+  font-family: "Oswald", sans-serif;
 }
 
 @media screen and (min-width: 576px) {
@@ -633,16 +638,27 @@ footer .card {
   border: 0;
 }
 
+.footer > * > .row {
+  background-image: url("img/separator-dark.png");
+  background-repeat: repeat-x;
+  background-position: bottom;
+  background-origin: border-box;
+  border-bottom: 7px solid transparent;
+}
+
 @media screen and (min-width: 768px) {
   .footer h5 {
     font-size: 24px;
   }
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 992px) {
   .footer h5 {
     font-size: 28px;
   }
+}
+
+@media screen and (min-width: 1200px) {
 }
 
 /* visit */
@@ -650,7 +666,8 @@ footer .card {
 .visit {
   background-image: url("img/separator-dark.png");
   background-repeat: repeat-x;
-  background-position: left 0px bottom -7px;
+  background-position: bottom;
+  background-origin: border-box;
   border-bottom: 7px solid transparent;
 }
 
@@ -684,16 +701,16 @@ footer .card {
   .visit {
     background-image: url("img/separator-dark-vertical.png");
     background-repeat: repeat-y;
-    background-position: right -6px;
+    background-position: right;
+    background-origin: border-box;
     border-right: 6px solid transparent;
     border-bottom: unset;
   }
 }
 
-
 /* blog-renew */
 
-.blog-renew+div {
+.blog-renew + div {
   background-image: url(img/separator-dark-vertical.png);
   background-repeat: repeat-y;
   background-position: left 6px;
@@ -731,20 +748,99 @@ footer .card {
   font-size: 16px;
 }
 
+/*  */
+
+.footer section > div:last-child {
+  background-image: url("img/separator-dark.png");
+  background-repeat: repeat-x;
+  border-top: 6px solid transparent;
+  background-clip: border-box;
+  background-origin: border-box;
+}
+
+@media screen and (min-width: 1200px) {
+  .footer section > div:last-child {
+    background-image: url("img/separator-dark-vertical.png");
+    background-repeat: repeat-y;
+    border-top: 0px solid transparent;
+    border-left: 7px solid transparent;
+  }
+}
+
 /* e-mail  */
+
+.e-mail label {
+  color: transparent;
+  transform: scale(0.85) translateY(-0.5rem) translateX(0.15rem);
+}
+
+.e-mail .form-control {
+  border: 6px solid #af8112;
+  border-radius: 0;
+}
+
+.e-mail .form-control {
+  box-shadow: 0 0 0 0rem;
+}
+
+.e-mail .form-control:focus ~ label,
+.e-mail .form-control:not(:placeholder-shown) ~ label {
+  color: unset;
+}
+
+.e-mail .form-control::placeholder {
+  color: #000000;
+  opacity: 0.65;
+}
+
+.e-mail .btn-primary {
+  color: #fff;
+  background-color: unset;
+  border-color: unset;
+  border: 0;
+  font-family: "Oswald", sans-serif;
+  text-transform: uppercase;
+  font-size: 20px;
+  position: relative;
+  z-index: 1;
+}
+
+.e-mail .btn-primary::before {
+  content: "";
+  height: 30px;
+  width: 110px;
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, 0);
+  background-image: url("img/buttons.png");
+  background-size: 223px;
+  background-position: 1px -37px;
+  background-repeat: no-repeat;
+  z-index: -1;
+}
+
+.e-mail .btn-primary:hover::before {
+  background-position: -113px -37px;
+}
 
 /* separate */
 
 hr.separate {
   background-image: url("img/separator-dark.png");
-  background-clip: content-box;
   height: 6px;
-  padding: 0 16px;
   background-color: unset;
   opacity: unset;
+  background-clip: content-box;
 }
 
 /* media-link */
+
+.separate + div {
+  border-left: 0;
+  background-image: unset;
+  background-origin: border-box;
+  background-repeat: repeat-y;
+}
 
 .media-link .btn-primary {
   color: unset;
@@ -757,7 +853,7 @@ hr.separate {
   border-radius: 0;
 }
 
-.media-link .btn-primary+.btn-primary {
+.media-link .btn-primary + .btn-primary {
   margin-left: 24px;
 }
 
@@ -774,6 +870,20 @@ hr.separate {
   background-size: 176px 528px;
 }
 
+@media screen and (min-width: 768px) {
+  .separate + div {
+    border-left: 6px solid transparent;
+    background-image: url("img/separator-dark-vertical.png");
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .separate + div {
+    border-left: 0;
+    background-image: unset;
+  }
+}
+
 /* copyright */
 
 .copyright span {
@@ -782,4 +892,5 @@ hr.separate {
 
 /* under-nav */
 
-@media screen and (min-width: 576px) {}
+@media screen and (min-width: 576px) {
+}

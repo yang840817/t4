@@ -106,7 +106,7 @@ header button path {
 }
 
 @media screen and (min-width: 992px) {
-  .header .nav-link + .nav-link {
+  .header .nav-link+.nav-link {
     margin-left: 24px;
   }
 
@@ -140,13 +140,13 @@ header button path {
 }
 
 @media screen and (min-width: 1200px) {
-  .header .nav-link + .nav-link {
+  .header .nav-link+.nav-link {
     margin-left: 36px;
   }
 }
 
 @media screen and (min-width: 1400px) {
-  .header .nav-link + .nav-link {
+  .header .nav-link+.nav-link {
     margin-left: 48px;
   }
 }
@@ -155,8 +155,8 @@ header button path {
 
 .main {
   background-image: url("img/bg-body.png");
-  background-position:  center ;
-  background-size:  100% ;
+  background-position: center;
+  background-size: 100%;
   background-repeat: repeat-y;
 }
 
@@ -436,6 +436,12 @@ header button path {
   font-family: 'Pathway Gothic One';
 }
 
+@media screen and (min-width: 768px) {
+  .main h4 {
+    font-size: 28px;
+  }
+}
+
 
 /* contact-us */
 
@@ -483,7 +489,7 @@ header button path {
 }
 
 @media screen and (min-width: 992px) {
-  .contact-us  > div:last-child {
+  .contact-us>div:last-child {
     border-left: 6px solid transparent;
   }
 
@@ -503,7 +509,7 @@ header button path {
     padding: 8px 0 16px;
   }
 
-  .contact-us  > div:last-child {
+  .contact-us>div:last-child {
     border-left: unset;
   }
 
@@ -556,11 +562,11 @@ header button path {
   .blog time {
     font-size: 24px;
   }
-  
+
   .blog h5 {
     font-size: 32px;
   }
-  
+
   .blog p {
     font-size: 24px;
   }
@@ -570,11 +576,11 @@ header button path {
   .blog time {
     font-size: 28px;
   }
-  
+
   .blog h5 {
     font-size: 36px;
   }
-  
+
   .blog p {
     font-size: 28px;
   }
@@ -584,11 +590,11 @@ header button path {
   .blog time {
     font-size: 20px;
   }
-  
+
   .blog h5 {
     font-size: 28px;
   }
-  
+
   .blog p {
     font-size: 20px;
   }
@@ -598,11 +604,11 @@ header button path {
   .blog time {
     font-size: 16px;
   }
-  
+
   .blog h5 {
     font-size: 24px;
   }
-  
+
   .blog p {
     font-size: 16px;
   }
@@ -627,17 +633,67 @@ footer .card {
   border: 0;
 }
 
+@media screen and (min-width: 768px) {
+  .footer h5 {
+    font-size: 24px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .footer h5 {
+    font-size: 28px;
+  }
+}
+
 /* visit */
 
 .visit {
-  background-image: url("img/separator-dark-vertical.png");
-  background-repeat: repeat-y;
-  background-position: right 6px;
+  background-image: url("img/separator-dark.png");
+  background-repeat: repeat-x;
+  background-position: left 0px bottom -7px;
+  border-bottom: 7px solid transparent;
 }
+
+.visit a {
+  color: #4d3c33;
+}
+
+.visit .visit__phone a {
+  text-decoration: none;
+}
+
+.visit .card-body {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+@media screen and (min-width: 768px) {
+  .visit p {
+    font-size: 20px;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .visit p {
+    font-size: 24px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .visit {
+    background-image: url("img/separator-dark-vertical.png");
+    background-repeat: repeat-y;
+    background-position: right -6px;
+    border-right: 6px solid transparent;
+    border-bottom: unset;
+  }
+}
+
 
 /* blog-renew */
 
-.blog-renew + div {
+.blog-renew+div {
   background-image: url(img/separator-dark-vertical.png);
   background-repeat: repeat-y;
   background-position: left 6px;
@@ -669,7 +725,7 @@ hr.separate {
   border-radius: 0;
 }
 
-.media-link .btn-primary + .btn-primary {
+.media-link .btn-primary+.btn-primary {
   margin-left: 24px;
 }
 
@@ -694,5 +750,4 @@ hr.separate {
 
 /* under-nav */
 
-@media screen and (min-width: 576px) {
-}
+@media screen and (min-width: 576px) {}

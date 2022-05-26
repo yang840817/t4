@@ -90,7 +90,6 @@ header button path {
 }
 
 .header .navbar-collapse {
-  padding: 0 16px;
   position: absolute;
   top: 100%;
   right: 0;
@@ -290,7 +289,7 @@ header button path {
 
 /* introduction */
 
-.introduction .card {
+.introduction.card {
   border-radius: 0;
   background-image: url("img/bg-pattern.jpg");
   background-size: cover;
@@ -365,10 +364,6 @@ header button path {
 
 /* classify__carousel */
 
-.classify .carousel-item {
-  position: relative;
-}
-
 .classify .carousel-item span {
   font-weight: bold;
   position: absolute;
@@ -387,14 +382,10 @@ header button path {
 
 /* classify */
 
-.classify {
-  background-color: #4b3a32;
-}
-
-.classify .card {
+.classify.card {
   border-radius: 0;
   border: 0;
-  background-color: unset;
+  background-color: #4b3a32;
   height: 100%;
 }
 
@@ -421,7 +412,7 @@ header button path {
   background-image: url("img/separator-light.png");
 }
 
-.classify:nth-child(5) .card-body {
+main div:nth-child(5) .card-body {
   background-color: #241b18;
 }
 

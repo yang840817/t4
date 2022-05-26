@@ -1,5 +1,5 @@
 * {
-  /* outline: solid red 1px; */
+  outline: solid red 1px;
   font-family: "Roboto Flex", "Montserrat", sans-serif;
 }
 
@@ -209,7 +209,6 @@ header button path {
 
 .main-products p {
   margin-bottom: 0;
-  /* width: 100px; */
 }
 
 .main-products__name {
@@ -396,6 +395,12 @@ header button path {
   border-radius: 0;
   border: 0;
   background-color: unset;
+  height: 100%;
+}
+
+.classify .row {
+  height: 100%;
+  align-content: baseline;
 }
 
 .classify .card-img-top {
@@ -490,18 +495,18 @@ header button path {
     height: 100%;
     width: 6px;
     top: 0;
-    right: 50%;
+    left: 50%;
     background-image: url("img/separator-light-vertical.png");
     background-clip: content-box;
     padding: 8px 0;
   }
+
+  .contact-us .contact-us__address {
+    border-left: 6px solid transparent;
+  }
 }
 
 @media screen and (min-width: 992px) {
-  .contact-us > div:last-child {
-    border-left: 6px solid transparent;
-  }
-
   .contact-us .card-text {
     font-size: 40px;
   }
@@ -518,7 +523,7 @@ header button path {
     padding: 8px 0 16px;
   }
 
-  .contact-us > div:last-child {
+  .contact-us .contact-us__address {
     border-left: unset;
   }
 
@@ -716,12 +721,6 @@ footer .card {
 
 /* blog-renew */
 
-.blog-renew + div {
-  background-image: url(img/separator-dark-vertical.png);
-  background-repeat: repeat-y;
-  background-position: left 6px;
-}
-
 .blog-renew__data {
   max-width: 100px;
 }
@@ -752,18 +751,20 @@ footer .card {
   font-size: 16px;
 }
 
-/*  */
+/* multimedia */
 
-.footer section > div:nth-child(3) {
+.footer .multimedia {
   background-image: url("img/separator-dark.png");
   background-repeat: repeat-x;
   border-top: 6px solid transparent;
   background-clip: border-box;
   background-origin: border-box;
+  height: 100%;
+  align-content: start;
 }
 
 @media screen and (min-width: 1200px) {
-  .footer section > div:nth-child(3) {
+  .footer .multimedia {
     background-image: url("img/separator-dark-vertical.png");
     background-repeat: repeat-y;
     border-top: 0px solid transparent;
@@ -773,31 +774,31 @@ footer .card {
 
 /* e-mail  */
 
-.e-mail label {
+.multimedia__e-mail label {
   color: transparent;
   transform: scale(0.85) translateY(-0.5rem) translateX(0.15rem);
 }
 
-.e-mail .form-control {
+.multimedia__e-mail .form-control {
   border: 6px solid #af8112;
   border-radius: 0;
 }
 
-.e-mail .form-control {
+.multimedia__e-mail .form-control {
   box-shadow: 0 0 0 0rem;
 }
 
-.e-mail .form-control:focus ~ label,
-.e-mail .form-control:not(:placeholder-shown) ~ label {
+.multimedia__e-mail .form-control:focus ~ label,
+.multimedia__e-mail .form-control:not(:placeholder-shown) ~ label {
   color: unset;
 }
 
-.e-mail .form-control::placeholder {
+.multimedia__e-mail .form-control::placeholder {
   color: #000000;
   opacity: 0.65;
 }
 
-.e-mail .btn-primary {
+.multimedia__e-mail .btn-primary {
   color: #fff;
   background-color: unset;
   border-color: unset;
@@ -809,27 +810,28 @@ footer .card {
   z-index: 1;
 }
 
-.e-mail .btn-primary::before {
+.multimedia__e-mail .btn-primary::before {
   content: "";
-  height: 30px;
+  height: 50px;
   width: 110px;
   position: absolute;
   left: 50%;
-  transform: translate(-50%, 0);
-  background-image: url("img/buttons.png");
-  background-size: 223px;
-  background-position: 1px -37px;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  background-image: url(img/buttons.png);
+  background-size: 250px 100px;
+  background-position: -5px -53px;
   background-repeat: no-repeat;
   z-index: -1;
 }
 
-.e-mail .btn-primary:hover::before {
-  background-position: -113px -37px;
+.multimedia__e-mail .btn-primary:hover::before {
+  background-position: -133px -53px;
 }
 
 /* separate */
 
-hr.separate {
+.multimedia hr {
   background-image: url("img/separator-dark.png");
   height: 6px;
   background-color: unset;
@@ -839,7 +841,7 @@ hr.separate {
 
 /* media-link */
 
-.media-link .btn-primary {
+.multimedia__link .btn-primary {
   color: unset;
   background-color: unset;
   border: 0;
@@ -850,42 +852,42 @@ hr.separate {
   border-radius: 0;
 }
 
-.media-link .btn-primary + .btn-primary {
+.multimedia__link .btn-primary + .btn-primary {
   margin-left: 24px;
 }
 
-.media-link .btn-primary:nth-child(1) {
+.multimedia__link .btn-primary:nth-child(1) {
   background-position: 95px 270px;
 }
 
-.media-link .btn-primary:nth-child(1):hover {
+.multimedia__link .btn-primary:nth-child(1):hover {
   background-position: 2px 270px;
 }
 
-.media-link .btn-primary:nth-child(2) {
+.multimedia__link .btn-primary:nth-child(2) {
   background-position: 95px 174px;
 }
 
-.media-link .btn-primary:nth-child(2):hover {
+.multimedia__link .btn-primary:nth-child(2):hover {
   background-position: 2px 174px;
 }
 
-.media-link .btn-primary:nth-child(3) {
+.multimedia__link .btn-primary:nth-child(3) {
   background-position: 81px 80px;
   background-size: 176px 528px;
 }
 
-.media-link .btn-primary:nth-child(3):hover {
+.multimedia__link .btn-primary:nth-child(3):hover {
   background-position: -1px 80px;
 }
 
 @media screen and (min-width: 768px) {
-  .separate + div {
+  .multimedia__link.card {
     border-left: 6px solid transparent;
     position: relative;
   }
 
-  .separate + div::before {
+  .multimedia__link::before {
     content: "";
     position: absolute;
     top: 0;
@@ -900,17 +902,17 @@ hr.separate {
 }
 
 @media screen and (min-width: 992px) {
-  .media-link .btn-primary + .btn-primary {
+  .multimedia__link .btn-primary + .btn-primary {
     margin-left: 36px;
   }
 }
 
 @media screen and (min-width: 1200px) {
-  .separate + div {
+  .multimedia__link.card {
     border-left: 0;
   }
 
-  .separate + div::before {
+  .multimedia__link::before {
     content: unset;
   }
 }

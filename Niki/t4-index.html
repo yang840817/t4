@@ -63,13 +63,13 @@
 
   <main class="main">
     <div class="container p-0">
-      <section class="row g-0">
+      <div class="row g-0">
 
         <!-- main-products -->
 
         <div class="col-12 col-lg-6 main-products">
           <figure class="figure mb-0 d-block position-relative">
-            <img src="img/chair.jpg" class="figure-img img-fluid w-100 mb-0" alt="...">
+            <img src="img/chair.jpg" class="figure-img img-fluid w-100 mb-0" alt="chair">
             <figcaption class="figure-caption d-grid position-absolute">
               <p class="main-products__name">
                 whicker chair
@@ -78,7 +78,7 @@
                 &#36;250.00
               </p>
               <p class="main-products__details">
-                <a href="##" class="d-block">view details</a>
+                <a class="d-block" href="##">view details</a>
               </p>
             </figcaption>
           </figure>
@@ -204,7 +204,7 @@
               </div>
             </div>
             <div class="col-12 col-md-6 col-xl-12">
-              <div class="card p-0">
+              <div class="card p-0 contact-us__address">
                 <div class="card-body p-0 px-md-4">
                   <h4 class="card-title mb-0">
                     or you can visit us at:
@@ -263,23 +263,21 @@
             </div>
           </div>
         </div>
-      </section>
+      </div>
     </div>
   </main>
 
   <!-- footer -->
-
   <footer class="footer">
     <div class="container pt-5 pb-4 px-0">
       <section class="row g-0 pb-xl-3">
-
-        <!-- visit -->
-
         <div class="col-12 col-xl-4">
-          <div class="p-4 pt-0 ps-xl-0 visit">
+
+          <!-- visit -->
+          <section class="p-4 pt-0 ps-xl-0 visit">
             <h5>visit our showroom</h5>
             <div class="card">
-              <div class="row gx-4">
+              <div class="row gx-4 gx-xl-0">
                 <div class="col-12 col-sm-6 col-xl-12">
                   <img src="img/show-room.png" class="card-img-top mb-3 mb-sm-0 mb-xl-3" alt="show-room">
                 </div>
@@ -302,13 +300,13 @@
                 </div>
               </div>
             </div>
-          </div>
+          </section>
+        
         </div>
-
-        <!-- blog-renew -->
-
         <div class="col-12 col-xl-4">
-          <div class="p-4 pt-xl-0 blog-renew">
+
+          <!-- blog-renew -->
+          <section class="p-4 pt-xl-0 blog-renew">
             <h5>recent blog posts</h5>
             <div class="row">
               <div class="col-12 col-lg-4 col-xl-12">
@@ -378,15 +376,17 @@
                 </div>
               </div>
             </div>
-          </div>
+          </section>
+        
         </div>
-
-        <!-- e-mail -->
-
         <div class="col-12 col-xl-4">
-          <div class="row g-0">
+
+          <!-- multimedia -->
+          <section class="row g-0 multimedia">
             <div class="col-12 col-md-6 col-xl-12">
-              <div class="p-4 pt-xl-0 e-mail">
+              
+              <!-- e-mail -->
+              <div class="p-4 pt-xl-0 multimedia__e-mail">
                 <h5>
                   join our newsletter
                 </h5>
@@ -399,16 +399,16 @@
                   <button type="submit" class="btn btn-primary text-center">Sign in</button>
                 </form>
               </div>
+
             </div>
 
             <!-- hr -->
 
-            <hr class="m-0 separate d-md-none d-xl-block px-xl-4">
+            <hr class="m-0 d-md-none d-xl-block px-xl-4">
 
-            <!-- media-link -->
-
+            <!-- multimedia__link -->
             <div class="col-12 col-md-6 col-xl-12">
-              <div class="card p-4 media-link">
+              <div class="card p-4 h-100 multimedia__link">
                 <div class="card-body p-0">
                   <h5 class="card-title">
                     social media
@@ -424,7 +424,8 @@
                 </div>
               </div>
             </div>
-          </div>
+
+          </section>
         </div>
       </section>
 

@@ -3,6 +3,11 @@
   font-family: "Roboto Flex", "Montserrat", sans-serif;
 }
 
+body {
+  min-width: 360px;
+}
+
+
 /* header */
 
 .header {
@@ -21,6 +26,13 @@
 
 .header h1 a {
   width: 100%;
+}
+
+.header p {
+  position: absolute;
+  height: 1px;
+  width: 1px;
+  color: #241b18;
 }
 
 .header button span {
@@ -543,16 +555,23 @@ main div:nth-child(5) .card-body {
 .blog time {
   font-family: "Open Sans", sans-serif;
   font-weight: 600;
+  font-size: calc( 1px + 4vw );
 }
 
 .blog h5 {
   font-family: "Oswald", sans-serif;
+  font-size: calc( -2.5px + 6vw );
+}
+
+.blog p {
+  line-height: initial;
 }
 
 .blog a {
   font-family: "Oswald", sans-serif;
   text-decoration: none;
   color: #4b3a32;
+  font-size: calc( 1px + 4vw );
 }
 
 @media screen and (min-width: 576px) {
@@ -564,7 +583,7 @@ main div:nth-child(5) .card-body {
     font-size: 32px;
   }
 
-  .blog p {
+  .blog a {
     font-size: 24px;
   }
 }
@@ -578,7 +597,7 @@ main div:nth-child(5) .card-body {
     font-size: 36px;
   }
 
-  .blog p {
+  .blog a {
     font-size: 28px;
   }
 }
@@ -592,7 +611,7 @@ main div:nth-child(5) .card-body {
     font-size: 28px;
   }
 
-  .blog p {
+  .blog a {
     font-size: 20px;
   }
 }
@@ -606,7 +625,7 @@ main div:nth-child(5) .card-body {
     font-size: 24px;
   }
 
-  .blog p {
+  .blog a {
     font-size: 16px;
   }
 }
@@ -771,11 +790,10 @@ footer .card {
   opacity: 0.65;
 }
 
-.multimedia__e-mail .btn-primary {
+.multimedia__e-mail .btn {
   color: #fff;
-  background-color: initial;
-  border-color: initial;
   border: 0;
+  border-radius: 0;
   font-family: "Oswald", sans-serif;
   text-transform: uppercase;
   font-size: 20px;
@@ -783,7 +801,7 @@ footer .card {
   z-index: 1;
 }
 
-.multimedia__e-mail .btn-primary::before {
+.multimedia__e-mail .btn::before {
   content: "";
   height: 50px;
   width: 110px;
@@ -794,7 +812,7 @@ footer .card {
   z-index: -1;
 }
 
-.multimedia__e-mail .btn-primary:hover::before {
+.multimedia__e-mail .btn:hover::before {
   background-position: -133px -53px;
 }
 
@@ -808,9 +826,8 @@ footer .card {
 
 /* media-link */
 
-.multimedia__link .btn-primary {
+.multimedia__link .btn {
   color: initial;
-  background-color: initial;
   border: 0;
   height: 80px;
   width: 80px;
@@ -819,32 +836,32 @@ footer .card {
   border-radius: 0;
 }
 
-.multimedia__link .btn-primary + .btn-primary {
+.multimedia__link .btn + .btn {
   margin-left: 24px;
 }
 
-.multimedia__link .btn-primary:nth-child(1) {
+.multimedia__link .btn:nth-child(1) {
   background-position: 95px 270px;
 }
 
-.multimedia__link .btn-primary:nth-child(1):hover {
+.multimedia__link .btn:nth-child(1):hover {
   background-position: 2px 270px;
 }
 
-.multimedia__link .btn-primary:nth-child(2) {
+.multimedia__link .btn:nth-child(2) {
   background-position: 95px 174px;
 }
 
-.multimedia__link .btn-primary:nth-child(2):hover {
+.multimedia__link .btn:nth-child(2):hover {
   background-position: 2px 174px;
 }
 
-.multimedia__link .btn-primary:nth-child(3) {
+.multimedia__link .btn:nth-child(3) {
   background-position: 81px 80px;
   background-size: 176px 528px;
 }
 
-.multimedia__link .btn-primary:nth-child(3):hover {
+.multimedia__link .btn:nth-child(3):hover {
   background-position: -1px 80px;
 }
 
@@ -857,19 +874,15 @@ footer .card {
   .multimedia__link::before {
     content: "";
     position: absolute;
-    top: 0;
-    left: -7px;
+    inset: 0 0 0 -7px;
     width: 7px;
-    height: 100%;
-    background-image: url("img/separator-dark-vertical.png");
-    background-clip: content-box;
-    background-repeat: repeat-y;
+    background: url("img/separator-dark-vertical.png") content-box;
     padding: 12px 0;
   }
 }
 
 @media screen and (min-width: 992px) {
-  .multimedia__link .btn + .btn-primary {
+  .multimedia__link .btn + .btn {
     margin-left: 36px;
   }
 }
@@ -886,11 +899,8 @@ footer .card {
 
 .footer .under-block {
   height: 7px;
-
-  background-image: url("img/separator-dark.png");
-  background-repeat: repeat-x;
+  background: url("img/separator-dark.png") transparent;
   opacity: 1;
-  background-color: transparent;
 }
 
 /* copyright */

@@ -869,7 +869,7 @@ footer .card {
 }
 
 @media screen and (min-width: 992px) {
-  .multimedia__link .btn-primary + .btn-primary {
+  .multimedia__link .btn + .btn-primary {
     margin-left: 36px;
   }
 }

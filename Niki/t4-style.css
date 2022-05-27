@@ -3,19 +3,11 @@
   font-family: "Roboto Flex", "Montserrat", sans-serif;
 }
 
-body {
-  min-width: 375px;
-}
-
 /* header */
 
 .header {
   background-color: #241b18;
   border-bottom: 2px solid #fff;
-}
-
-.header .bg-light {
-  --bs-bg-opacity: 0;
 }
 
 .header .navbar {
@@ -32,8 +24,8 @@ body {
 }
 
 .header button span {
-  height: unset;
-  width: unset;
+  height: initial;
+  width: initial;
 }
 
 header button svg {
@@ -50,11 +42,11 @@ header button path {
 }
 
 .header .navbar-toggler-icon {
-  background: unset;
+  background: initial;
 }
 
 .header .collapse {
-  flex-grow: unset;
+  flex-grow: initial;
 }
 
 .header .navbar-nav .nav-link.active {
@@ -63,7 +55,7 @@ header button path {
 
 .header .navbar-nav .nav-link {
   color: #ffffff;
-  transition: unset;
+  transition: initial;
   position: relative;
   padding: 16px 0;
   z-index: 2;
@@ -110,9 +102,9 @@ header button path {
   }
 
   .header .navbar-collapse {
-    position: unset;
-    width: unset;
-    background-color: unset;
+    position: initial;
+    width: initial;
+    background-color: initial;
   }
 
   .header .nav-link {
@@ -167,31 +159,29 @@ header button path {
 .main .container::after {
   content: "";
   position: absolute;
-  transform: rotate(180deg);
   width: 100%;
   height: 20px;
   bottom: 0;
-  left: 0;
-  background-image: linear-gradient(to bottom, #d1d1d1, #ffffff 20px);
+  background-image: linear-gradient(to top, #d1d1d1, #ffffff 20px);
 }
 
 .main .introduction {
   border: 2px solid #fff;
-  border-top: unset;
+  border-top: initial;
 }
 
 .main .main-products {
   border: 2px solid #fff;
-  border-top: unset;
+  border-top: initial;
 }
 
 @media screen and (min-width: 992px) {
   .main .introduction {
-    border-left: unset;
+    border-left: initial;
   }
 
   .main .main-products {
-    border-right: unset;
+    border-right: initial;
   }
 }
 
@@ -303,12 +293,12 @@ header button path {
 .introduction .card-title {
   font-weight: 600;
   text-shadow: 1px 1px #ffffff;
-  font-size: calc(2px + 6vw );
+  font-size: calc(2px + 6vw);
 }
 
 .introduction .card-text {
   text-align: start;
-  font-size: calc(1px +  4vw );
+  font-size: calc(1px + 4vw);
 }
 
 @media screen and (min-width: 576px) {
@@ -465,7 +455,7 @@ main div:nth-child(5) .card-body {
   border: 0;
   border-radius: 0;
   text-transform: uppercase;
-  background-color: unset;
+  background-color: initial;
 }
 
 .contact-us .card-text {
@@ -515,16 +505,16 @@ main div:nth-child(5) .card-body {
   }
 
   .contact-us .contact-us__address {
-    border-left: unset;
+    border-left: initial;
   }
 
   .contact-us {
     border-right: 6px solid transparent;
-    border-bottom: unset;
+    border-bottom: initial;
   }
 
   .contact-us::before {
-    content: unset;
+    content: initial;
   }
 
   .contact-us .card-text a {
@@ -635,17 +625,9 @@ main div:nth-child(5) .card-body {
 }
 
 footer .card {
-  background-color: unset;
+  background-color: initial;
   border-radius: 0;
   border: 0;
-}
-
-.footer > * > .row:first-child {
-  background-image: url("img/separator-dark.png");
-  background-repeat: repeat-x;
-  background-position: bottom;
-  background-origin: border-box;
-  border-bottom: 7px solid transparent;
 }
 
 @media screen and (min-width: 768px) {
@@ -706,7 +688,7 @@ footer .card {
     background-position: right;
     background-origin: border-box;
     border-right: 6px solid transparent;
-    border-bottom: unset;
+    border-bottom: initial;
   }
 }
 
@@ -781,7 +763,7 @@ footer .card {
 
 .multimedia__e-mail .form-control:focus ~ label,
 .multimedia__e-mail .form-control:not(:placeholder-shown) ~ label {
-  color: unset;
+  color: initial;
 }
 
 .multimedia__e-mail .form-control::placeholder {
@@ -791,8 +773,8 @@ footer .card {
 
 .multimedia__e-mail .btn-primary {
   color: #fff;
-  background-color: unset;
-  border-color: unset;
+  background-color: initial;
+  border-color: initial;
   border: 0;
   font-family: "Oswald", sans-serif;
   text-transform: uppercase;
@@ -806,13 +788,9 @@ footer .card {
   height: 50px;
   width: 110px;
   position: absolute;
-  left: 50%;
-  top: 50%;
+  inset: 50% 0 0 50%;
   transform: translate(-50%, -50%);
-  background-image: url(img/buttons.png);
-  background-size: 250px 100px;
-  background-position: -5px -53px;
-  background-repeat: no-repeat;
+  background: url(img/buttons.png) -5px -53px/ 250px 100px no-repeat;
   z-index: -1;
 }
 
@@ -823,18 +801,16 @@ footer .card {
 /* separate */
 
 .multimedia hr {
-  background-image: url("img/separator-dark.png");
+  background: url("img/separator-dark.png") content-box transparent;
   height: 6px;
-  background-color: unset;
-  opacity: unset;
-  background-clip: content-box;
+  opacity: initial;
 }
 
 /* media-link */
 
 .multimedia__link .btn-primary {
-  color: unset;
-  background-color: unset;
+  color: initial;
+  background-color: initial;
   border: 0;
   height: 80px;
   width: 80px;
@@ -904,8 +880,17 @@ footer .card {
   }
 
   .multimedia__link::before {
-    content: unset;
+    content: initial;
   }
+}
+
+.footer .under-block {
+  height: 7px;
+
+  background-image: url("img/separator-dark.png");
+  background-repeat: repeat-x;
+  opacity: 1;
+  background-color: transparent;
 }
 
 /* copyright */
@@ -942,13 +927,10 @@ footer .card {
 
   .under-nav .nav-link {
     padding: 8px 0;
-    flex: unset;
+    flex: initial;
   }
 
   .under-nav .nav-link + .nav-link {
     margin-left: 16px;
   }
-}
-
-@media screen and (min-width: 576px) {
 }

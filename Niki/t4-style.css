@@ -7,6 +7,11 @@ body {
   min-width: 360px;
 }
 
+.card {
+  border: 0;
+  border-radius: 0;
+}
+
 /* header */
 
 .header {
@@ -161,34 +166,16 @@ main .container::after {
   background-image: linear-gradient(to top, #d1d1d1, #ffffff 20px);
 }
 
-main .introduction {
-  border: 2px solid #fff;
-  border-top: initial;
-}
-
-main .main-products {
-  border: 2px solid #fff;
-  border-top: initial;
-}
-
-@media screen and (min-width: 992px) {
-  main .introduction {
-    border-left: initial;
-  }
-
-  main .main-products {
-    border-right: initial;
-  }
-}
-
 /* main-products */
 
+.main-products {
+  border: 2px solid #fff;
+  border-top: initial;
+}
+
 .main-products figcaption {
-  right: 20px;
-  bottom: 12px;
-  grid-template-columns: 1fr;
+  inset: auto 20px 12px auto;
   text-align: center;
-  align-items: center;
   color: #030303;
 }
 
@@ -237,8 +224,7 @@ main .main-products {
 
 @media screen and (min-width: 576px) {
   .main-products figcaption {
-    right: 36px;
-    bottom: 24px;
+    inset: auto 36px 24px auto;
   }
 
   .main-products p {
@@ -258,8 +244,7 @@ main .main-products {
   }
 
   .main-products__details::before {
-    top: -8px;
-    left: -9px;
+    inset: -8px auto auto -9px;
     height: 53px;
     width: 165px;
     background-size: 338px;
@@ -270,11 +255,18 @@ main .main-products {
   }
 }
 
+@media screen and (min-width: 992px) {
+  .main-products {
+    border-right: initial;
+  }
+}
+
 /* introduction */
 
-.introduction.card {
-  border-radius: 0;
+.introduction {
   background: url("img/bg-pattern.jpg") 0% 0% / cover;
+  border: 2px solid #fff;
+  border-top: initial;
 }
 
 .introduction .card-body {
@@ -319,6 +311,10 @@ main .main-products {
 }
 
 @media screen and (min-width: 992px) {
+  .introduction {
+    border-left: initial;
+  }
+
   .introduction .card-title {
     font-size: 36px;
   }
@@ -355,14 +351,12 @@ main .main-products {
   inset: auto 20px 20px auto;
   color: #976b04;
   text-transform: uppercase;
-  background: url(img/buttons.png) 2px -1px / 240px no-repeat ;
+  background: url(img/buttons.png) 2px -1px / 240px no-repeat;
 }
 
 /* classify */
 
 .classify.card {
-  border-radius: 0;
-  border: 0;
   background-color: #4b3a32;
   height: 100%;
 }
@@ -407,14 +401,14 @@ main div:nth-child(5) .card-body {
 
 /* contact-us , blog h4 */
 
-.main h4 {
+main h4 {
   font-size: 24px;
   color: #818181;
   font-family: "Pathway Gothic One";
 }
 
 @media screen and (min-width: 768px) {
-  .main h4 {
+  main h4 {
     font-size: 28px;
   }
 }
@@ -439,8 +433,6 @@ main div:nth-child(5) .card-body {
 }
 
 .contact-us .card {
-  border: 0;
-  border-radius: 0;
   text-transform: uppercase;
   background-color: initial;
 }
@@ -514,8 +506,6 @@ main div:nth-child(5) .card-body {
 }
 
 .blog .card {
-  border: 0;
-  border-radius: 0;
   background-color: #dddad3;
   border: 4px double #ffffff;
   color: #4b3a32;
@@ -528,12 +518,12 @@ main div:nth-child(5) .card-body {
 .blog time {
   font-family: "Open Sans", sans-serif;
   font-weight: 600;
-  font-size: calc( 1px + 4vw );
+  font-size: calc(1px + 4vw);
 }
 
 .blog h5 {
   font-family: "Oswald", sans-serif;
-  font-size: calc( -2.5px + 6vw );
+  font-size: calc(-2.5px + 6vw);
 }
 
 .blog p {
@@ -544,7 +534,7 @@ main div:nth-child(5) .card-body {
   font-family: "Oswald", sans-serif;
   text-decoration: none;
   color: #4b3a32;
-  font-size: calc( 1px + 4vw );
+  font-size: calc(1px + 4vw);
 }
 
 @media screen and (min-width: 576px) {
@@ -618,8 +608,6 @@ main div:nth-child(5) .card-body {
 
 footer .card {
   background-color: initial;
-  border-radius: 0;
-  border: 0;
 }
 
 @media screen and (min-width: 768px) {

@@ -371,16 +371,7 @@ main .container::after {
 }
 
 .classify .card-body {
-  position: relative;
-}
-
-.classify .card-body::before {
-  content: "";
-  position: absolute;
-  width: 100%;
-  height: 6px;
-  inset: 0;
-  background-image: url("img/separator-light.png");
+  background: url(img/separator-light.png) repeat-x;
 }
 
 .classify .classify__card--separate {

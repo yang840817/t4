@@ -383,7 +383,7 @@ main .container::after {
   background-image: url("img/separator-light.png");
 }
 
-main div:nth-child(5) .card-body {
+.classify .classify__card--separate {
   background-color: #241b18;
 }
 
@@ -790,28 +790,28 @@ footer .card {
   margin-left: 24px;
 }
 
-.multimedia__link .btn:nth-child(1) {
+.multimedia__link .multimedia__facebook-link {
   background-position: 95px 270px;
 }
 
-.multimedia__link .btn:nth-child(1):hover {
+.multimedia__link .multimedia__facebook-link:hover {
   background-position: 2px 270px;
 }
 
-.multimedia__link .btn:nth-child(2) {
+.multimedia__link .multimedia__google-link {
   background-position: 95px 174px;
 }
 
-.multimedia__link .btn:nth-child(2):hover {
+.multimedia__link .multimedia__google-link:hover {
   background-position: 2px 174px;
 }
 
-.multimedia__link .btn:nth-child(3) {
+.multimedia__link .multimedia__twitter-link {
   background-position: 81px 80px;
   background-size: 176px 528px;
 }
 
-.multimedia__link .btn:nth-child(3):hover {
+.multimedia__link .multimedia__twitter-link:hover {
   background-position: -1px 80px;
 }
 

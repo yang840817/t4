@@ -1,0 +1,25 @@
+* {
+     /* outline: 1px solid red; */
+}
+
+body {
+    min-width: 375px;
+}
+
+:root {
+    --bs-primary: 246, 203, 96; 
+    --bs-secondary: 255, 255, 255;
+    --bs-tertiary: 123, 123, 123;
+    --bs-dark-rgb: 35,27,24;
+    --bs-light-rgb: 226, 178, 65;
+    --bs-gray: 221, 218, 211;
+}
+/* 
+    --bs-primary: 246, 203, 96;     主色：黃色
+    --bs-secondary: 255, 255, 255;  次色：白色
+    --bs-tertiary: 123, 123, 123;   第三：灰色
+    --bs-dark-rgb: 35,27,24;        暗色背景：咖啡=header
+    --bs-light-rgb: 226, 178, 65;   亮色背景：黃色=footer
+    --bs-gray: 220,218,212;         灰色
+ */
+

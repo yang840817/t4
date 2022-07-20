@@ -1,7 +1,8 @@
 footer {
-    padding: 1rem;
+    padding: 1.5rem 1rem;
     border-top: 0.1rem solid white;
 }
+
 @media (min-width: 768px) {
     footer {
         padding: 1.5rem 5%;
@@ -10,20 +11,21 @@ footer {
 @media (min-width: 992px) {
     footer {
     padding: 1.5rem 10%;
+    
     }
 }
 
-.footer_row .col-12 + .col-12 {
-    margin-top: 1.5rem;
+.footer_information .col-12 + .col-12 {
+    margin-top: 1.25rem;
 }
 
 @media (min-width: 576px) {
-    .footer_row .col-12 + .col-12 {
+    .footer_information .col-12 + .col-12 {
         margin-top: 0;
     }
 }
 
-.footer_row h3 {
+.footer_information h3 {
     text-transform: uppercase;
     font-family: 'Oswald', sans-serif;
     overflow: hidden;
@@ -31,32 +33,27 @@ footer {
     text-overflow: ellipsis;
 }
 @media (min-width: 576px) {
-    .footer_row h3 {
+    .footer_information h3 {
         margin-bottom: 1rem;
     }
 }
 
-.footer_row .list_item {
+.footer_information ul {
     margin: 0;
     padding: 0;
-    display: flex;
-    flex-direction: column;
     list-style: none;
     color: rgb(72, 59, 52);
 }
 
-.footer_row .list_item li + li {
-    margin-top: 1rem;
+.footer_information ul li + li {
+    margin-top: 0.5rem;
 }
 
-
-/* vist_our */
-
 @media (min-width: 576px){
-    .footer_row .footer_col {
+    .footer_information .col-12 {
         position: relative;
     }
-    .footer_row .footer_col + .footer_col::before {
+    .footer_information .col-12 + .col-12::before {
         content: " ";
         position: absolute;
         top: 0%;
@@ -65,61 +62,49 @@ footer {
         background-repeat: repeat-y;
         background-position: center;
         background-size: 0.6rem;
-        width: 5%;
+        width: 6%;
         height: 100%;
     }
 }
 
-
-.footer_row .vist_our .image_box {
-    display: inline-block;
-    width: 100%;
+.footer_information .image_box {
+    display: block;
 }
 
-.footer_row .vist_our .list_item a {
+.footer_information ul a {
     color: rgba(var(--bs-black));
 }
 
-.footer_row .vist_our .phone_number {
+.footer_information .phone_number {
     text-decoration: none;
 }
 
-.footer_row .vist_our .E_mail {
+.footer_information .E_mail {
     word-wrap: break-word;
 }
-.footer_row .list_item a:hover {
+.footer_information ul a:hover {
     text-decoration: underline;
 }
-.footer_row .list_item img:hover {
+.footer_information ul img:hover {
     transform: scale(0.98);
 }
 
-.footer_row .list_item h4 {
-    display: -webkit-inline-box;
-    -webkit-box-orient: vertical;
-    -webkit-line-clamp: 1;
-    overflow: hidden;
-}
-
-.footer_row .list_item p {
+.footer_information p {
     margin-bottom: 0;
     display: -webkit-inline-box;
     -webkit-box-orient: vertical;
-    -webkit-line-clamp: 3;
+    -webkit-line-clamp: 2;
     overflow: hidden;
 }
 
-.blog_posts .list_item li {
+/* info_items */
+.footer_information .info_item {
     display: flex;
-    align-items: flex-start;
 }
-
-.blog_posts .image_box {
+.info_item .image_box {
     flex: 1 1 10%;
 }
-
-
-.blog_posts .image_box span {
+.info_item .image_box span {
     display: inline-block;
     background-image: url("../img/bg-time.png");
     background-repeat: no-repeat;
@@ -132,23 +117,28 @@ footer {
     text-align: center;
     font-family: 'Oswald', sans-serif;
 }
-.blog_posts .text_box {
+.info_item .text_box {
     padding: 0 0 0 1rem;
     flex: 1 1 90%
 }
-.blog_posts .text_box h4 {
+.info_item h4 {
+    display: -webkit-inline-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 1;
+    overflow: hidden;
     font-family: 'Oswald', sans-serif;
 }
 
-.footer_col .col_item + .col_item {
-    margin-top: 1rem;
+/* email_subscribe and social_media */
+.footer_information .email_subscribe {
+    margin-bottom: 1rem;
 }
 @media (min-width: 576px) {
-    .footer_col .col_item + .col_item {
-        margin-top: 0;
+    .footer_information .email_subscribe {
+        margin-bottom: 1rem;
     }
-    .footer_row .social_media::before {
-        content: "";
+    .footer_information .email_subscribe::after {
+        content: " ";
         background-image: url("../img/separator-dark.png");
         background-size: 0.4rem;
         margin: 1.5rem 0;
@@ -165,6 +155,10 @@ footer {
     overflow: hidden;
     white-space: nowrap;
     text-overflow: ellipsis;
+}
+
+.form-control:focus {
+    box-shadow: none;
 }
 
 @media (min-width: 576px) {
@@ -188,7 +182,6 @@ footer {
     color: white;
     font-family: 'Oswald', sans-serif;
     text-transform: uppercase;
-
 }
 
 .email_subscribe .btn:hover {
@@ -199,36 +192,37 @@ footer {
     display: inline-block;
     background-image: url("../img/icons.png");
     background-repeat: no-repeat;
+    background-size: 200%;
     width: 2.5rem;
-    padding-top: 2.5rem;
+    height: 2.5rem;
 }
-
 .social_media .icons + .icons {
     margin-left: 1rem;
 }
+
 .social_media .facebook {
-    background-position: bottom -78px right -4px;
+    background-position: bottom -72px right -3px;
 }
 .social_media .facebook:hover {
-    background-position: bottom -78px left 4px;
+    background-position: bottom -72px left 6px;
 }
 
 .social_media .google {
-    background-position: bottom -37px right -3px;
+    background-position: bottom -34px right -2px;
 }
 .social_media .google:hover {
-    background-position: bottom -37px left 3px;
+    background-position: bottom -34px left 5px;
 }
 
 .social_media .twitter {
-    background-position: bottom 3px right;
+    background-position: bottom 3px right 1px;
 }
 .social_media .twitter:hover {
-    background-position: bottom 3px left;
+    background-position: bottom 3px left 2px;
 }
 
-.footer_row::after {
-    content: "";
+.footer_information::after {
+    content: " ";
     background-image: url("../img/separator-dark.png");
     background-size: 0.4rem;
     margin: 1rem 1.5rem;
@@ -237,10 +231,6 @@ footer {
 }
 
 /* footer_copyright */
-footer {
-    box-shadow: 0px -13px 20px -20px #000000;
-}
-
 .footer_copyright p {
     margin-bottom: 0.5rem;
     text-align: center;

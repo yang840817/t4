@@ -1,0 +1,30 @@
+header {
+  min-width: 375px;
+  background-color: #241b17;
+}
+
+@media (min-width: 992px) {
+  .menu_list {
+    margin: 56px 0 32px;
+  }
+}
+.header_container .nav-link {
+  text-transform: uppercase;
+  color: white;
+}
+.header_container .nav-link.active,
+.header_container .nav-link:hover {
+  color: #ffc947;
+}
+.logo_container {
+  margin: 16px 0;
+}
+.logo_container a {
+  width: 100%;
+  max-width: 435px;
+}
+@media (min-width: 992px) {
+  .header_container nav {
+    max-width: 410px;
+  }
+}

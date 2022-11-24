@@ -1,0 +1,188 @@
+footer {
+  min-width: 375px;
+  background-color: #ebb017;
+}
+.footer_main {
+  background: url(../img/separator-dark.png) repeat-x bottom/4px;
+}
+.footer_main > div {
+  margin: 36px 0 16px;
+}
+.footer_main h4,
+.footer_main p,
+.footer_main a,
+.contact_fill_mail::placeholder {
+  color: #4e3932;
+}
+.footer_main h3 {
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  text-transform: uppercase;
+  font-size: 18px;
+  font-weight: bolder;
+  color: #261b17;
+}
+.footer_main h4 {
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-size: 16px;
+  font-weight: bolder;
+}
+
+.footer_main p,
+.footer_main a {
+  font-size: 14px;
+}
+
+.recent_post > h3 + div,
+.visit_us > * + *,
+.contact_us > * + *,
+.contact_fill > * + *,
+.contact_community > * + * {
+  margin-top: 20px;
+}
+.recent_post > div + div {
+  margin-top: 40px;
+}
+.visit_us,
+.footer_main > div:nth-child(3n + 2) > div {
+  padding-top: 24px;
+  background: url(../img/separator-dark.png) repeat-x top/4px;
+}
+@media (min-width: 576px) {
+  .visit_us,
+  .footer_main > div:nth-child(3n + 2) > div {
+    padding-right: 24px;
+  }
+}
+@media (min-width: 992px) {
+  .visit_us,
+  .footer_main > div:nth-child(3n + 2) > div {
+    height: 100%;
+    padding-top: unset;
+    background: url(../img/separator-dark-vertical.png) repeat-y right/6px;
+  }
+}
+.visit_us a:hover {
+  color: #b37b00;
+  background-color: wheat;
+  border-radius: 3px;
+}
+@media (min-width: 992px) {
+  .recent_post,
+  .footer_main > div:nth-child(3n + 1) > div {
+    padding: 0 24px;
+    height: 100%;
+  }
+}
+.recent_post > div {
+  display: flex;
+}
+.recent_post_date {
+  margin-right: 12px;
+  flex-shrink: 0;
+  width: 48px;
+  height: 48px;
+  font-weight: bold;
+  text-transform: uppercase;
+  text-align: center;
+  color: white;
+  background: url(../img/bg-time.png);
+  background-size: 50px 50px;
+}
+.contact_us,
+.footer_main > div:nth-child(3n + 3) > div {
+  padding-top: 24px;
+  background: url(../img/separator-dark.png) repeat-x top/4px;
+}
+@media (min-width: 576px) {
+  .contact_us,
+  .footer_main > div:nth-child(3n + 3) > div {
+    padding-left: 24px;
+  }
+}
+@media (min-width: 992px) {
+  .contact_us,
+  .footer_main > div:nth-child(3n + 3) > div {
+    height: 100%;
+    padding-top: unset;
+    background: url(../img/separator-dark-vertical.png) repeat-y left/6px;
+  }
+}
+.contact_us > div + div {
+  padding-top: 24px;
+  background: url(../img/separator-dark.png) repeat-x top/4px;
+}
+.contact_fill_mail {
+  display: block;
+  width: 100%;
+  height: 32px;
+  border: 2px solid #b77f00;
+}
+.contact_fill_button {
+  margin-top: 6px;
+  width: 95px;
+  height: 32px;
+  font-weight: bolder;
+  text-transform: uppercase;
+  color: white;
+  background: url(../img/buttons.png) no-repeat;
+  background-position: -14px -43.5px;
+  background-size: 250px;
+  border: none;
+}
+.contact_fill_button:hover {
+  background-position: -142px -43.5px;
+}
+.contact_community a {
+  display: inline-block;
+  width: 48px;
+  height: 48px;
+}
+.contact_community a + a {
+  margin-left: 20px;
+}
+.facebook {
+  background: url(../img/icons.png) no-repeat;
+  background-position: -49px -125px;
+  background-size: 100px;
+}
+.facebook:hover {
+  background-position: 4.6px -125px;
+}
+.google_plus {
+  background: url(../img/icons.png) no-repeat;
+  background-position: -49px -173px;
+  background-size: 100px;
+}
+.google_plus:hover {
+  background-position: 4.6px -173px;
+}
+.twitter {
+  background: url(../img/icons.png) no-repeat;
+  background-position: -53px -220px;
+  background-size: 100px;
+}
+.twitter:hover {
+  background-position: 0.6px -220px;
+}
+.footer_menu {
+  padding: 12px 0;
+}
+
+.footer_nav_container,
+.copyright {
+  font-size: 14px;
+  text-transform: uppercase;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  color: #b37b00;
+}
+.footer_nav_container a:hover {
+  color: #4e3932;
+  background-color: wheat;
+  border-radius: 3px;
+}
+
+.footer_nav_container ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}

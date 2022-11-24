@@ -1,0 +1,16 @@
+* {
+  /* outline: 1px solid red; */
+}
+.container-xl {
+  max-width: 1100px;
+}
+img {
+  width: 100%;
+}
+a {
+  text-decoration: none;
+  display: inline-block;
+}
+p {
+  margin-bottom: 0;
+}
